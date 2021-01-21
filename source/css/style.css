@@ -383,6 +383,7 @@ aside {
 }
 
 .breadcrumb {
+  background-color: #fff;
   font-size: 13px;
   color: #9a9a9a;
   display: -webkit-box;
