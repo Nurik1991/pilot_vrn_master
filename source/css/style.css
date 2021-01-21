@@ -87,50 +87,44 @@ body {
 }
 
 /* -----------	Основной стиль -----------	*/
-h1 {
-  font-size: calc(20px + 20 * ((100vw - 320px) / 1580));
-}
-
 body {
   font-family: "Exo 2";
   overflow-x: hidden;
-  color: black;
-  padding: 100px;
 }
 
 h1 {
-  font-size: 54px;
+  font-size: calc(20px + 34 * ((100vw - 320px) / 1580));
   font-weight: 700;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: calc(18px + 18 * ((100vw - 320px) / 1580));
   font-weight: 600;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: calc(16px + 14 * ((100vw - 320px) / 1580));
   font-weight: 400;
 }
 
 h4 {
-  font-size: 30px;
+  font-size: calc(16px + 14 * ((100vw - 320px) / 1580));
   font-weight: 400;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1580));
   font-weight: 400;
 }
 
 h6 {
-  font-size: 18px;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 1580));
   font-weight: 400;
 }
 
 p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: calc(14px + 2 * ((100vw - 320px) / 1580));
 }
 
 /* -----------	Основной стиль -----------	*/
@@ -142,6 +136,14 @@ aside {
   border: 1px solid yellowgreen;
 }
 
+/* -----------	Header -----------	*/
+.header {
+  height: 80px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1d170f), color-stop(146.88%, rgba(29, 23, 15, 0.6)));
+  background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%);
+}
+
+/* -----------	End Header -----------	*/
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,28 +164,4 @@ aside {
 
 /* ----------- // Основной стиль -----------	*/
 /* ====================Мобильная версия================= */
-@media screen and (max-width: 768px) {
-  h1 {
-    color: gray;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  h1 {
-    color: red;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1580px) {
-  h1 {
-    color: blue;
-  }
-}
-
-@media (min-width: 1580px) {
-  h1 {
-    color: black;
-  }
-}
-
 /* ============Конец - Мобильная версия================= */

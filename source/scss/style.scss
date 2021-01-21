@@ -4,51 +4,45 @@
 @import "_variables";
 
 /* -----------	Основной стиль -----------	*/
-h1 {
-	@include adaptiv-font(40, 20);
-}
-
 // типография
 body {
 	font-family: "Exo 2";
 	overflow-x: hidden;
-	color: black;
-	padding: 100px;
 }
 
 h1 {
-	font-size: 54px;
+	@include adaptiv-font(54, 20);
 	font-weight: 700;
 }
 
 h2 {
-	font-size: 36px;
+	@include adaptiv-font(36, 18);
 	font-weight: 600;
 }
 
 h3 {
-	font-size: 30px;
+	@include adaptiv-font(30, 16);
 	font-weight: 400;
 }
 
 h4 {
-	font-size: 30px;
+	@include adaptiv-font(30, 16);
 	font-weight: 400;
 }
 
 h5 {
-	font-size: 20px;
+	@include adaptiv-font(20, 14);
 	font-weight: 400;
 }
 
 h6 {
-	font-size: 18px;
+	@include adaptiv-font(18, 12);
 	font-weight: 400;
 }
 
 p {
 	font-weight: 400;
-	font-size: 16px;
+	@include adaptiv-font(16, 14);
 }
 
 // конец типография
@@ -61,6 +55,15 @@ section,
 aside {
 	border: 1px solid yellowgreen;
 }
+
+/* -----------	Header -----------	*/
+
+.header {
+	height: 80px;
+	background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%);
+}
+
+/* -----------	End Header -----------	*/
 
 .footer {
 	display: flex;
