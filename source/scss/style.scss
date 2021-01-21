@@ -90,6 +90,8 @@ aside {
 	align-self: center;
 	width: auto;
 	height: 100%;
+	position: relative;
+	z-index: 9;
 }
 
 .menu {
@@ -98,11 +100,11 @@ aside {
 }
 
 .menu__item {
-	padding: 31.5px 33px;
 	background: none;
 	display: inline-flex;
 
 	a {
+		padding: 31.5px 33px;
 		color: white;
 		text-transform: uppercase;
 		@include adaptiv-font(14, 12);
@@ -112,6 +114,74 @@ aside {
 		background: #2c2419;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		cursor: pointer;
+	}
+}
+.have-sub {
+	position: relative;
+	padding-right: 25px;
+	z-index: 9;
+	overflow: hidden;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+
+	&::after {
+		content: "";
+		position: absolute;
+		right: 30px;
+		background-image: url(../img/arrow.svg);
+		width: 16px;
+		height: 8px;
+		background-position: center;
+		top: 37px;
+	}
+	&:hover {
+		overflow: visible;
+		.sub-menu {
+			position: absolute;
+			top: 80px;
+			background: white;
+			background: #fff;
+			box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+			transition: 0.4s;
+			-webkit-transition: 0.4s;
+			-moz-transition: 0.4s;
+			-ms-transition: 0.4s;
+			-o-transition: 0.4s;
+			opacity: 1;
+			min-height: 80px;
+			height: auto;
+		}
+	}
+	.sub-menu {
+		position: absolute;
+		top: 80px;
+		opacity: 0;
+		background: white;
+		background: #fff;
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+		transition: 0.4s;
+		-webkit-transition: 0.4s;
+		-moz-transition: 0.4s;
+		-ms-transition: 0.4s;
+		-o-transition: 0.4s;
+		z-index: 1;
+		min-height: 0;
+		&__links {
+			padding: 13px 12px;
+			text-align: left;
+			a {
+				color: #161616;
+				padding: 10px 20px;
+				font-size: 14px;
+				line-height: 150%;
+			}
+		}
+		.sub-menu__links:hover {
+			background: $yellow;
+		}
 	}
 }
 
@@ -128,6 +198,18 @@ aside {
 
 	&-links {
 		display: flex;
+
+		.number a {
+			color: white;
+			font-size: 16px;
+		}
+		.callback a {
+			color: white;
+			font-size: 14px;
+			border-bottom: 1px solid #ffa401;
+			margin-left: 20px;
+			padding: 0 5px 2px 5px;
+		}
 	}
 }
 
@@ -176,15 +258,14 @@ aside {
 
 .breadcrumb {
 	font-size: 13px;
-	color: #9A9A9A;
+	color: #9a9a9a;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 
 	a {
-		color: #9A9A9A;
+		color: #9a9a9a;
 	}
-
 }
 
 // мобильная версия
