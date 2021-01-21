@@ -470,6 +470,22 @@ aside {
           flex-direction: row;
 }
 
+/* -----------	Каталог -----------	*/
+.catalog_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
+}
+
+/* -----------	Конец Каталог -----------	*/
 /* -----------	Конец Блок поиска на главной -----------	*/
 .footer {
   margin-top: 140px;

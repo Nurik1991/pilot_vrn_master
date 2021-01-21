@@ -361,6 +361,17 @@ aside {
 	flex-direction: row;
 }
 
+/* -----------	Каталог -----------	*/
+.catalog_grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	justify-items: center;
+	justify-self: center;
+	width: 100%;
+}
+/* -----------	Конец Каталог -----------	*/
+
 /* -----------	Конец Блок поиска на главной -----------	*/
 
 .footer {
@@ -417,7 +428,6 @@ aside {
 	height: 100%;
 	min-height: 500px;
 
-
 	.page-404__number p {
 		font-size: 100px;
 		font-weight: bold;
@@ -440,7 +450,6 @@ aside {
 	font-size: 13px;
 	color: #9a9a9a;
 
-
 	a {
 		color: #9a9a9a;
 	}
@@ -454,7 +463,6 @@ aside {
 }
 
 /*--------конец 404 -----*/
-
 
 /*------- Контакты -------*/
 .contact {
@@ -471,7 +479,6 @@ aside {
 		li {
 			list-style-type: none;
 		}
-
 	}
 }
 
