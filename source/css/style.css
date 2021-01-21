@@ -254,24 +254,6 @@ aside {
 
 /* ----------- // Основной стиль -----------	*/
 /*------------ страница 404 ---------------*/
-.page-404 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-}
-
 .page-404 .page-404__number p {
   font-size: 100px;
   font-weight: bold;
@@ -285,21 +267,21 @@ aside {
 
 .breadcrumb {
   font-size: 13px;
-  color: #9A9A9A;
+  color: #9a9a9a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .breadcrumb a {
-  color: #9A9A9A;
+  color: #9a9a9a;
 }
 
 /* ====================Мобильная версия================= */

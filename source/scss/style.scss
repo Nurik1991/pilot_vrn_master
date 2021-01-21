@@ -125,6 +125,10 @@ aside {
 	}
 }
 
+// .header__tel-links {
+
+// }
+
 /* -----------	End Header -----------	*/
 
 .footer {
@@ -149,39 +153,34 @@ aside {
 
 /* ----------- // Основной стиль -----------	*/
 /*------------ страница 404 ---------------*/
-.page-404 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	flex-basis: 200px;
-<<<<<<< Updated upstream
+.page-404 .page-404__number p {
+	font-size: 100px;
+	font-weight: bold;
+	margin-right: 20px;
+}
 
-	.page-404__number p {
-		font-size: 100px;
-		font-weight: bold;
-		margin-right: 20px;
-	}
-
-	.page-404__text {
-		font-size: 20px;
-		width: 492px;
-	}
+.page-404 .page-404__text {
+	font-size: 20px;
+	width: 492px;
 }
 
 .breadcrumb {
 	font-size: 13px;
-	color: #9A9A9A;
+	color: #9a9a9a;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+}
 
-	a {
-		color: #9A9A9A;
-	}
-
-=======
->>>>>>> Stashed changes
+.breadcrumb a {
+	color: #9a9a9a;
 }
 
 // мобильная версия
