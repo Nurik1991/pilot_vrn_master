@@ -4,14 +4,14 @@
 *,
 *::before,
 *::after {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Убираем внутренние отступы */
 ul[class],
 ol[class] {
-	padding: 0;
+  padding: 0;
 }
 
 /* Убираем внешние отступы */
@@ -29,36 +29,36 @@ figcaption,
 blockquote,
 dl,
 dd {
-	margin: 0;
+  margin: 0;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-	min-height: 100vh;
-	scroll-behavior: smooth;
-	text-rendering: optimizeSpeed;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
-	list-style: none;
+  list-style: none;
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-	text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Упрощаем работу с изображениями */
 img {
-	max-width: 100%;
-	display: block;
+  max-width: 100%;
+  display: block;
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
-	margin-top: 1em;
+  margin-top: 1em;
 }
 
 /* Наследуем шрифты для инпутов и кнопок */
@@ -66,65 +66,72 @@ input,
 button,
 textarea,
 select {
-	font: inherit;
+  font: inherit;
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
-	* {
-		-webkit-animation-duration: 0.01ms !important;
-		animation-duration: 0.01ms !important;
-		-webkit-animation-iteration-count: 1 !important;
-		animation-iteration-count: 1 !important;
-		-webkit-transition-duration: 0.01ms !important;
-		transition-duration: 0.01ms !important;
-		scroll-behavior: auto !important;
-	}
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 body {
-	font-family: "Exo 2";
+  font-family: "Exo 2";
 }
 
 /* -----------	Основной стиль -----------	*/
 body {
-	font-family: "Exo 2";
-	overflow-x: hidden;
+  font-family: "Exo 2";
+  overflow-x: hidden;
 }
 
 h1 {
-	font-size: calc(20px + 34 * ((100vw - 320px) / 1600));
-	font-weight: 700;
+  font-size: calc(20px + 34 * ((100vw - 320px) / 1600));
+  font-weight: 700;
 }
 
 h2 {
-	font-size: calc(18px + 18 * ((100vw - 320px) / 1600));
-	font-weight: 600;
+  font-size: calc(18px + 18 * ((100vw - 320px) / 1600));
+  font-weight: 600;
 }
 
 h3 {
-	font-size: calc(16px + 14 * ((100vw - 320px) / 1600));
-	font-weight: 400;
+  font-size: calc(16px + 14 * ((100vw - 320px) / 1600));
+  font-weight: 400;
 }
 
 h4 {
-	font-size: calc(16px + 14 * ((100vw - 320px) / 1600));
-	font-weight: 400;
+  font-size: calc(16px + 14 * ((100vw - 320px) / 1600));
+  font-weight: 400;
 }
 
 h5 {
-	font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
-	font-weight: 400;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
+  font-weight: 400;
 }
 
 h6 {
-	font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
-	font-weight: 400;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
+  font-weight: 400;
 }
 
 p {
-	font-weight: 400;
-	font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+  font-weight: 400;
+  font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+}
+
+.wrapper {
+  max-width: 1410px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 /* -----------	Основной стиль -----------	*/
@@ -133,39 +140,33 @@ header,
 footer,
 section,
 aside {
-	border: 1px solid yellowgreen;
+  border: 1px solid yellowgreen;
 }
 
 /* -----------	Header -----------	*/
 .header {
-	height: 80px;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		from(#1d170f),
-		color-stop(146.88%, rgba(29, 23, 15, 0.6))
-	);
-	background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%);
+  height: 80px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1d170f), color-stop(146.88%, rgba(29, 23, 15, 0.6)));
+  background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%);
 }
 
 /* -----------	End Header -----------	*/
 .footer {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	margin-top: 140px;
-	width: 100%;
-	min-height: 89px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 140px;
+  width: 100%;
+  min-height: 89px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /* ----------- // Основной стиль -----------	*/

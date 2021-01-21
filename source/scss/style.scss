@@ -45,6 +45,13 @@ p {
 	@include adaptiv-font(16, 14);
 }
 
+.wrapper {
+	max-width: 1410px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
 // конец типография
 
 /* -----------	Основной стиль -----------	*/
