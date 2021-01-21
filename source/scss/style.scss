@@ -161,16 +161,22 @@ aside {
 	justify-content: center;
 	align-items: center;
 	flex-basis: 200px;
+	margin-top: 292px;
 
 	.page-404__number p {
 		font-size: 100px;
 		font-weight: bold;
-		margin-right: 20px;
+		margin-right: 62px;
 	}
 
 	.page-404__text {
 		font-size: 20px;
 		width: 492px;
+		margin-left: 56px;
+	}
+
+	.page-404__lightning:hover img {
+		transition: top 2s ease-out 0.5s;
 	}
 }
 
@@ -186,6 +192,12 @@ aside {
 	}
 
 }
+
+/*--------конец 404 -----*/
+
+
+
+
 
 // мобильная версия
 @import "_media";

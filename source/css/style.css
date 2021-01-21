@@ -270,17 +270,24 @@ aside {
           align-items: center;
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
+  margin-top: 292px;
 }
 
 .page-404 .page-404__number p {
   font-size: 100px;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 62px;
 }
 
 .page-404 .page-404__text {
   font-size: 20px;
   width: 492px;
+  margin-left: 56px;
+}
+
+.page-404 .page-404__lightning:hover img {
+  -webkit-transition: top 2s ease-out 0.5s;
+  transition: top 2s ease-out 0.5s;
 }
 
 .breadcrumb {
@@ -302,5 +309,6 @@ aside {
   color: #9A9A9A;
 }
 
+/*--------конец 404 -----*/
 /* ====================Мобильная версия================= */
 /* ============Конец - Мобильная версия================= */
