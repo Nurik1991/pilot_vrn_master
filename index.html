@@ -4,12 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
 	<title>Главная</title>
 	<link rel="stylesheet" href="source/css/style.css">
 </head>
 
 <body>
-
+	<!-- Хедер -->
 	<header class="header">
 		<div class="wrapper">
 			<div class="header__logo">
@@ -52,6 +53,7 @@
 			</div>
 		</div>
 	</header>
+	<!-- Конец Хедер -->
 
 	<section class="offer">
 		_______________
@@ -59,14 +61,109 @@
 
 	</section>
 
-
+	<!-- Блок поиска -->
 	<section class="search-block">
-		search
-	</section>
+		<div class="wrapper">
+			<div class="search-block__select">
 
-	<section class="catalog">
-		каталог
+				<div class="select">
+					<input class="select__input" type="hidden" name="">
+					<div class="select__head">Марка</div>
+					<ul class="select__list" style="display: none;">
+						<li class="select__item">Стилизация select CSS</li>
+						<li class="select__item">Стилизация select JavaScript</li>
+						<li class="select__item">Стилизация select, используя input</li>
+					</ul>
+				</div>
+
+				<div class="select">
+					<input class="select__input" type="hidden" name="">
+					<div class="select__head">Модель</div>
+					<ul class="select__list" style="display: none;">
+						<li class="select__item">Стилизация select CSS</li>
+						<li class="select__item">Стилизация select JavaScript</li>
+						<li class="select__item">Стилизация select, используя input</li>
+					</ul>
+				</div>
+
+				<div class="select">
+					<input class="select__input" type="hidden" name="">
+					<div class="select__head">Поколение</div>
+					<ul class="select__list" style="display: none;">
+						<li class="select__item">Стилизация select CSS</li>
+						<li class="select__item">Стилизация select JavaScript</li>
+						<li class="select__item">Стилизация select, используя input</li>
+					</ul>
+				</div>
+
+				<input type="button" value="найти">
+
+			</div>
+		</div>
 	</section>
+	<!-- Конец Блок поиска -->
+
+	<!-- Переход по каталогу -->
+	<section class="catalog">
+		<div class="wrapper">
+
+			<!-- Каталог 1 -->
+			<div class="catalog__block">
+				<a href="#0">
+					<h4 class="catalog__block-name">Накидки</h4>
+					<img class="catalog__block-image" src="source/img/catalog/cat1.png">
+				</a>
+			</div>
+			<!-- Каталог 1 -->
+
+			<!-- Каталог 1 -->
+			<div class="catalog__block">
+				<a href="#0">
+					<h4 class="catalog__block-name">Накидки</h4>
+					<img class="catalog__block-image" src="source/img/catalog/cat1.png">
+				</a>
+			</div>
+			<!-- Каталог 1 -->
+
+			<!-- Каталог 1 -->
+			<div class="catalog__block">
+				<a href="#0">
+					<h4 class="catalog__block-name">Накидки</h4>
+					<img class="catalog__block-image" src="source/img/catalog/cat1.png">
+				</a>
+			</div>
+			<!-- Каталог 1 -->
+
+			<!-- Каталог 1 -->
+			<div class="catalog__block">
+				<a href="#0">
+					<h4 class="catalog__block-name">Накидки</h4>
+					<img class="catalog__block-image" src="source/img/catalog/cat1.png">
+				</a>
+			</div>
+			<!-- Каталог 1 -->
+
+			<!-- Каталог 1 -->
+			<div class="catalog__block">
+				<a href="#0">
+					<h4 class="catalog__block-name">Накидки</h4>
+					<img class="catalog__block-image" src="source/img/catalog/cat1.png">
+				</a>
+			</div>
+			<!-- Каталог 1 -->
+
+			<!-- Каталог 1 -->
+			<div class="catalog__block">
+				<a href="#0">
+					<h4 class="catalog__block-name">Накидки</h4>
+					<img class="catalog__block-image" src="source/img/catalog/cat1.png">
+				</a>
+			</div>
+			<!-- Каталог 1 -->
+
+		</div>
+	</section>
+	<!-- Конец Переход по каталогу -->
 
 	<section class="goods-block">
 		tovari
@@ -84,6 +181,7 @@
 		Остались вопроссы
 	</aside>
 
+	<!-- Footer -->
 	<footer class="footer">
 		<div class="wrapper">
 			<div class="footer__rights-reserved">© 2020 PILOT - VRN. Все права защищены.</div>
@@ -106,7 +204,40 @@
 			</div>
 		</div>
 	</footer>
+	<!-- End Footer -->
 
 </body>
+<!-- Скрипты для Селекта -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	jQuery(($) => {
+		$('.select').on('click', '.select__head', function () {
+			if ($(this).hasClass('open')) {
+				$(this).removeClass('open');
+				$(this).next().fadeOut();
+			} else {
+				$('.select__head').removeClass('open');
+				$('.select__list').fadeOut();
+				$(this).addClass('open');
+				$(this).next().fadeIn();
+			}
+		});
+
+		$('.select').on('click', '.select__item', function () {
+			$('.select__head').removeClass('open');
+			$(this).parent().fadeOut();
+			$(this).parent().prev().text($(this).text());
+			$(this).parent().prev().prev().val($(this).text());
+		});
+
+		$(document).click(function (e) {
+			if (!$(e.target).closest('.select').length) {
+				$('.select__head').removeClass('open');
+				$('.select__list').fadeOut();
+			}
+		});
+	});
+</script>
+<!-- Скрипты для Селекта -->
 
 </html>
