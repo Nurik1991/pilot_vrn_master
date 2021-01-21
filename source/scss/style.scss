@@ -45,11 +45,17 @@ p {
 	@include adaptiv-font(16, 14);
 }
 
+a {
+	color: black;
+	text-decoration: none;
+}
+
 .wrapper {
 	max-width: 1410px;
 	height: 100%;
-	display: block;
+	display: flex;
 	margin: 0 auto;
+	justify-content: space-between;
 }
 
 // конец типография
@@ -70,18 +76,54 @@ aside {
 	background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%);
 }
 
+.header__logo {
+	margin-top: 9px;
+	// .header__nav {
+	// }
+	// .header__tel {
+	// }
+}
+
+// .logo {
+// }
+// .header__menu {
+// }
+.menu {
+	display: flex;
+}
+
+// .menu__item {
+// }
+// .have-sub {
+// }
+.menu__link {
+	display: flex;
+}
+
+.header__tel-links {
+	display: flex;
+}
+
 /* -----------	End Header -----------	*/
 
 .footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	margin-top: 140px;
-	width: 100%;
+	width: 99.5%;
 	min-height: 89px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	display: flex;
+	align-items: center;
+	background: #2c2419;
+
+	.wrapper {
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 1410px;
+		height: 80px;
+	}
 }
 
 /* ----------- // Основной стиль -----------	*/
@@ -93,7 +135,5 @@ aside {
 	align-items: center;
 	flex-basis: 200px;
 
-}
-
-// мобильная версия
-@import "_media";
+	// мобильная версия
+	@import "_media";
