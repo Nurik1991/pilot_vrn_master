@@ -468,6 +468,14 @@ aside {
           align-items: center;
 }
 
+.contact .contact__info ul {
+  padding: 0;
+}
+
+.contact .contact__info li {
+  list-style-type: none;
+}
+
 /*--------конец Контакты -----*/
 /* ====================Мобильная версия================= */
 /* ============Конец - Мобильная версия================= */
