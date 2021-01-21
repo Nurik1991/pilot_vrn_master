@@ -84,7 +84,7 @@ select {
 
 body {
   font-family: "Exo 2";
-  color: #2C2419;
+  color: #2c2419;
 }
 
 /* -----------	Основной стиль -----------	*/
@@ -151,7 +151,7 @@ header,
 footer,
 section,
 aside {
-  border: 1px solid yellowgreen;
+  border: 0px solid yellowgreen;
 }
 
 /* -----------	Header -----------	*/
@@ -165,16 +165,54 @@ aside {
   margin-top: 9px;
 }
 
+.header__menu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: auto;
+  height: 100%;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__item {
+  padding: 31.5px 33px;
+  background: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.menu__item a {
+  color: white;
+  text-transform: uppercase;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1600));
+}
+
+.menu__item:hover {
+  background: #2c2419;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header__tel {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .header__tel-links {

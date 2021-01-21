@@ -1,11 +1,11 @@
 // шрифт //
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700;800&display=swap");
 
+$default-color: #2c2419;
 body {
 	font-family: "Exo 2";
-	color: #2C2419;
+	color: $default-color;
 }
-
 // шрифт //
 
 // начало Переменные //
@@ -15,9 +15,7 @@ $flex: flex;
 $jsc-c: center;
 // конец  Переменные //
 
-
-
-// Адаптивный шрифт 
+// Адаптивный шрифт
 $maxWidth: 1920; // макетная ширина
 
 @mixin adaptiv-font($pcSize, $mobSize) {
@@ -26,5 +24,5 @@ $maxWidth: 1920; // макетная ширина
 	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
 
-// подключить к шрифту макс - мин значения где 40 макс по макету для пк, мин для мобилки 
+// подключить к шрифту макс - мин значения где 40 макс по макету для пк, мин для мобилки
 // @include adaptiv-font(40, 20);
