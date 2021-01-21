@@ -134,11 +134,30 @@ aside {
 	justify-content: center;
 	align-items: center;
 	flex-basis: 200px;
-<<<<<<< Updated upstream
-=======
 
+	.page-404__number p {
+		font-size: 100px;
+		font-weight: bold;
+		margin-right: 20px;
+	}
 
->>>>>>> Stashed changes
+	.page-404__text {
+		font-size: 20px;
+		width: 492px;
+	}
+}
+
+.breadcrumb {
+	font-size: 13px;
+	color: #9A9A9A;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	a {
+		color: #9A9A9A;
+	}
+
 }
 
 // мобильная версия
