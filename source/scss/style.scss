@@ -66,7 +66,7 @@ header,
 footer,
 section,
 aside {
-	border: 1px solid yellowgreen;
+	border: 0px solid yellowgreen;
 	position: relative;
 }
 
@@ -321,10 +321,6 @@ aside {
 }
 
 /*--------конец 404 -----*/
-
-
-
-
 
 // мобильная версия
 @import "_media";

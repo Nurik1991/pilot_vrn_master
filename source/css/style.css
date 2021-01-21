@@ -152,7 +152,7 @@ header,
 footer,
 section,
 aside {
-  border: 1px solid yellowgreen;
+  border: 0px solid yellowgreen;
   position: relative;
 }
 
