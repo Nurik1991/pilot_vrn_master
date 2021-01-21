@@ -66,7 +66,8 @@ header,
 footer,
 section,
 aside {
-	border: 0px solid yellowgreen;
+	border: 1px solid yellowgreen;
+	position: relative;
 }
 
 /* -----------	Header -----------	*/
@@ -223,9 +224,24 @@ aside {
 
 /* -----------	End Header -----------	*/
 
+/* -----------	 Offer -----------	*/
+.offer {
+	background-image: url(../img/sed1.png);
+	background-repeat: no-repeat;
+	height: 1000px;
+	background-attachment: fixed;
+	background-origin: border-box;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	top: -80px;
+	z-index: -1;
+}
+/* -----------	End Offer -----------	*/
+
 .footer {
 	margin-top: 140px;
-	width: 99.5%;
+	width: 100%;
 	min-height: 89px;
 	position: absolute;
 	bottom: 0;
@@ -240,6 +256,27 @@ aside {
 		align-items: center;
 		width: 1410px;
 		height: 80px;
+		color: #afafaf;
+		font-size: 12px;
+	}
+	.footer__made-by a {
+		color: #afafaf;
+		border-bottom: 1px solid #ffa401;
+		padding: 0 2px 2px 1px;
+		margin-left: 2px;
+	}
+}
+
+.footer__social-links {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	align-items: center;
+	font-size: 14px;
+
+	.telephone a {
+		color: #afafaf;
+		margin-left: 47px;
 	}
 }
 
