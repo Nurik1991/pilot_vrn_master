@@ -85,8 +85,15 @@ aside {
 }
 
 /* ----------- // Основной стиль -----------	*/
+/*------------ страница 404 ---------------*/
+.page-404 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 200px;
 
-.page-404 {}
+}
 
 // мобильная версия
 @import "_media";

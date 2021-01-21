@@ -84,6 +84,7 @@ select {
 
 body {
   font-family: "Exo 2";
+  color: #2C2419;
 }
 
 /* -----------	Основной стиль -----------	*/
@@ -170,5 +171,24 @@ aside {
 }
 
 /* ----------- // Основной стиль -----------	*/
+/*------------ страница 404 ---------------*/
+.page-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+}
+
 /* ====================Мобильная версия================= */
 /* ============Конец - Мобильная версия================= */
