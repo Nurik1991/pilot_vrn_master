@@ -135,8 +135,13 @@ a {
 .wrapper {
   max-width: 1410px;
   height: 100%;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* -----------	Основной стиль -----------	*/
@@ -159,6 +164,24 @@ aside {
   margin-top: 9px;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__tel-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* -----------	End Header -----------	*/
 .footer {
   margin-top: 140px;
@@ -173,6 +196,7 @@ aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #2c2419;
 }
 
 .footer .wrapper {

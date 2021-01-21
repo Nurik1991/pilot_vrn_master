@@ -51,8 +51,9 @@ a {
 .wrapper {
 	max-width: 1410px;
 	height: 100%;
-	display: block;
+	display: flex;
 	margin: 0 auto;
+	justify-content: space-between;
 }
 
 // конец типография
@@ -81,6 +82,24 @@ aside {
 	}
 }
 
+.logo {
+}
+.header__menu {
+}
+.menu {
+	display: flex;
+}
+.menu__item {
+}
+.have-sub {
+}
+.menu__link {
+	display: flex;
+}
+.header__tel-links {
+	display: flex;
+}
+
 /* -----------	End Header -----------	*/
 
 .footer {
@@ -92,6 +111,7 @@ aside {
 	left: 0;
 	display: flex;
 	align-items: center;
+	background: #2c2419;
 	.wrapper {
 		display: inline-flex;
 		justify-content: space-between;
