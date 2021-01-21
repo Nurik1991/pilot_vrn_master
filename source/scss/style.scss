@@ -44,7 +44,10 @@ p {
 	font-weight: 400;
 	@include adaptiv-font(16, 14);
 }
-
+a {
+	color: black;
+	text-decoration: none;
+}
 .wrapper {
 	max-width: 1410px;
 	height: 100%;
@@ -70,23 +73,38 @@ aside {
 	background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%);
 }
 
+.header__logo {
+	margin-top: 9px;
+	.header__nav {
+	}
+	.header__tel {
+	}
+}
+
 /* -----------	End Header -----------	*/
 
 .footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	margin-top: 140px;
-	width: 100%;
+	width: 99.5%;
 	min-height: 89px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	display: flex;
+	align-items: center;
+	.wrapper {
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 1410px;
+		height: 80px;
+	}
 }
 
 /* ----------- // Основной стиль -----------	*/
 
-.page-404 {}
+.page-404 {
+}
 
 // мобильная версия
 @import "_media";

@@ -127,6 +127,11 @@ p {
   font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .wrapper {
   max-width: 1410px;
   height: 100%;
@@ -150,23 +155,38 @@ aside {
   background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%);
 }
 
+.header__logo {
+  margin-top: 9px;
+}
+
 /* -----------	End Header -----------	*/
 .footer {
+  margin-top: 140px;
+  width: 99.5%;
+  min-height: 89px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 140px;
-  width: 100%;
-  min-height: 89px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  width: 1410px;
+  height: 80px;
 }
 
 /* ----------- // Основной стиль -----------	*/
