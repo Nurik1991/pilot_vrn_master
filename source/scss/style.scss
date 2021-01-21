@@ -237,6 +237,7 @@ aside {
 	top: -80px;
 	z-index: -1;
 }
+
 /* -----------	End Offer -----------	*/
 
 .footer {
@@ -259,6 +260,7 @@ aside {
 		color: #afafaf;
 		font-size: 12px;
 	}
+
 	.footer__made-by a {
 		color: #afafaf;
 		border-bottom: 1px solid #ffa401;
@@ -287,8 +289,11 @@ aside {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	flex-basis: 200px;
-	margin-top: 292px;
+
+	align-content: center;
+	height: 100%;
+	min-height: 500px;
+
 
 	.page-404__number p {
 		font-size: 100px;
@@ -311,16 +316,32 @@ aside {
 	background-color: #fff;
 	font-size: 13px;
 	color: #9a9a9a;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+
 
 	a {
 		color: #9a9a9a;
 	}
+
+	.wrapper {
+		display: flex;
+		padding-top: 30px;
+		padding-bottom: 50px;
+		justify-content: flex-start;
+	}
 }
 
 /*--------конец 404 -----*/
+
+
+/*------- Контакты -------*/
+.contact {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/*--------конец Контакты -----*/
 
 // мобильная версия
 @import "_media";

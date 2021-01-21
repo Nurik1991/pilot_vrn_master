@@ -406,9 +406,10 @@ aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-  margin-top: 292px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  min-height: 500px;
 }
 
 .page-404 .page-404__number p {
@@ -432,6 +433,26 @@ aside {
   background-color: #fff;
   font-size: 13px;
   color: #9a9a9a;
+}
+
+.breadcrumb a {
+  color: #9a9a9a;
+}
+
+.breadcrumb .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/*--------конец 404 -----*/
+/*------- Контакты -------*/
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,12 +463,11 @@ aside {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.breadcrumb a {
-  color: #9a9a9a;
-}
-
-/*--------конец 404 -----*/
+/*--------конец Контакты -----*/
 /* ====================Мобильная версия================= */
 /* ============Конец - Мобильная версия================= */
