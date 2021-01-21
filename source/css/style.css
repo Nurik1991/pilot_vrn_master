@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700;800&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: "Exo 2";
+}
+
+/* -----------	Основной стиль -----------	*/
+h1 {
+  font-size: calc(20px + 20 * ((100vw - 320px) / 1580));
+}
+
+body {
+  font-family: "Exo 2";
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* -----------	Основной стиль -----------	*/
+div,
+header,
+footer,
+section,
+aside {
+  border: 1px solid yellowgreen;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 140px;
+  width: 100%;
+  min-height: 89px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* ----------- // Основной стиль -----------	*/
+/* ====================Мобильная версия================= */
+@media screen and (max-width: 768px) {
+  h1 {
+    color: gray;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    color: red;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1580px) {
+  h1 {
+    color: blue;
+  }
+}
+
+@media (min-width: 1580px) {
+  h1 {
+    color: black;
+  }
+}
+
+/* ============Конец - Мобильная версия================= */

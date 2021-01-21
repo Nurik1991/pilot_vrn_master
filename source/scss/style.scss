@@ -1,0 +1,68 @@
+// reset css
+@import "_reset";
+// переменные
+@import "_variables";
+/* -----------	Основной стиль -----------	*/
+h1 {
+	@include adaptiv-font(40, 20);
+}
+
+// типография
+body {
+	font-family: "Exo 2";
+	overflow-x: hidden;
+}
+h1 {
+	font-size: 54px;
+	font-weight: 700;
+}
+h2 {
+	font-size: 36px;
+	font-weight: 600;
+}
+h3 {
+	font-size: 30px;
+	font-weight: 400;
+}
+h4 {
+	font-size: 30px;
+	font-weight: 400;
+}
+h5 {
+	font-size: 20px;
+	font-weight: 400;
+}
+h6 {
+	font-size: 18px;
+	font-weight: 400;
+}
+p {
+	font-weight: 400;
+	font-size: 16px;
+}
+// конец типография
+
+/* -----------	Основной стиль -----------	*/
+div,
+header,
+footer,
+section,
+aside {
+	border: 1px solid yellowgreen;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 140px;
+	width: 100%;
+	min-height: 89px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* ----------- // Основной стиль -----------	*/
+// мобильная версия
+@import "_media";
