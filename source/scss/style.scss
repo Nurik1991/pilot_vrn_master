@@ -502,12 +502,57 @@ aside {
 		h2 {
 			color: #FFA401;
 			font-size: 16px;
+			font-weight: normal;
+			padding-top: 104px;
+			padding-bottom: 34px;
 		}
 
+
+
+
+
 		input {
+			color: #fff;
 			display: block;
-			margin: 0 auto;
+			margin: 20px auto;
+			border: 1px solid rgba(225, 218, 208, 0.15);
+			border-radius: 3px;
+			padding: 10px;
+			background-color: rgba(225, 218, 208, 0.1);
+			width: 70%;
+
+			&:focus {
+				border: 1px solid rgba(225, 218, 208, 0.15);
+				outline: none;
+
+			}
+
+			::-webkit-input-placeholder {
+				color: #fff;
+			}
+
+			::-moz-placeholder {
+				color: #fff;
+			}
+
+			/* Firefox 19+ */
+			:-moz-placeholder {
+				color: #fff;
+			}
+
+			/* Firefox 18- */
+			:-ms-input-placeholder {
+				color: #fff;
+			}
+
 		}
+
+		label {
+			font-size: 13px;
+			color: #fff;
+			font-weight: normal;
+		}
+
 	}
 }
 
