@@ -1174,6 +1174,7 @@ aside {
   background-color: #eeeeee;
   position: relative;
   min-width: 774px;
+  height: 774px;
 }
 
 .contact .contact__info {
