@@ -5,8 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Главная</title>
+	<!-- swiper -->
+	<link rel="stylesheet" href="source/js/swiper-bundle.min.css">
+	<script src="source/js/swiper-bundle.min.js"></script>
+	<!-- end swiper -->
+
+	<!-- стили -->
 	<link rel="stylesheet" href="source/css/style.css">
+	<!-- конец стили -->
+
+	<title>Главная</title>
 </head>
 
 <body>
@@ -462,6 +470,7 @@
 	</section>
 	<!-- Конец Товары дня-->
 
+	<!-- СпецПредложения -->
 	<aside class="special-goods">
 		<div class="container">
 
@@ -490,10 +499,59 @@
 
 		</div>
 	</aside>
+	<!--конец  СпецПредложения -->
 
-	<section class="about-us container">
-		о нас
+	<!-- О нас -->
+	<section class="about-us ">
+		<div class="container">
+
+			<div class="about-us__slider ">
+				<div class="about-us__slider-swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">Slide 1</div>
+						<div class="swiper-slide">Slide 2</div>
+						<div class="swiper-slide">Slide 3</div>
+						<div class="swiper-slide">Slide 4</div>
+						<div class="swiper-slide">Slide 5</div>
+						<div class="swiper-slide">Slide 6</div>
+						<div class="swiper-slide">Slide 7</div>
+						<div class="swiper-slide">Slide 8</div>
+						<div class="swiper-slide">Slide 9</div>
+						<div class="swiper-slide">Slide 10</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<!-- Initialize Swiper -->
+				<script>
+					var swiper = new Swiper('.about-us__slider-swiper-container', {
+						direction: 'vertical',
+						slidesPerView: 1,
+						spaceBetween: 30,
+						mousewheel: true,
+
+						loop: true,
+						autoplay: {
+							delay: 2500,
+							disableOnInteraction: false,
+						},
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+							renderBullet: function (index, className) {
+								return '<span class="' + className + '">' + (index + 1) + '</span>';
+							},
+						},
+					});
+				</script>
+			</div>
+
+			<div class="about-us__description"></div>
+		</div>
 	</section>
+	<!--Конец  О нас -->
+
 
 	<aside class="questions-block container">
 		Остались вопроссы

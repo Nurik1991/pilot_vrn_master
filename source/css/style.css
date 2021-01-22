@@ -155,6 +155,10 @@ aside {
   position: relative;
 }
 
+aside {
+  margin-bottom: 140px;
+}
+
 /* -----------	Header -----------	*/
 .header {
   height: 80px;
@@ -967,6 +971,12 @@ aside {
 }
 
 /* -----------	Конец Спецпредложения  -----------	*/
+/* -----------	 О компании  -----------	*/
+.about-us {
+  background: #eeeeee;
+}
+
+/* -----------	Конец О компании  -----------	*/
 .footer {
   margin-top: 140px;
   width: 100%;
