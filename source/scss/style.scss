@@ -494,6 +494,21 @@ aside {
 
 		}
 	}
+
+	.contact__form {
+		background-color: #2C2419;
+		text-align: center;
+
+		h2 {
+			color: #FFA401;
+			font-size: 16px;
+		}
+
+		input {
+			display: block;
+			margin: 0 auto;
+		}
+	}
 }
 
 /*--------конец Контакты -----*/

@@ -643,6 +643,21 @@ aside {
   color: #797979;
 }
 
+.contact .contact__form {
+  background-color: #2C2419;
+  text-align: center;
+}
+
+.contact .contact__form h2 {
+  color: #FFA401;
+  font-size: 16px;
+}
+
+.contact .contact__form input {
+  display: block;
+  margin: 0 auto;
+}
+
 /*--------конец Контакты -----*/
 /* ====================Мобильная версия================= */
 /* ============Конец - Мобильная версия================= */
