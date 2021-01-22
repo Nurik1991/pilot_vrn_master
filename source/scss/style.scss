@@ -807,22 +807,22 @@ aside {
 .about-us {
 	background-color: #eee;
 }
-.container {
-}
-.about-us__slider {
-}
-.about-us__slider-swiper-container {
-}
-.swiper-container {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
-}
-.about-us__description {
-}
+// .container {
+// }
+// .about-us__slider {
+// }
+// .about-us__slider-swiper-container {
+// }
+// .swiper-container {
+// }
+// .swiper-wrapper {
+// }
+// .swiper-slide {
+// }
+// .swiper-pagination {
+// }
+// .about-us__description {
+// }
 
 /* -----------	Конец О нас  -----------	*/
 
@@ -1108,4 +1108,4 @@ aside {
 @import "style2.scss";
 
 // мобильная версия
-// @import "_media" 
+@import "_media" 
