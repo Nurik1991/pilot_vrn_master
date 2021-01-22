@@ -69,8 +69,6 @@ aside {
 	position: relative;
 }
 
- 
-
 /* -----------	Header -----------	*/
 
 .header {
@@ -596,7 +594,7 @@ aside {
 	min-width: 290px;
 	overflow: hidden;
 	margin-bottom: 5px;
- 
+}
 
 .card__material {
 	color: #797979;
@@ -709,8 +707,8 @@ aside {
 /* -----------	 Спецпредложения  -----------	*/
 .special-goods {
 	position: relative;
-margin-bottom: 140px;
-	div { 
+	margin-bottom: 140px;
+	div {
 		max-height: 100%;
 		width: 100%;
 	}
@@ -791,6 +789,30 @@ margin-bottom: 140px;
 }
 
 /* -----------	Конец Спецпредложения  -----------	*/
+
+/* -----------	О нас  -----------	*/
+
+.about-us {
+	background-color: #eee;
+}
+.container {
+}
+.about-us__slider {
+}
+.about-us__slider-swiper-container {
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.about-us__description {
+}
+
+/* -----------	Конец О нас  -----------	*/
 
 .footer {
 	margin-top: 140px;
@@ -891,6 +913,7 @@ margin-bottom: 140px;
 	background-color: #eeeeee;
 	position: relative;
 	min-width: 774px;
+
 	.contact__info {
 		width: 448px;
 		margin-top: 136px;
@@ -1013,4 +1036,4 @@ margin-bottom: 140px;
 @import "style2.scss";
 
 // мобильная версия
-// @import "_media";
+// @import "_media"
