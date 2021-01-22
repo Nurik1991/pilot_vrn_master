@@ -69,6 +69,8 @@ aside {
 	position: relative;
 }
 
+ 
+
 /* -----------	Header -----------	*/
 
 .header {
@@ -594,18 +596,12 @@ aside {
 	min-width: 290px;
 	overflow: hidden;
 	margin-bottom: 5px;
-
-	.name {
-		// border:1px solid;
-	}
-}
+ 
 
 .card__material {
 	color: #797979;
 	margin-bottom: 10px;
 }
-
-.material {}
 
 .card__price {
 	display: inline-flex;
@@ -713,8 +709,8 @@ aside {
 /* -----------	 Спецпредложения  -----------	*/
 .special-goods {
 	position: relative;
-
-	div {
+margin-bottom: 140px;
+	div { 
 		max-height: 100%;
 		width: 100%;
 	}
@@ -892,12 +888,9 @@ aside {
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
-	background-color: #EEEEEE;
+	background-color: #eeeeee;
 	position: relative;
 	min-width: 774px;
-	;
-
-
 	.contact__info {
 		width: 448px;
 		margin-top: 136px;
@@ -907,7 +900,6 @@ aside {
 		h2 {
 			font-size: 40px;
 			padding-bottom: 68px;
-
 		}
 
 		ul {
@@ -989,29 +981,21 @@ aside {
 				margin-top: -20px;
 				margin-left: 84px;
 				text-align: left;
-
 			}
 		}
-
 
 		.custom-checkbox {
 			width: 10%;
 			margin: 0px 48px;
-
 		}
 
-
 		input[type="button"] {
-			background-color: #FFA401;
+			background-color: #ffa401;
 			border: none;
 			border-radius: 0;
 			cursor: pointer;
-
 		}
-
-
 	}
-
 
 	.contact__map {
 		position: relative;
@@ -1026,7 +1010,7 @@ aside {
 
 /*--------конец Контакты -----*/
 
-@import "_style2";
+@import "style2.scss";
 
 // мобильная версия
-@import "_media";
+// @import "_media";
