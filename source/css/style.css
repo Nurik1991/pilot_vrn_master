@@ -784,6 +784,45 @@ aside {
   font-size: 20px;
 }
 
+.card__material {
+  color: #797979;
+  margin-bottom: 10px;
+}
+
+.card__price {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.old-price {
+  margin-right: 20px;
+  position: relative;
+  color: #8b8275;
+  font-size: 14px;
+}
+
+.old-price::after {
+  content: "";
+  width: 120%;
+  height: 2px;
+  position: absolute;
+  top: 10px;
+  left: -5px;
+  display: block;
+  background: #c98100;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.new-price {
+  font-size: 20px;
+}
+
 .card__like-button {
   position: absolute;
   right: 88px;
@@ -872,6 +911,11 @@ aside {
   width: 100%;
 }
 
+.special-goods div:hover path {
+  fill: red;
+  stroke: red;
+}
+
 .special-goods__column {
   padding: 60px;
   display: -webkit-box;
@@ -940,6 +984,31 @@ aside {
   font-size: 20px;
 }
 
+/* -----------	О нас  -----------	*/
+.about-us {
+  background-color: #eee;
+}
+
+/* -----------	Конец О нас  -----------	*/
+.footer {
+  margin-top: 140px;
+  width: 100%;
+  min-height: 89px;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2c2419;
+}
+
+.footer:nth-child(2)::after {
+  display: none;
+}
+
 .button {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -968,12 +1037,6 @@ aside {
 }
 
 /* -----------	Конец Спецпредложения  -----------	*/
-/* -----------	О нас  -----------	*/
-.about-us {
-  background-color: #eee;
-}
-
-/* -----------	Конец О нас  -----------	*/
 .footer {
   margin-top: 140px;
   width: 100%;

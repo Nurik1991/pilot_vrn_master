@@ -81,7 +81,7 @@ aside {
 .header__logo {
 	margin-top: 9px;
 }
- 
+
 .header__menu {
 	align-self: center;
 	width: auto;
@@ -732,17 +732,19 @@ aside {
 		padding: 4px 13px;
 	}
 }
- 
+
 /* -----------	Конец Товары дня  -----------	*/
 
- 
+
 /* -----------	 Спецпредложения  -----------	*/
 .special-goods {
 	position: relative;
 	margin-bottom: 140px;
+
 	div {
 		max-height: 100%;
 		width: 100%;
+
 		&:hover path {
 			fill: red;
 			stroke: red;
@@ -801,28 +803,28 @@ aside {
 	max-width: 500px;
 	font-size: 20px;
 }
- 
+
 /* -----------	О нас  -----------	*/
 
 .about-us {
 	background-color: #eee;
 }
-.container {
-}
-.about-us__slider {
-}
-.about-us__slider-swiper-container {
-}
-.swiper-container {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
-}
-.about-us__description {
-}
+
+.container {}
+
+.about-us__slider {}
+
+.about-us__slider-swiper-container {}
+
+.swiper-container {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-pagination {}
+
+.about-us__description {}
 
 /* -----------	Конец О нас  -----------	*/
 
@@ -837,10 +839,11 @@ aside {
 	align-items: center;
 	background: #2c2419;
 
-		&:nth-child(2)::after {
-			display: none;
-		}
+	&:nth-child(2)::after {
+		display: none;
 	}
+}
+
 .button {
 	grid-column: 2/3;
 	grid-row: 1/3;
@@ -855,7 +858,8 @@ aside {
 	&::after {
 		content: "";
 	}
-} 
+}
+
 .special-goods__image {
 	position: absolute;
 	right: 0;
@@ -952,27 +956,9 @@ aside {
 		justify-content: flex-start;
 	}
 }
- 
-/*------- Контакты -------*/
-.contact {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
-	background-color: #eeeeee;
-	position: relative;
-	min-width: 774px;
 
-	.contact__info {
-		width: 448px;
-		margin-top: 136px;
-		margin-bottom: 140px;
-		margin-right: 50px;
-		align-content: center;
-		height: 100%;
-		min-height: 500px;
 
-/*--------конец 404 -----*/ 
+/*--------конец 404 -----*/
 
 /*------- Контакты -------*/
 .contact {
