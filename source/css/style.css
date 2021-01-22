@@ -133,7 +133,7 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
+.container {
   max-width: 1410px;
   height: 100%;
   display: -webkit-box;
@@ -617,9 +617,10 @@ aside {
 .title {
   width: 100%;
   text-align: center;
+  margin-bottom: 70px;
 }
 
-.goods-block .wrapper {
+.goods-block .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,7 +646,7 @@ aside {
   color: #2c2419;
 }
 
-.goods-block__wrapper {
+.goods-block__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,6 +659,11 @@ aside {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card {
@@ -854,6 +860,8 @@ aside {
 }
 
 /* -----------	Конец Товары дня  -----------	*/
+/* -----------	 Спецпредложения  -----------	*/
+/* -----------	Конец Спецпредложения  -----------	*/
 .footer {
   margin-top: 140px;
   width: 100%;
@@ -869,7 +877,7 @@ aside {
   background: #2c2419;
 }
 
-.footer .wrapper {
+.footer .container {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -961,7 +969,7 @@ aside {
   color: #9a9a9a;
 }
 
-.breadcrumb .wrapper {
+.breadcrumb .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

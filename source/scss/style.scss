@@ -49,7 +49,7 @@ a {
 	text-decoration: none;
 }
 
-.wrapper {
+.container {
 	max-width: 1410px;
 	height: 100%;
 	display: flex;
@@ -489,9 +489,10 @@ aside {
 .title {
 	width: 100%;
 	text-align: center;
+	margin-bottom: 70px;
 }
 .goods-block {
-	.wrapper {
+	.container {
 		display: flex;
 		flex-direction: column;
 	}
@@ -512,12 +513,14 @@ aside {
 	color: #2c2419;
 }
 
-.goods-block__wrapper {
+.goods-block__container {
 	display: flex;
 	flex-direction: row;
 	gap: 30px;
 	margin-bottom: 40px;
 	flex: 0 0 25%;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .card {
@@ -579,17 +582,13 @@ aside {
 	min-width: 290px;
 	overflow: hidden;
 	margin-bottom: 5px;
-	.name {
-		// border:1px solid;
-	}
 }
 
 .card__material {
 	color: #797979;
 	margin-bottom: 10px;
 }
-.material {
-}
+
 .card__price {
 	display: inline-flex;
 	list-style-type: none;
@@ -682,6 +681,10 @@ aside {
 
 /* -----------	Конец Товары дня  -----------	*/
 
+/* -----------	 Спецпредложения  -----------	*/
+
+/* -----------	Конец Спецпредложения  -----------	*/
+
 .footer {
 	margin-top: 140px;
 	width: 100%;
@@ -693,7 +696,7 @@ aside {
 	align-items: center;
 	background: #2c2419;
 
-	.wrapper {
+	.container {
 		display: inline-flex;
 		justify-content: space-between;
 		align-items: center;
@@ -762,7 +765,7 @@ aside {
 		color: #9a9a9a;
 	}
 
-	.wrapper {
+	.container {
 		display: flex;
 		padding-top: 30px;
 		padding-bottom: 50px;
