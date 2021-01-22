@@ -133,7 +133,7 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
+.container {
   max-width: 1410px;
   height: 100%;
   display: -webkit-box;
@@ -153,6 +153,10 @@ section,
 aside {
   border: 0px solid yellowgreen;
   position: relative;
+}
+
+aside {
+  margin-bottom: 140px;
 }
 
 /* -----------	Header -----------	*/
@@ -617,9 +621,10 @@ aside {
 .title {
   width: 100%;
   text-align: center;
+  margin-bottom: 70px;
 }
 
-.goods-block .wrapper {
+.goods-block .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,7 +650,7 @@ aside {
   color: #2c2419;
 }
 
-.goods-block__wrapper {
+.goods-block__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,6 +663,12 @@ aside {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 140px;
 }
 
 .card {
@@ -854,6 +865,118 @@ aside {
 }
 
 /* -----------	Конец Товары дня  -----------	*/
+/* -----------	 Спецпредложения  -----------	*/
+.special-goods {
+  position: relative;
+}
+
+.special-goods div {
+  max-height: 100%;
+  width: 100%;
+}
+
+.special-goods__column {
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0;
+}
+
+.special-goods__column::after {
+  content: "";
+  -webkit-clip-path: polygon(0 0, 92% 0px, 72% 100%, 0% 100%);
+          clip-path: polygon(0 0, 92% 0px, 72% 100%, 0% 100%);
+  background-color: #2c2419;
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}
+
+.special-goods__column:nth-child(2)::after {
+  display: none;
+}
+
+.column {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.column .preview {
+  position: absolute;
+  top: -125px;
+  z-index: 9;
+  right: -320px;
+}
+
+.column-title {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 22px;
+}
+
+.column-text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  color: white;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.button {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  background: #ffa401;
+  padding: 10px 50px;
+  border: none;
+  outline: none;
+  margin-right: -50px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.button::after {
+  content: "";
+}
+
+.special-goods__image {
+  position: absolute;
+  right: 0;
+  z-index: -2;
+  top: 0;
+}
+
+/* -----------	Конец Спецпредложения  -----------	*/
+/* -----------	 О компании  -----------	*/
+.about-us {
+  background: #eeeeee;
+}
+
+/* -----------	Конец О компании  -----------	*/
 .footer {
   margin-top: 140px;
   width: 100%;
@@ -869,7 +992,7 @@ aside {
   background: #2c2419;
 }
 
-.footer .wrapper {
+.footer .container {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -961,7 +1084,7 @@ aside {
   color: #9a9a9a;
 }
 
-.breadcrumb .wrapper {
+.breadcrumb .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
