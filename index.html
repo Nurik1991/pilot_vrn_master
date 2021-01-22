@@ -504,57 +504,82 @@
 	<!-- О нас -->
 	<section class="about-us ">
 		<div class="container">
-
-			<div class="about-us__slider ">
-				<div class="about-us__slider-swiper-container swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">Slide 1</div>
-						<div class="swiper-slide">Slide 2</div>
-						<div class="swiper-slide">Slide 3</div>
-						<div class="swiper-slide">Slide 4</div>
-						<div class="swiper-slide">Slide 5</div>
-						<div class="swiper-slide">Slide 6</div>
-						<div class="swiper-slide">Slide 7</div>
-						<div class="swiper-slide">Slide 8</div>
-						<div class="swiper-slide">Slide 9</div>
-						<div class="swiper-slide">Slide 10</div>
-					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
+			<div class="about-us__swiper-container swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
+					<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
+					<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
 				</div>
-
-				<!-- Initialize Swiper -->
-				<script>
-					var swiper = new Swiper('.about-us__slider-swiper-container', {
-						direction: 'vertical',
-						slidesPerView: 1,
-						spaceBetween: 30,
-						mousewheel: true,
-
-						loop: true,
-						autoplay: {
-							delay: 2500,
-							disableOnInteraction: false,
-						},
-						pagination: {
-							el: '.swiper-pagination',
-							clickable: true,
-							renderBullet: function (index, className) {
-								return '<span class="' + className + '">' + (index + 1) + '</span>';
-							},
-						},
-					});
-				</script>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
 			</div>
 
-			<div class="about-us__description"></div>
+			<div class="about-us__text">
+
+				<!-- Заголовок и описание на сайте повторяются -->
+				<div class="title">
+					<div class="title-description">
+						<span>КОРОТКО О НАС</span>
+					</div>
+					<div class="title-name">
+						<h2>Компания PILOT</h2>
+					</div>
+					<div class="title-text">
+						<p>Компания PILOT-VRN официально представляет в Воронеже и области Российскую швейную ассоциацию
+							компаний «АВТОПИЛОТ».Мы впервые вышли на рынок в 1999 году. Целью деятельности нашего
+							интернет-магазина является обеспечение уюта и комфорта для автомобилиста и его пассажиров.
+						</p>
+
+						<p>Разнообразие цветовой гаммы и материалов позволяет создавать оригинальную продукцию,
+							способную удовлетворить любого клиента.
+							Лозунг нашей компании: «Делаем с любовью – продаем с гордостью».
+						</p>
+					</div>
+
+					<div class="title-button">
+						<input type="button" value="Подробнее" class="button">
+					</div>
+				</div>
+				<!-- Конец - Заголовок и описание на сайте повторяются -->
+
+			</div>
+
 		</div>
 	</section>
 	<!--Конец  О нас -->
 
 
-	<aside class="questions-block container">
-		Остались вопроссы
+	<aside class="questions-block ">
+		<!-- СпецПредложения -->
+		<aside class="special-goods">
+			<div class="container">
+
+				<div class="special-goods__column  ">
+
+					<div class="column">
+						<h2 class="column-title">
+							Остались вопросы
+						</h2>
+
+						<p class="column-text">
+							Наши специалисты с удовольствием ответят на все Ваши вопросы.
+						</p>
+
+						<input type="button" value="Выбрать" class="button">
+						<img class="special-goods__image preview" src="source/img/special_goods/special_1.png" alt="">
+					</div>
+
+				</div>
+
+				<div class="special-goods__column">
+					<img class="special-goods__image" src="source/img/special_goods/bg2.png">
+				</div>
+
+
+			</div>
+		</aside>
+		<!--конец  СпецПредложения -->
+
 	</aside>
 
 	<!-- Footer -->
@@ -585,6 +610,7 @@
 </body>
 <!-- Скрипты для Селекта -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script src="source/js/main.js"></script>
 
 <script>
@@ -617,5 +643,28 @@
 	});
 </script>
 <!-- Скрипты для Селекта -->
+
+
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		direction: 'vertical',
+		slidesPerView: 1,
+		mousewheel: true,
+		dynamicBullets: true,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '">' + (index + 1) + '</span>';
+			},
+		},
+		loop: true,
+		updateOnWindowResize: true,
+		observer: true,
+		observeParents: true,
+
+	});
+</script>
 
 </html>

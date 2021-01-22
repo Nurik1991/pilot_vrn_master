@@ -69,8 +69,6 @@ aside {
 	position: relative;
 }
 
-
-
 /* -----------	Header -----------	*/
 
 .header {
@@ -626,7 +624,6 @@ aside {
 	font-size: 20px;
 }
 
-
 .card__material {
 	color: #797979;
 	margin-bottom: 10px;
@@ -735,7 +732,6 @@ aside {
 
 /* -----------	Конец Товары дня  -----------	*/
 
-
 /* -----------	 Спецпредложения  -----------	*/
 .special-goods {
 	position: relative;
@@ -750,7 +746,6 @@ aside {
 			stroke: red;
 		}
 	}
-
 }
 
 .special-goods__column {
@@ -808,25 +803,76 @@ aside {
 
 .about-us {
 	background-color: #eee;
+	height: 795px;
+	max-height: 795px;
+	margin-bottom: 140px;
+	.swiper-container {
+		margin-left: unset;
+		padding-right: 40px;
+	}
+	.swiper-container-vertical > .swiper-pagination-bullets {
+		right: 10px;
+		top: 50%;
+		transform: translate3d(0px, -50%, 0);
+		height: 250px;
+		width: 68px;
+	}
+	.title {
+		margin-top: 150px;
+		text-align: left;
+	}
+
+	.title-text {
+		max-width: 570px;
+		margin: 50px 0 60px 0;
+		font-size: 16px;
+		p {
+			margin-bottom: 35px;
+		}
+		p:nth-child(1) {
+			color: #797979;
+		}
+	}
+	div {
+		// border: 1px solid red;
+	}
+	.container {
+		justify-content: flex-start;
+		margin: 0 auto;
+	}
+
+	.swiper-pagination {
+		text-align: right;
+		justify-content: space-around;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: end;
+		.swiper-pagination-bullet {
+			background-color: unset;
+			content: "";
+			position: relative;
+
+			top: 14px;
+		}
+		.swiper-pagination-bullet-active {
+			background-color: unset;
+			&::before {
+				content: "";
+				width: 23px;
+				height: 1px;
+				background-color: #ffa401;
+				display: inline-flex;
+				position: relative;
+				right: 33px;
+				top: 14px;
+			}
+		}
+	}
+	.about-us__text {
+		width: 50%;
+	}
 }
-
-// .container {
-// }
-// .about-us__slider {
-// }
-// .about-us__slider-swiper-container {
-// }
-// .swiper-container {
-// }
-// .swiper-wrapper {
-// }
-// .swiper-slide {
-// }
-// .swiper-pagination {
-// }
-// .about-us__description {
-// }
-
 /* -----------	Конец О нас  -----------	*/
 
 .footer {
@@ -958,7 +1004,6 @@ aside {
 	}
 }
 
-
 /*--------конец 404 -----*/
 
 /*------- Контакты -------*/
@@ -970,8 +1015,6 @@ aside {
 	background-color: #eeeeee;
 	position: relative;
 	min-width: 774px;
-
-
 
 	.contact__info {
 		width: 448px;
@@ -1095,4 +1138,4 @@ aside {
 @import "style2.scss";
 
 // мобильная версия
-@import "_media"
+@import "_media";

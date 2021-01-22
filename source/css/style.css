@@ -987,6 +987,95 @@ aside {
 /* -----------	О нас  -----------	*/
 .about-us {
   background-color: #eee;
+  height: 795px;
+  max-height: 795px;
+  margin-bottom: 140px;
+}
+
+.about-us .swiper-container {
+  margin-left: unset;
+  padding-right: 40px;
+}
+
+.about-us .swiper-container-vertical > .swiper-pagination-bullets {
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translate3d(0px, -50%, 0);
+          transform: translate3d(0px, -50%, 0);
+  height: 250px;
+  width: 68px;
+}
+
+.about-us .title {
+  margin-top: 150px;
+  text-align: left;
+}
+
+.about-us .title-text {
+  max-width: 570px;
+  margin: 50px 0 60px 0;
+  font-size: 16px;
+}
+
+.about-us .title-text p {
+  margin-bottom: 35px;
+}
+
+.about-us .title-text p:nth-child(1) {
+  color: #797979;
+}
+
+.about-us .container {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.about-us .swiper-pagination {
+  text-align: right;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.about-us .swiper-pagination .swiper-pagination-bullet {
+  background-color: unset;
+  content: "";
+  position: relative;
+  top: 14px;
+}
+
+.about-us .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: unset;
+}
+
+.about-us .swiper-pagination .swiper-pagination-bullet-active::before {
+  content: "";
+  width: 23px;
+  height: 1px;
+  background-color: #ffa401;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  right: 33px;
+  top: 14px;
+}
+
+.about-us .about-us__text {
+  width: 50%;
 }
 
 /* -----------	Конец О нас  -----------	*/
