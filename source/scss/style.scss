@@ -356,30 +356,225 @@ aside {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-
 	align-self: center;
 	flex-direction: row;
 }
 
+/* -----------	Конец Блок поиска на главной -----------	*/
+
 /* -----------	Каталог -----------	*/
-.catalog_grid {
+.catalog__grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	justify-content: center;
 	justify-items: center;
 	justify-self: center;
 	width: 100%;
+	margin-bottom: 140px;
+	column-gap: 30px;
+	row-gap: 18px;
+
+	.catalog__block {
+		width: 100%;
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		border: 1px solid #eee;
+		transition: 0.5s;
+
+		&:hover {
+			background-color: #ffa401;
+			transition: 0.5s;
+			-webkit-transition: 0.5s;
+			-moz-transition: 0.5s;
+			-ms-transition: 0.5s;
+			-o-transition: 0.5s;
+		}
+		&::after {
+			content: "";
+			-webkit-clip-path: polygon(0 154px, 100% 1px, 100% 100%, 0% 100%);
+			clip-path: polygon(0 154px, 100% 1px, 100% 100%, 0% 100%);
+			background-color: #eeeeee;
+			position: absolute;
+			width: 100%;
+			height: 66%;
+			bottom: 0;
+			z-index: 1;
+			opacity: 0.5;
+			right: -0.5px;
+		}
+
+		&:hover::after {
+			background-color: #cf8700;
+		}
+		&:hover:nth-child(2)::after {
+			background-color: #cf8700;
+		}
+
+		&:nth-child(2)::after {
+			content: "";
+			-webkit-clip-path: polygon(0 154px, 100% 1px, 100% 100%, 0% 100%);
+			clip-path: polygon(0 154px, 100% 1px, 100% 100%, 0% 100%);
+			background-color: #eeeeee;
+			position: absolute;
+			width: 100%;
+			height: 58%;
+			bottom: 0;
+			z-index: 1;
+			opacity: 0.5;
+		}
+
+		img {
+			display: flex;
+			padding: 60px 60px 0 0;
+			filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.4));
+		}
+
+		a {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 9;
+			animation: pulse 3s infinite;
+			-webkit-animation: pulse 3s infinite;
+		}
+
+		h4 {
+			@include adaptiv-font(28, 16);
+			font-weight: 700;
+			color: #2c2419;
+			width: 100%;
+			position: absolute;
+			top: 24px;
+			left: 45px;
+		}
+	}
+	.block__row {
+		grid-row: 1/3;
+		grid-column: 2/3;
+		justify-content: center;
+		display: flex;
+		justify-items: center;
+		justify-self: center;
+		align-content: center;
+		align-items: center;
+	}
 }
 
+// @keyframes pulse {
+// 	0% {
+// 		filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0));
+// 		-webkit-filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0));
+// 	}
+
+// 	50% {
+// 		filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.4));
+// 		-webkit-filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.4));
+// 	}
+
+// 	100% {
+// 		filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0));
+// 		-webkit-filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0));
+// 	}
+// }
 /* -----------	Конец Каталог -----------	*/
 
-/* -----------	Конец Блок поиска на главной -----------	*/
+/* -----------	Товары дня  -----------	*/
+.title {
+	width: 100%;
+	text-align: center;
+}
+.goods-block {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.title_description {
+	font-size: 16px;
+	line-height: 140%;
+	text-transform: uppercase;
+	color: #c98100;
+}
+.title_name {
+	font-family: Exo 2;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 140%;
+
+	color: #2c2419;
+}
+
+.goods-block__wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	margin-bottom: 40px;
+	flex: 0 0 25%;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	box-sizing: border-box;
+	padding: 20px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	max-width: 330px;
+	min-height: 425px;
+	&:hover {
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
+	}
+}
+.card__image {
+}
+.card__title {
+}
+.name {
+}
+.card__material {
+}
+.material {
+}
+.card__price {
+}
+.old_price {
+}
+.new_price {
+}
+.card__like-button {
+}
+.card__buy-button {
+}
+.card__attributes {
+	.attribute {
+	}
+}
+
+/* -----------	Конец Товары дня  -----------	*/
 
 .footer {
 	margin-top: 140px;
 	width: 100%;
 	min-height: 89px;
-	position: absolute;
+	// position: absolute;
 	bottom: 0;
 	left: 0;
 	display: flex;
@@ -489,18 +684,16 @@ aside {
 
 			span {
 				color: #797979;
-
 			}
-
 		}
 	}
 
 	.contact__form {
-		background-color: #2C2419;
+		background-color: #2c2419;
 		text-align: center;
 
 		h2 {
-			color: #FFA401;
+			color: #ffa401;
 			font-size: 16px;
 			font-weight: normal;
 			padding-top: 104px;
