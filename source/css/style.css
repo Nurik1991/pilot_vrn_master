@@ -982,12 +982,22 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #EEEEEE;
+  position: relative;
+  min-width: 774px;
+}
+
+.contact .contact__info {
+  width: 448px;
+  margin-top: 136px;
+  margin-bottom: 140px;
+  margin-right: 50px;
 }
 
 .contact .contact__info h2 {
@@ -1012,6 +1022,11 @@ aside {
 .contact .contact__form {
   background-color: #2c2419;
   text-align: center;
+  width: 416px;
+  height: 616px;
+  margin-top: 50px;
+  margin-right: -90px;
+  z-index: 2;
 }
 
 .contact .contact__form h2 {
@@ -1020,6 +1035,7 @@ aside {
   font-weight: normal;
   padding-top: 104px;
   padding-bottom: 34px;
+  text-transform: uppercase;
 }
 
 .contact .contact__form input {
@@ -1062,9 +1078,36 @@ aside {
   font-weight: normal;
 }
 
-.contact .contact__form input#contact__form-chek {
-  float: left;
+.contact .contact__form label span {
+  display: block;
+  width: 50%;
+  margin-top: -20px;
+  margin-left: 84px;
+  text-align: left;
+}
+
+.contact .contact__form .custom-checkbox {
   width: 10%;
+  margin: 0px 48px;
+}
+
+.contact .contact__form input[type="button"] {
+  background-color: #FFA401;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.contact .contact__map {
+  position: relative;
+  z-index: 1;
+  margin-left: 1px;
+  width: 826px;
+  height: 768px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -7px;
 }
 
 /*--------конец Контакты -----*/
