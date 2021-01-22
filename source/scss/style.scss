@@ -370,6 +370,7 @@ aside {
 	justify-self: center;
 	width: 100%;
 }
+
 /* -----------	Конец Каталог -----------	*/
 
 /* -----------	Конец Блок поиска на главной -----------	*/
@@ -472,12 +473,25 @@ aside {
 	align-items: center;
 
 	.contact__info {
+		h2 {
+			font-size: 40px;
+			padding-bottom: 68px;
+		}
+
 		ul {
 			padding: 0;
+			font-size: 16px;
 		}
 
 		li {
 			list-style-type: none;
+			padding-bottom: 30px;
+
+			span {
+				color: #797979;
+
+			}
+
 		}
 	}
 }

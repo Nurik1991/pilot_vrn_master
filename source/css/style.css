@@ -624,12 +624,23 @@ aside {
           align-items: center;
 }
 
+.contact .contact__info h2 {
+  font-size: 40px;
+  padding-bottom: 68px;
+}
+
 .contact .contact__info ul {
   padding: 0;
+  font-size: 16px;
 }
 
 .contact .contact__info li {
   list-style-type: none;
+  padding-bottom: 30px;
+}
+
+.contact .contact__info li span {
+  color: #797979;
 }
 
 /*--------конец Контакты -----*/
