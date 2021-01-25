@@ -64,8 +64,71 @@
 	<!-- Конец Хедер -->
 
 	<section class="offer">
-		_______________
 
+		<div class="offer-swiper-container swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="qwe">
+						<img src="source/img/sed1.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="qwe">
+						<img src="source/img/sed2.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="qwe">
+						<img src="source/img/sed1.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="qwe">
+						<img src="source/img/sed2.png">
+					</div>
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="offer-swiper-pagination swiper-pagination"></div>
+		</div>
+
+		<div class="container">
+			<div class="offer__text">
+				<div class="offer__text-title">
+					<h1>
+						ЭКОКОЖА "АРИГОН"
+					</h1>
+				</div>
+				<div class="offer__text-text">
+					<p>Идеально подходит по техническим характеристикам для пошива чехлов для сидений автомобиля</p>
+				</div>
+				<div class="offer__text-button">
+					<a href="#0" class="button">Подобрать</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="offer__bookmarks">
+			<div class="offer__like">
+				<a href="#0" class="offer__like-button">
+					<img class="svg" src="source/img/like.svg" alt="+1">
+					<div class="offer_like-count">0</div>
+				</a>
+			</div>
+			<div class="offer__buy">
+				<a href="#0" class="offer__buy-button">
+					<img class="svg" src="source/img/buy.svg" alt="Купить">
+					<div class="offer_buy-count">0</div>
+				</a>
+			</div>
+		</div>
 
 	</section>
 
@@ -545,42 +608,34 @@
 			</div>
 
 		</div>
+
+		<div class="about-us__whitespace"></div>
+
 	</section>
 	<!--Конец  О нас -->
 
-
+	<!-- блока оставить вопрос -->
 	<aside class="questions-block ">
-		<!-- СпецПредложения -->
-		<aside class="special-goods">
-			<div class="container">
+		<div class="container">
 
-				<div class="special-goods__column  ">
-
-					<div class="column">
-						<h2 class="column-title">
-							Остались вопросы
-						</h2>
-
-						<p class="column-text">
-							Наши специалисты с удовольствием ответят на все Ваши вопросы.
-						</p>
-
-						<input type="button" value="Выбрать" class="button">
-						<img class="special-goods__image preview" src="source/img/special_goods/special_1.png" alt="">
-					</div>
-
+			<div class="questions-block__bg">
+				<div class="questions-block__bg-columns">
+					<span class="questions-block__bg-title">Остались вопросы?</span>
 				</div>
-
-				<div class="special-goods__column">
-					<img class="special-goods__image" src="source/img/special_goods/bg2.png">
+				<div class="questions-block__bg-columns">
+					<p class="questions-block__bg-text">Наши специалисты с удовольствием ответят на все Ваши вопросы.
+					</p>
 				</div>
-
-
+				<div class="questions-block__bg-columns">
+					<a href="#0" class="questions-block__bg-button">Задать вопрос</a>
+				</div>
 			</div>
-		</aside>
-		<!--конец  СпецПредложения -->
 
+
+
+		</div>
 	</aside>
+	<!--конец  блока оставить вопрос -->
 
 	<!-- Footer -->
 	<footer class="footer">
@@ -593,9 +648,11 @@
 				<div class="social__links-instagram">
 					<a href="#0" target="_blank"><img src="source/img/social/vk.svg"></a>
 				</div>
+
 				<div class="telephone">
 					<a href="tel:8 (473) 232-37-98">8 (473) 232-37-98</a>
 				</div>
+
 			</div>
 			<div class="footer__made-by">
 				<span>Разработано в
@@ -606,8 +663,8 @@
 		</div>
 
 		<!-- to the top -->
-		<div class="to-top to-top__scrollto" id="top">11111111111111111111111111
-			<a class="to-top__link" href="#top" id="to-top__link-id"><img src="source/img/social/instagramm.svg"></a>
+		<div class="to-top to-top__scrollto" id="top">
+			<a class="to-top__link" href="#top" id="to-top__link-id"><img src="source/img/to_the_top.svg"></a>
 		</div>
 		<!-- end to the top -->
 	</footer>
@@ -651,9 +708,34 @@
 <!-- Скрипты для Селекта -->
 
 
-<!-- Initialize Swiper -->
+<!-- Initialize Swiper offer -->
 <script>
-	var swiper = new Swiper('.swiper-container', {
+	var swiper = new Swiper('.offer-swiper-container ', {
+		direction: 'vertical',
+		slidesPerView: 1,
+		spaceBetween: 0,
+		mousewheel: false,
+		pagination: {
+			el: '.offer-swiper-pagination',
+			clickable: true,
+
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '"> 0' + (index + 1) + '</span>';
+			},
+		},
+		autoplay: {
+			delay: 8500,
+		},
+		loop: true,
+		updateOnWindowResize: true,
+		observer: true,
+		observeParents: true,
+	});
+</script>
+
+<!-- Initialize Swiper about-us -->
+<script>
+	var swiper = new Swiper('.about-us__swiper-container', {
 		direction: 'vertical',
 		slidesPerView: 1,
 		mousewheel: true,
@@ -665,11 +747,14 @@
 				return '<span class="' + className + '">' + (index + 1) + '</span>';
 			},
 		},
+		autoplay: {
+			delay: 5500,
+			disableOnInteraction: false,
+		},
 		loop: true,
 		updateOnWindowResize: true,
 		observer: true,
 		observeParents: true,
-
 	});
 </script>
 

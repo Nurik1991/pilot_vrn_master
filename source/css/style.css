@@ -92,6 +92,7 @@ body {
 body {
   font-family: "Exo 2";
   overflow-x: hidden;
+  z-index: 3;
 }
 
 h1 {
@@ -317,7 +318,6 @@ aside {
 /* -----------	End Header -----------	*/
 /* -----------	 Offer -----------	*/
 .offer {
-  background-image: url(../img/sed1.png);
   background-repeat: no-repeat;
   height: 1000px;
   background-attachment: fixed;
@@ -327,6 +327,167 @@ aside {
   position: relative;
   top: -80px;
   z-index: -1;
+}
+
+.offer .offer-swiper-container {
+  position: absolute;
+  max-height: 989px;
+  z-index: 99;
+}
+
+.offer .offer-swiper-container::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-color: #1e180f;
+  z-index: 999;
+  position: absolute;
+}
+
+.offer .offer-swiper-container .offer-swiper-pagination {
+  right: 14%;
+  z-index: 99999999999;
+  color: white;
+  height: 30px;
+  top: 42%;
+}
+
+.offer .offer-swiper-container .swiper-pagination-bullet {
+  color: white;
+  opacity: 1;
+  background: unset;
+  position: relative;
+  width: 30px;
+  height: auto;
+  border-radius: 0;
+  margin: 0 0 50px 0;
+}
+
+.offer .offer-swiper-container .swiper-pagination-bullet-active {
+  background-color: unset;
+}
+
+.offer .offer-swiper-container .swiper-pagination-bullet-active::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: #ffa401;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  right: 33px;
+  top: 10px;
+  color: white;
+  margin-right: 20px;
+}
+
+.offer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: absolute;
+  z-index: 99999;
+  color: white;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 660px;
+}
+
+.offer__text-title {
+  padding-bottom: 35px;
+}
+
+.offer__text-text {
+  padding-bottom: 50px;
+  max-width: 544px;
+}
+
+.offer__text-button {
+  margin-top: 10px;
+}
+
+.offer__bookmarks {
+  position: absolute;
+  right: 0;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 90px;
+  z-index: 9999;
+  gap: 25px;
+}
+
+.offer__bookmarks .offer__like-button {
+  background-color: #ebebeb;
+  padding: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.offer__bookmarks .offer__buy-button {
+  background-color: #ffa401;
+  padding: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.offer__bookmarks .offer_like-count,
+.offer__bookmarks .offer_buy-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #2c2419;
+  font-size: 16px;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
 }
 
 /* -----------	End Offer -----------	*/
@@ -1006,6 +1167,10 @@ aside {
   width: 68px;
 }
 
+.about-us .swiper-pagination-bullet {
+  height: unset;
+}
+
 .about-us .title {
   margin-top: 150px;
   text-align: left;
@@ -1078,7 +1243,86 @@ aside {
   width: 50%;
 }
 
+.about-us__whitespace {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  height: 50px;
+}
+
 /* -----------	Конец О нас  -----------	*/
+/* -----------	Question block  -----------	*/
+.questions-block__bg {
+  position: relative;
+  background-image: url(../img/faq_bg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 150px;
+  margin: 0 auto;
+  z-index: 1;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions-block__bg div {
+  width: 33%;
+}
+
+.questions-block__bg::after {
+  content: "";
+  width: 70%;
+  height: 100%;
+  max-width: 1050px;
+  position: absolute;
+  background-color: #ffa401;
+  -webkit-clip-path: polygon(0 0%, 100% 0px, 84% 100%, 0% 100%);
+          clip-path: polygon(0 0%, 100% 0px, 84% 100%, 0% 100%);
+  opacity: 0.8;
+  top: 0;
+  z-index: 2;
+}
+
+.questions-block__bg .questions-block__bg-columns {
+  z-index: 3;
+}
+
+.questions-block__bg .questions-block__bg-title {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  padding-left: 60px;
+}
+
+.questions-block__bg .questions-block__bg-text {
+  font-size: 20px;
+  line-height: 150%;
+  color: white;
+  padding-left: 75px;
+}
+
+.questions-block__bg .questions-block__bg-button {
+  background-color: #ffa401;
+  padding: 10px 27px;
+  color: #2c2419;
+  display: inline-block;
+  float: right;
+  clear: both;
+  margin-right: 160px;
+}
+
+/* -----------	Конец Question block  -----------	*/
 .footer {
   margin-top: 140px;
   width: 100%;
@@ -1182,6 +1426,26 @@ aside {
 .footer__social-links .telephone a {
   color: #afafaf;
   margin-left: 47px;
+}
+
+.to-top {
+  position: absolute;
+  z-index: 999999999;
+  bottom: 130px;
+  right: 25px;
+}
+
+.to-top__link {
+  padding: 18px;
+  background: #ffa401;
+  -webkit-box-shadow: 0px 3px 4px rgba(44, 36, 25, 0.2);
+          box-shadow: 0px 3px 4px rgba(44, 36, 25, 0.2);
+  border-radius: 50px;
+}
+
+.to-top__link svg {
+  position: relative;
+  top: 20%;
 }
 
 /* ----------- // Основной стиль -----------	*/
@@ -1451,7 +1715,7 @@ aside {
 .checkout .checkout__enter-data input {
   width: 328px;
   height: 45px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-radius: 5px;
   padding-left: 15px;
   font-size: 16px;
@@ -1459,7 +1723,7 @@ aside {
 }
 
 .checkout .checkout__enter-data input:focus {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   outline: none;
 }
 
@@ -1486,19 +1750,19 @@ aside {
 }
 
 .checkout .checkout__enter-data textarea {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-radius: 5px;
   padding-left: 15px;
   resize: none;
 }
 
 .checkout .checkout__enter-data textarea:focus {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   outline: none;
 }
 
 .checkout .checkout__shipping-payment {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   border-radius: 5px;
   margin-left: 30px;
 }
@@ -1508,7 +1772,7 @@ aside {
 .checkout .checkout__shipping-payment .checkout__shipping,
 .checkout .checkout__shipping-payment .checkout__total,
 .checkout .checkout__shipping-payment .checkout__payment {
-  border-bottom: 1px dashed #D2D2D2;
+  border-bottom: 1px dashed #d2d2d2;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
