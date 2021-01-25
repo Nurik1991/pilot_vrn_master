@@ -1496,7 +1496,18 @@ aside {
   color: #9a9a9a;
 }
 
-.breadcrumb a {
+.breadcrumb .breadcrumb-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.breadcrumb .breadcrumb-list__item:not(:last-child):after {
+  content: " > ";
+  padding: 0 7px;
+}
+
+.breadcrumb .breadcrumb-list__link {
   color: #9a9a9a;
 }
 

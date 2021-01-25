@@ -1232,7 +1232,14 @@ aside {
 	font-size: 13px;
 	color: #9a9a9a;
 
-	a {
+	.breadcrumb-list {
+		display: inline-flex;
+	}
+	.breadcrumb-list__item:not(:last-child):after {
+		content: " > ";
+		padding: 0 7px;
+	}
+	.breadcrumb-list__link {
 		color: #9a9a9a;
 	}
 
