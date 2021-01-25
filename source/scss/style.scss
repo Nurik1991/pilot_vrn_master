@@ -277,6 +277,7 @@ aside {
 
 		.swiper-pagination-bullet-active {
 			background-color: unset;
+			color: $yellow;
 			&::before {
 				content: "";
 				display: block;
@@ -333,8 +334,8 @@ aside {
 		padding: 10px;
 		display: inline-flex;
 		border-radius: 50px;
-		width: 50px;
-		height: 50px;
+		width: 60px;
+		height: 60px;
 		justify-content: center;
 		align-content: center;
 		align-items: center;
@@ -346,27 +347,31 @@ aside {
 		padding: 10px;
 		display: inline-flex;
 		border-radius: 50px;
-		width: 50px;
-		height: 50px;
+		width: 60px;
+		height: 60px;
 		justify-content: center;
 		align-content: center;
 		align-items: center;
 		position: relative;
 	}
-	.offer_like-count,
-	.offer_buy-count {
+	.offer__like-count,
+	.offer__buy-count {
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: -3px;
+		right: -3px;
 		background-color: #2c2419;
 		font-size: 16px;
 		color: white;
-		padding: 2px 6px;
 		border-radius: 100%;
 		-webkit-border-radius: 100%;
 		-moz-border-radius: 100%;
 		-ms-border-radius: 100%;
 		-o-border-radius: 100%;
+		width: 25px;
+		height: 25px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -947,10 +952,10 @@ aside {
 	margin-bottom: 140px;
 	.swiper-container {
 		margin-left: unset;
-		padding-right: 40px;
+		padding-right: 70px;
 	}
 	.swiper-container-vertical > .swiper-pagination-bullets {
-		right: 10px;
+		right: -36px;
 		top: 50%;
 		transform: translate3d(0px, -50%, 0);
 		height: 250px;
@@ -981,32 +986,36 @@ aside {
 		margin: 0 auto;
 	}
 
-	.swiper-pagination {
-		text-align: right;
-		justify-content: space-around;
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-		align-items: end;
-		.swiper-pagination-bullet {
-			background-color: unset;
-			content: "";
-			position: relative;
+	.swiper-pagination-bullet {
+		color: #161616;
+		opacity: 1;
+		background: unset;
+		position: relative;
+		width: 30px;
+		height: auto;
+		border-radius: 0;
+		margin: 0 0 50px 0;
+		margin-bottom: 50px !important;
+	}
 
-			top: 14px;
-		}
-		.swiper-pagination-bullet-active {
-			background-color: unset;
-			&::before {
-				content: "";
-				width: 23px;
-				height: 1px;
-				background-color: #ffa401;
-				display: inline-flex;
-				position: relative;
-				right: 33px;
-				top: 14px;
-			}
+	.swiper-pagination-bullet-active {
+		background-color: unset;
+		color: #ffa401;
+		margin-bottom: 50px !important;
+		&::before {
+			content: "";
+			display: block;
+			width: 30px;
+			height: 1px;
+			background-color: #ffa401;
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			position: absolute;
+			right: 33px;
+			top: 10px;
+			color: #ffa401;
+			margin-right: 20px;
 		}
 	}
 	.about-us__text {
@@ -1223,7 +1232,14 @@ aside {
 	font-size: 13px;
 	color: #9a9a9a;
 
-	a {
+	.breadcrumb-list {
+		display: inline-flex;
+	}
+	.breadcrumb-list__item:not(:last-child):after {
+		content: " > ";
+		padding: 0 7px;
+	}
+	.breadcrumb-list__link {
 		color: #9a9a9a;
 	}
 
