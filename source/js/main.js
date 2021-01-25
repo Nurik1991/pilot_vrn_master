@@ -1,4 +1,4 @@
-// svg
+// svg поддержка
 $(document).ready(function () {
 	$('img[src$=".svg"]').each(function () {
 		var $img = jQuery(this);
@@ -20,5 +20,23 @@ $(document).ready(function () {
 			// Replace IMG with SVG
 			$img.replaceWith($svg);
 		}, 'xml');
+	});
+});
+
+
+
+
+// When the user scrolls down 20px from the top of the document, show the button
+$(document).ready(function () {
+	$(function () {
+		$("#to-top__link-id").hide();
+
+
+		$("#to-top__link").click(function () {
+			$("body,html").animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
 	});
 });

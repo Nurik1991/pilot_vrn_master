@@ -958,6 +958,15 @@ aside {
 	}
 }
 
+// наверх стрелка
+.to-top {
+}
+.to-top__scrollto {
+}
+.to-top__link {
+}
+// наверх стрелка
+
 /* ----------- // Основной стиль -----------	*/
 /*------------ страница 404 ---------------*/
 .page-404 {
@@ -1050,7 +1059,6 @@ aside {
 		height: 616px;
 		margin-top: 50px;
 		margin-right: -90px;
-
 		z-index: 2;
 
 		h2 {
@@ -1110,11 +1118,6 @@ aside {
 			}
 		}
 
-
-
-
-
-
 		input[type="button"] {
 			background-color: #ffa401;
 			border: none;
@@ -1137,11 +1140,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -1153,22 +1156,20 @@ aside {
 		border-radius: 3px;
 		bottom: 230px;
 		left: 63px;
-
 	}
 
-	input[type=checkbox]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
 		background-image: url(../img/check.png);
 		background-position: 4px 5px;
-
 	}
 }
 
 /*--------конец Контакты -----*/
 
-@import "style2.scss";
+@import "_style2";
 
 // мобильная версия
 @import "_media";
