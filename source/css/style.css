@@ -1400,7 +1400,7 @@ aside {
   left: 63px;
 }
 
-.contact input[type=checkbox]:checked + label:before {
+.contact input[type="checkbox"]:checked + label:before {
   border: 1px solid #fff;
   width: 20px;
   height: 20px;
@@ -1409,5 +1409,51 @@ aside {
 }
 
 /*--------конец Контакты -----*/
+/*-------Оформление заказа------*/
+.checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.checkout .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.checkout h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.checkout .checkout__enter-data {
+  width: 690px;
+  display: inline-block;
+}
+
+.checkout .checkout__enter-data input {
+  width: 48%;
+  height: 45px;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  margin-bottom: 36px;
+}
+
 /* ====================Мобильная версия================= */
 /* ============Конец - Мобильная версия================= */

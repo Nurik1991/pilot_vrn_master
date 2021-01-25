@@ -1,4 +1,35 @@
-body {
-	background-color: red;
-	padding: 150px;
+/*-------Оформление заказа------*/
+.checkout {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	h2 {
+		font-size: 40px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.checkout__enter-data {
+		width: 690px;
+		display: inline-block;
+
+		input {
+			width: 48%;
+			height: 45px;
+			border: 1px solid #EEEEEE;
+			border-radius: 5px;
+			margin-bottom: 36px;
+
+		}
+	}
+
+
+
 }
