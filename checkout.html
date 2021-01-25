@@ -91,35 +91,40 @@
 
           <div class="checkout__shipping-payment">
 			<div class="checkout__summa">
-				<span class="title">Сумма:</span>
-				<span class="number">5,980.00 руб.</span>
+				<span class="checkout__title">Сумма:</span>
+				<span class="checkout__number">5,980.00 руб.</span>
 			</div>
-			<div class="sale">	
-				<span class="title">Скидка:</span>
-				<span class="number">-299.00 руб.</span>
+			<div class="checkout__sale">	
+				<span class="checkout__title">Скидка:</span>
+				<span class="checkout__number">-299.00 руб.</span>
 			</div>	
-			<div class="shipping">
-				<span class="title">Доставка:</span>
-				<span class="number">
+			<div class="checkout__shipping">
+				<span class="checkout__title">Доставка:</span>
+				<span class="checkout__number">
 					<input type="checkbox">Самовывоз: г. Воронеж, ул. Короленко 5
 					<input type="checkbox">Доставка курьером
 					<input type="checkbox">Доставка службой IML
 				</span>
 			</div>
-			<div class="total">	
-				<span class="title">ИТОГО:</span>
-				<span class="number">7 570 ₽</span>
+			<div class="checkout__total">	
+				<span class="checkout__title">ИТОГО:</span>
+				<span class="checkout__number">7 570 ₽</span>
 			</div>	
-			<div class="payment">
-				<span class="title">Оплата:</span>
-				<span class="number">
-					<input type="checkbox">Наличными при получении
-					<input type="checkbox">Банковской картой при получении
-					<input type="checkbox">Онлайн платежом
-					<input type="checkbox">Онлайн платежом
+			<div class="checkout__payment">
+				<span class="checkout__title">Оплата:</span>
+				<span class="checkout__number">
+					<input type="checkbox" id="checkout__number-check1">
+					<label for="checkout__number-check1"><span>Наличными при получении</span></label>
+					<input type="checkbox" id="checkout__number-check2">
+					<label for="checkout__number-check2"><span>Банковской картой при получении</span></label>
+					<input type="checkbox" id="checkout__number-check3">
+					<label for="checkout__number-check3"><span>Онлайн платежом</span></label>
+					<input type="checkbox" id="checkout__number-check4">
+					<label for="checkout__number-check4"><span>Безналичный расчет</span></label>
+
 				</span>
 			</div>
-			<div class="info">
+			<div class="checkout__info">
 				<p>Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для других целей, которые описывает наша</p>
 				<a href="#">политика конфиденциальности</a>
 				<input type="checkbox">Я согласен(на) на обработку персональных данных
