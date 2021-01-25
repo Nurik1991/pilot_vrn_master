@@ -29,10 +29,11 @@ $(document).ready(function () {
 // When the user scrolls down 20px from the top of the document, show the button
 // When the user scrolls down 20px from the top of the document, show the button
 $(document).ready(function () {
+
 	$(function () {
 		$("#to-top__link-id").hide();
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 150) {
+			if ($(this).scrollTop() > 850) {
 
 				$("#to-top__link-id").fadeIn();
 				$("#to-top__link-id").css('display', 'block');

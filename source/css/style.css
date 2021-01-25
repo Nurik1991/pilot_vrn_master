@@ -420,7 +420,7 @@ aside {
 }
 
 .offer__bookmarks {
-  position: absolute;
+  position: fixed;
   right: 0;
   width: 100px;
   display: -webkit-box;
@@ -430,8 +430,8 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  bottom: 90px;
-  z-index: 9999;
+  top: 689px;
+  z-index: 9999999999999999999;
   gap: 25px;
 }
 
@@ -453,6 +453,9 @@ aside {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  z-index: 9999999999999999999;
+  -webkit-box-shadow: 0px 3px 4px rgba(44, 36, 25, 0.2);
+          box-shadow: 0px 3px 4px rgba(44, 36, 25, 0.2);
 }
 
 .offer__bookmarks .offer__buy-button {
@@ -473,6 +476,9 @@ aside {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  z-index: 9999999999999999999;
+  -webkit-box-shadow: 0px 3px 4px rgba(44, 36, 25, 0.2);
+          box-shadow: 0px 3px 4px rgba(44, 36, 25, 0.2);
 }
 
 .offer__bookmarks .offer__like-count,
@@ -499,6 +505,7 @@ aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 9999999999999999999;
 }
 
 /* -----------	End Offer -----------	*/
@@ -1162,6 +1169,7 @@ aside {
   height: 795px;
   max-height: 795px;
   margin-bottom: 140px;
+  z-index: -45;
 }
 
 .about-us .swiper-container {
@@ -1185,6 +1193,10 @@ aside {
 .about-us .title {
   margin-top: 150px;
   text-align: left;
+}
+
+.about-us .without-button .title-button {
+  display: none;
 }
 
 .about-us .title-text {
@@ -1326,6 +1338,54 @@ aside {
 }
 
 /* -----------	Конец Question block  -----------	*/
+/* -----------	  Плюсы компании block  -----------	*/
+.company__advantag .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 150px;
+}
+
+.company__advantag .company__advantag-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.company__advantag .company__advantag-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 33%;
+}
+
+.company__advantag .company__advantag-block-icon {
+  border-bottom: 1px dashed #d2d2d2;
+  padding-bottom: 33px;
+  margin-bottom: 20px;
+}
+
+/* -----------	Конец Плюсы компании block  -----------	*/
 .footer {
   margin-top: 140px;
   width: 100%;
@@ -1432,10 +1492,14 @@ aside {
 }
 
 .to-top {
-  position: absolute;
+  position: fixed;
   z-index: 999999999;
-  bottom: 130px;
-  right: 25px;
+  bottom: 50px;
+  right: 40px;
+}
+
+#to-top__link-id {
+  display: none;
 }
 
 .to-top__link {
@@ -1516,7 +1580,7 @@ aside {
   display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 90px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
