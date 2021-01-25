@@ -101,9 +101,9 @@
 			<div class="checkout__shipping">
 				<span class="checkout__title">Доставка:</span>
 				<span class="checkout__number">
-					<input type="checkbox">Самовывоз: г. Воронеж, ул. Короленко 5
-					<input type="checkbox">Доставка курьером
-					<input type="checkbox">Доставка службой IML
+					<input type="radio">Самовывоз: г. Воронеж, ул. Короленко 5
+					<input type="radio">Доставка курьером
+					<input type="radio">Доставка службой IML
 				</span>
 			</div>
 			<div class="checkout__total">	
@@ -113,21 +113,27 @@
 			<div class="checkout__payment">
 				<span class="checkout__title">Оплата:</span>
 				<span class="checkout__number">
-					<input type="checkbox" id="checkout__number-check1">
-					<label for="checkout__number-check1"><span>Наличными при получении</span></label>
-					<input type="checkbox" id="checkout__number-check2">
-					<label for="checkout__number-check2"><span>Банковской картой при получении</span></label>
-					<input type="checkbox" id="checkout__number-check3">
-					<label for="checkout__number-check3"><span>Онлайн платежом</span></label>
-					<input type="checkbox" id="checkout__number-check4">
-					<label for="checkout__number-check4"><span>Безналичный расчет</span></label>
+					<input type="radio" id="checkout__number-check1">
+					<label for="checkout__number-check1">Наличными при получении</label>
+
+					<input type="radio" id="checkout__number-check2">
+					<label for="checkout__number-check2">Банковской картой при получении</label>
+
+					<input type="radio" id="checkout__number-check3">
+					<label for="checkout__number-check3">Онлайн платежом</label>
+
+					<input type="radio" id="checkout__number-check4">
+					<label for="checkout__number-check4">Безналичный расчет</label>
 
 				</span>
 			</div>
 			<div class="checkout__info">
 				<p>Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для других целей, которые описывает наша</p>
 				<a href="#">политика конфиденциальности</a>
-				<input type="checkbox">Я согласен(на) на обработку персональных данных
+				<label for="checkout__info-check">
+					 <input type="checkbox" id="checkout__info-check">Я согласен(на) на обработку персональных данных
+				</label>
+			
 			</div>
 			<input type="button" value="ОФОРМИТЬ ЗАКАЗ">
 		  </div>

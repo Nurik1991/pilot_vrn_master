@@ -1788,15 +1788,19 @@ aside {
   font-weight: normal;
 }
 
+.checkout .checkout__shipping-payment .checkout__shipping .checkout__number,
+.checkout .checkout__shipping-payment .checkout__payment .checkout__number {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30px 2fr;
+      grid-template-columns: 30px 2fr;
+  grid-row-gap: 15px;
+}
+
 .checkout .checkout__shipping-payment .checkout__number {
   padding-top: 25px;
   padding-bottom: 25px;
   color: #161616;
-}
-
-.checkout .checkout__shipping-payment .checkout__number input {
-  display: -ms-grid;
-  display: grid;
 }
 
 .checkout .checkout__shipping-payment .checkout__total {
@@ -1809,7 +1813,12 @@ aside {
   color: #797979;
   font-weight: normal;
   font-size: 16px;
-  padding: 0px 30px 30px 30px;
+  padding: 30px 30px 30px 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-row-gap: 32px;
 }
 
 /* ====================Мобильная версия================= */

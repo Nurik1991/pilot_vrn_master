@@ -95,14 +95,20 @@
 			font-weight: normal;
 		}
 
+		.checkout__shipping,
+		.checkout__payment {
+			.checkout__number {
+				display: grid;
+				grid-template-columns: 30px 2fr;
+				grid-row-gap: 15px;
+
+			}
+		}
+
 		.checkout__number {
 			padding-top: 25px;
 			padding-bottom: 25px;
 			color: #161616;
-
-			input {
-				display: grid;
-			}
 		}
 
 		.checkout__total {
@@ -115,7 +121,13 @@
 			color: #797979;
 			font-weight: normal;
 			font-size: 16px;
-			padding: 0px 30px 30px 30px;
+			padding: 30px 30px 30px 30px;
+			display: grid;
+			grid-template-rows: 1fr;
+			grid-row-gap: 32px;
+
+
+
 		}
 	}
 }
