@@ -325,7 +325,7 @@ aside {
 	width: 100px;
 	display: flex;
 	flex-direction: column;
-	top: 689px;
+	top: 680px;
 	z-index: 9999999999999999999;
 	gap: 25px;
 
@@ -1134,10 +1134,15 @@ aside {
 	}
 }
 
-.block-help {
-}
-.container {
-}
+// .block-help {
+// 	.container {
+// 		display: flex;
+// 		justify-content: center;
+
+// 		align-items: center;
+// 	}
+// }
+
 .block-help__bg {
 	background-image: url(../img/bg_need_help.png);
 	background-size: cover;
@@ -1146,8 +1151,25 @@ aside {
 	max-height: 290px;
 	min-height: 290px;
 	position: relative;
+	color: white;
+	padding: 70px 90px;
 
-	&::after {
+	.row .block-help__row {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 135px;
+		margin-bottom: 50px;
+	}
+
+	.row .block-help__row:nth-child(2) {
+		gap: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	&::before {
 		content: "";
 		background-color: #2c2419;
 		opacity: 0.8;
@@ -1157,8 +1179,26 @@ aside {
 		right: 0;
 		bottom: 0;
 	}
+
+	.block-help__row-input {
+		background: rgba(225, 218, 208, 0.1);
+		border: 1px solid rgba(225, 218, 208, 0.15);
+		box-sizing: border-box;
+		border-radius: 5px;
+		outline: none;
+		color: white;
+		padding: 15px;
+	}
 }
-.block-help__row {
+
+.block-help__row-title {
+	font-size: 40px;
+	line-height: 150%;
+}
+.block-help__row-text {
+	font-size: 20px;
+	line-height: 150%;
+	max-width: 650px;
 }
 /* -----------	Конец Плюсы компании block  -----------	*/
 

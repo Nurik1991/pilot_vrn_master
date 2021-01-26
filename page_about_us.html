@@ -157,13 +157,13 @@
 		<div class="about-us__whitespace"></div>
 
 	</section>
-	<!--Конец  О нас -->
+	<!--  Конец  О нас -->
 
-	<!-- Плюсы компании -->
+	<!--  Плюсы компании -->
 	<section class="company__advantag">
 		<div class="container">
 
-			<!--  Заголовок и описание на сайте повторяются -->
+			<!--   Заголовок и описание на сайте повторяются -->
 			<div class="title">
 				<div class="title-description">
 					<span>почему нас выбирают</span>
@@ -172,9 +172,9 @@
 					<h2>Плюсы компании</h2>
 				</div>
 			</div>
-			<!-- Конец - Заголовок и описание на сайте повторяются -->
+			<!--  Конец - Заголовок и описание на сайте повторяются -->
 
-			<!-- Плюсы компании -->
+			<!--  Плюсы компании -->
 			<div class="company__advantag-block">
 
 				<div class="company__advantag-item">
@@ -205,14 +205,14 @@
 				</div>
 
 			</div>
-			<!-- Конец Плюсы компании -->
+			<!--  Конец Плюсы компании -->
 
 		</div>
 	</section>
-	<!-- Плюсы компании -->
+	<!--  Плюсы компании -->
 
 
-	<!-- Переход по каталогу -->
+	<!--  Переход по каталогу -->
 	<section class="catalog">
 		<div class="container">
 			<div class="catalog__grid">
@@ -264,20 +264,64 @@
 
 			</div>
 	</section>
-	<!-- Конец Переход по каталогу -->
+	<!--  Конец Переход по каталогу -->
 
-	<!-- Блок Нужна помощь -->
+	<!--   Блок Нужна помощь -->
 	<section class="block-help">
 		<div class="container">
-			<div class="block-help__bg">
-				<div class="block-help__row">1</div>
-				<div class="block-help__row">2</div>
+			<div class="block-help__bg ">
+
+				<div class="row">
+					<div class="block-help__row">
+
+						<span class="block-help__row-title">
+							Нужна помощь?
+						</span>
+
+						<span class="block-help__row-text">
+							Заполните форму и наши специалисты с удовольствием помогут
+							Вам в
+							ближайшее время.
+						</span>
+
+					</div>
+
+					<div class="block-help__row">
+						<input class="block-help__row-input" type="text" class="name" placeholder="Имя*">
+						<input class="block-help__row-input" type="text" class="phone" placeholder="Телефон *">
+						<input class="block-help__row-input" type="text" class="phone" placeholder="Email *">
+
+						<div class="agree">123123</div>
+
+						<div class="button">
+							<a href="#">Отправить</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="row">
+					<div class="block-help__row-inputs">
+						<div class="checkout__enter-data">
+							<input type="text" class="name" placeholder="Имя*">
+							<input type="text" class="phone" placeholder="Телефон *">
+							<input type="text" class="phone" placeholder="Email *">
+							<label for="contact__formch">
+								<span> Я согласен(на) на обработку персональных
+									данных
+								</span>
+							</label>
+							<a href="#0">Отправить</a>
+						</div>
+					</div>
+
+				</div> -->
+
 			</div>
 		</div>
 	</section>
-	<!-- Конец Блок Нужна помощь -->
+	<!--  Конец Блок Нужна помощь -->
 
-	<!-- Footer -->
+	<!--  Footer -->
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__rights-reserved">© 2020 PILOT - VRN. Все права защищены.</div>
@@ -308,13 +352,13 @@
 		</div>
 		<!-- end to the top -->
 	</footer>
-	<!-- End Footer -->
+	<!--  End Footer -->
 
 </body>
-<!-- Скрипты для Селекта -->
+<!--  Скрипты для Селекта -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script src="source/js/main.js"></script>
+
 
 <script>
 	jQuery(($) => {
@@ -345,12 +389,16 @@
 		});
 	});
 </script>
-<!-- Скрипты для Селекта -->
+<!--  конец Скрипты для Селекта -->
+
+<!-- maska -->
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+	type="text/javascript"></script>
+<!-- end maska -->
+<script src="source/js/main.js"></script>
 
 
-
-
-<!-- Initialize Swiper about-us -->
+<!--  Initialize Swiper about-us -->
 <script>
 	var swiper = new Swiper('.about-us__swiper-container', {
 		direction: 'vertical',

@@ -115,8 +115,9 @@
 		<div class="container">
 
 			
+
 			<div class="checkout__enter-data">
-				<h5>Введите ваши данные</h5>	
+				<h5>Введите ваши данные</h5>
 				<input type="text" class="name" placeholder="Имя*">
 				<input type="text" placeholder="Фамилия *">
 				<input type="text" class="city" placeholder="Город">
@@ -128,67 +129,67 @@
 				<textarea name="text" class="note" placeholder="Примечание к заказу"></textarea>
 				<!--<input type="textarea" class="note"  placeholder="Примечание к заказу">-->
 			</div>
-			
+
 			<div class="checkout__shipping-payment">
 				<h5>Доставка и оплата </h5>
 				<div class="wrapperbg">
-				<div class="checkout__summa">
-					<span class="checkout__title">Сумма:</span>
-					<span class="checkout__number">5,980.00 руб.</span>
+					<div class="checkout__summa">
+						<span class="checkout__title">Сумма:</span>
+						<span class="checkout__number">5,980.00 руб.</span>
+					</div>
+					<div class="checkout__sale">
+						<span class="checkout__title">Скидка:</span>
+						<span class="checkout__number">-299.00 руб.</span>
+					</div>
+					<div class="checkout__shipping">
+						<span class="checkout__title">Доставка:</span>
+						<span class="checkout__number">
+
+							<input type="radio" id="checkout__shipping-check1" name="prim">
+							<label for="checkout__shipping-check1">Самовывоз: г. Воронеж, ул. Короленко 5</label>
+
+							<input type="radio" id="checkout__shipping-check2" name="prim">
+							<label for="checkout__shipping-check2">Доставка курьером</label>
+
+							<input type="radio" id="checkout__shipping-check3" name="prim">
+							<label for="checkout__shipping-check3">Доставка службой IML</label>
+
+						</span>
+					</div>
+					<div class="checkout__total">
+						<span class="checkout__title">ИТОГО:</span>
+						<span class="checkout__number">7 570 ₽</span>
+					</div>
+					<div class="checkout__payment">
+						<span class="checkout__title">Оплата:</span>
+						<span class="checkout__number">
+
+							<input type="radio" id="checkout__number-check1" name="prim2">
+							<label for="checkout__number-check1">Наличными при получении</label>
+
+							<input type="radio" id="checkout__number-check2" name="prim2">
+							<label for="checkout__number-check2">Банковской картой при получении</label>
+
+							<input type="radio" id="checkout__number-check3" name="prim2">
+							<label for="checkout__number-check3">Онлайн платежом</label>
+
+							<input type="radio" id="checkout__number-check4" name="prim2">
+							<label for="checkout__number-check4">Безналичный расчет</label>
+
+						</span>
+					</div>
+					<div class="checkout__info">
+						<p>Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с
+							сайтом и для других целей, которые описывает наша</p>
+						<a href="#">политика конфиденциальности</a>
+
+						<input type="checkbox" id="checkout__info-check" checked>
+						<label for="checkout__info-check">Я согласен(на) на обработку персональных данных </label>
+
+					</div>
+					<input type="button" class="button" value="ОФОРМИТЬ ЗАКАЗ">
 				</div>
-				<div class="checkout__sale">
-					<span class="checkout__title">Скидка:</span>
-					<span class="checkout__number">-299.00 руб.</span>
-				</div>
-				<div class="checkout__shipping">
-					<span class="checkout__title">Доставка:</span>
-					<span class="checkout__number">
-
-						<input type="radio" id="checkout__shipping-check1" name="prim">
-						<label for="checkout__shipping-check1">Самовывоз: г. Воронеж, ул. Короленко 5</label>
-
-						<input type="radio" id="checkout__shipping-check2" name="prim">
-						<label for="checkout__shipping-check2">Доставка курьером</label>
-
-						<input type="radio" id="checkout__shipping-check3" name="prim">
-						<label for="checkout__shipping-check3">Доставка службой IML</label>
-						
-					</span>
-				</div>
-				<div class="checkout__total">
-					<span class="checkout__title">ИТОГО:</span>
-					<span class="checkout__number">7 570 ₽</span>
-				</div>
-				<div class="checkout__payment">
-					<span class="checkout__title">Оплата:</span>
-					<span class="checkout__number"> 
-
-						<input type="radio" id="checkout__number-check1" name="prim2">
-						<label for="checkout__number-check1">Наличными при получении</label>
-
-						<input type="radio" id="checkout__number-check2" name="prim2">
-						<label for="checkout__number-check2">Банковской картой при получении</label>
-
-						<input type="radio" id="checkout__number-check3" name="prim2">
-						<label for="checkout__number-check3">Онлайн платежом</label>
-
-						<input type="radio" id="checkout__number-check4" name="prim2">
-						<label for="checkout__number-check4">Безналичный расчет</label>
-
-					</span>
-				</div>
-				<div class="checkout__info">
-					<p>Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с
-						сайтом и для других целей, которые описывает наша</p>
-					<a href="#">политика конфиденциальности</a>
-
-					<input type="checkbox" id="checkout__info-check" checked>
-					<label for="checkout__info-check">Я согласен(на) на обработку персональных данных </label>
-
-				</div>
-				<input type="button" class="button" value="ОФОРМИТЬ ЗАКАЗ">
 			</div>
-		</div>
 		</div>
 	</section>
 	<!-- Оформление заказа конец  -->
@@ -219,3 +220,11 @@
 	<!-- End Footer -->
 
 </body>
+<!-- maska -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+	type="text/javascript"></script>
+<!-- end maska -->
+<script src="source/js/main.js"></script>
+
+</html>

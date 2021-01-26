@@ -51,3 +51,6 @@ $(document).ready(function () {
 		});
 	});
 });
+
+
+$("[placeholder*='Тел']").mask("+7(999) 999-9999");

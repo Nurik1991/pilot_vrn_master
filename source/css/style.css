@@ -430,7 +430,7 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 689px;
+  top: 680px;
   z-index: 9999999999999999999;
   gap: 25px;
 }
@@ -1393,9 +1393,38 @@ aside {
   max-height: 290px;
   min-height: 290px;
   position: relative;
+  color: white;
+  padding: 70px 90px;
 }
 
-.block-help__bg::after {
+.block-help__bg .row .block-help__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 135px;
+  margin-bottom: 50px;
+}
+
+.block-help__bg .row .block-help__row:nth-child(2) {
+  gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.block-help__bg::before {
   content: "";
   background-color: #2c2419;
   opacity: 0.8;
@@ -1404,6 +1433,28 @@ aside {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.block-help__bg .block-help__row-input {
+  background: rgba(225, 218, 208, 0.1);
+  border: 1px solid rgba(225, 218, 208, 0.15);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  padding: 15px;
+}
+
+.block-help__row-title {
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.block-help__row-text {
+  font-size: 20px;
+  line-height: 150%;
+  max-width: 650px;
 }
 
 /* -----------	Конец Плюсы компании block  -----------	*/
