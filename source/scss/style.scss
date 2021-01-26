@@ -1247,17 +1247,13 @@ aside {
 	background-color: #eee !important;
 }
 
-.page__cat {
+.page__cat,
+.page__seat {
 	.category__offer {
 		min-height: 270px;
 		background-color: #eee;
 	}
-	// .title {
-	// }
-	// .title-description {
-	// }
-	// .title-name {
-	// }
+
 	.search-block {
 		margin-top: -135px;
 		border: 1px solid #ebebeb;
@@ -1289,8 +1285,7 @@ aside {
 			margin: 0;
 		}
 	}
-	// .select__input {
-	// }
+
 	.select__head {
 		color: #797979;
 		background: rgba(235, 235, 235, 0.14);
@@ -1300,10 +1295,6 @@ aside {
 			background: url(../img/Polygon2.svg) no-repeat center/cover;
 		}
 	}
-	// .select__list {
-	// }
-	// .select__item {
-	// }
 }
 
 .page__seat {
@@ -1396,6 +1387,7 @@ aside {
 
 	.pagination__block-link {
 		font-size: 15px;
+		color: #797979;
 		border: 2px solid #e3e3e3;
 		padding: 6px 11px;
 		transition: 0.3s;
@@ -1403,8 +1395,10 @@ aside {
 		-moz-transition: 0.3s;
 		-ms-transition: 0.3s;
 		-o-transition: 0.3s;
+		border-radius: 3px;
 
 		&:hover {
+			color: #2c2419;
 			border: 2px solid $yellow;
 			transition: 0.3s;
 			-webkit-transition: 0.3s;
@@ -1412,6 +1406,11 @@ aside {
 			-ms-transition: 0.3s;
 			-o-transition: 0.3s;
 		}
+	}
+
+	.pagination__block-link.active {
+		border: 2px solid $yellow;
+		color: #2c2419;
 	}
 }
 

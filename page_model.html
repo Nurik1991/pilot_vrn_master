@@ -412,54 +412,5 @@
 <!-- Скрипты для Селекта -->
 
 
-<!-- Initialize Swiper offer -->
-<script>
-	var swiper = new Swiper('.offer-swiper-container ', {
-		direction: 'vertical',
-		slidesPerView: 1,
-		spaceBetween: 0,
-		mousewheel: false,
-		pagination: {
-			el: '.offer-swiper-pagination',
-			clickable: true,
-
-			renderBullet: function (index, className) {
-				return '<span class="' + className + '"> 0' + (index + 1) + '</span>';
-			},
-		},
-		autoplay: {
-			delay: 8500,
-		},
-		loop: true,
-		updateOnWindowResize: true,
-		observer: true,
-		observeParents: true,
-	});
-</script>
-
-<!-- Initialize Swiper about-us -->
-<script>
-	var swiper = new Swiper('.about-us__swiper-container', {
-		direction: 'vertical',
-		slidesPerView: 1,
-		mousewheel: true,
-		dynamicBullets: true,
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-			renderBullet: function (index, className) {
-				return '<span class="' + className + '"> 0' + (index + 1) + '</span>';
-			},
-		},
-		autoplay: {
-			delay: 5500,
-			disableOnInteraction: false,
-		},
-		loop: true,
-		updateOnWindowResize: true,
-		observer: true,
-		observeParents: true,
-	});
-</script>
 
 </html>

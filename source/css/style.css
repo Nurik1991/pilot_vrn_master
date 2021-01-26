@@ -1529,12 +1529,14 @@ aside {
   background-color: #eee !important;
 }
 
-.page__cat .category__offer {
+.page__cat .category__offer,
+.page__seat .category__offer {
   min-height: 270px;
   background-color: #eee;
 }
 
-.page__cat .search-block {
+.page__cat .search-block,
+.page__seat .search-block {
   margin-top: -135px;
   border: 1px solid #ebebeb;
   -webkit-box-sizing: border-box;
@@ -1546,7 +1548,8 @@ aside {
   margin-bottom: 70px;
 }
 
-.page__cat .search-block__select {
+.page__cat .search-block__select,
+.page__seat .search-block__select {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
@@ -1558,12 +1561,14 @@ aside {
           justify-content: right;
 }
 
-.page__cat .select {
+.page__cat .select,
+.page__seat .select {
   min-width: 250px;
   max-width: 250px;
 }
 
-.page__cat .select .button {
+.page__cat .select .button,
+.page__seat .select .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1582,13 +1587,15 @@ aside {
   margin: 0;
 }
 
-.page__cat .select__head {
+.page__cat .select__head,
+.page__seat .select__head {
   color: #797979;
   background: rgba(235, 235, 235, 0.14);
   border: 1px solid #ebebeb;
 }
 
-.page__cat .select__head::after {
+.page__cat .select__head::after,
+.page__seat .select__head::after {
   background: url(../img/Polygon2.svg) no-repeat center/cover;
 }
 
@@ -1695,6 +1702,7 @@ aside {
 
 .pagination .pagination__block-link {
   font-size: 15px;
+  color: #797979;
   border: 2px solid #e3e3e3;
   padding: 6px 11px;
   transition: 0.3s;
@@ -1702,15 +1710,22 @@ aside {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+  border-radius: 3px;
 }
 
 .pagination .pagination__block-link:hover {
+  color: #2c2419;
   border: 2px solid #ffa401;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+}
+
+.pagination .pagination__block-link.active {
+  border: 2px solid #ffa401;
+  color: #2c2419;
 }
 
 /* -----------	конец Страница брендов  -----------	*/
