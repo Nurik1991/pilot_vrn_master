@@ -1730,6 +1730,18 @@ aside {
 
 /* -----------	конец Страница брендов  -----------	*/
 /* -----------	Страница Карточка товара  -----------	*/
+.single-product {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 /* -----------	конец Карточка товара -----------	*/
 .footer {
   margin-top: 140px;
