@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Корзина</title>
+	<link rel="stylesheet" href="source/css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__logo">
+				<a href="index.html">
+					<img class="logo" src="source/img/logo.svg" alt="Авточехлы и Аксессуары">
+				</a>
+			</div>
+			<div class="header__menu">
+				<ul class="menu">
+					<li class="menu__item have-sub">
+						<a class="menu__link" href="#0">Каталог</a>
+
+						<ol class="sub-menu">
+							<li class="sub-menu__links"><a href="#0">Чехлы</a></li>
+							<li class="sub-menu__links"><a href="#0">Накидки</a></li>
+							<li class="sub-menu__links"><a href="#0">Коврики</a></li>
+							<li class="sub-menu__links"><a href="#0">Аксессуары</a></li>
+						</ol>
+
+					</li>
+					<li class="menu__item have-sub">
+						<a class="menu__link" href="#0">Услуги</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#0">Доставка и оплата</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#0">О нас</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#0">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__tel">
+				<ul class="header__tel-links">
+					<li class="number"><a href="tel:8 (473) 232-37-98">8 (473) 232-37-98</a></li>
+					<li class="callback"><a href="#0">Заказать звонок</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- хлебные крошки -->
+	<section class="breadcrumb">
+		<div class="container">
+
+			<ul class="breadcrumb-list">
+
+				<li class="breadcrumb-list__item">
+					<a class="breadcrumb-list__link" href="index.html">Главная</a>
+				</li>
+
+				<li class="breadcrumb-list__item">
+					<a class="breadcrumb-list__link" href="#0">Контакты</a>
+				</li>
+
+			</ul>
+
+		</div>
+	</section>
+	<!-- конец хлебные  крошки -->
+	
+	<!-- Плавающая корзина + подняться наверх + избранное -->
+	<div class="offer__bookmarks">
+
+		<div class="offer__buy">
+			<a href="#0" class="offer__buy-button">
+				<img class="svg" src="source/img/buy.svg" alt="Купить">
+				<div class="offer__buy-count">3</div>
+			</a>
+		</div>
+
+		<div class="offer__like">
+			<a href="#0" class="offer__like-button">
+				<img class="svg" src="source/img/like_offer.svg" alt="+1">
+				<div class="offer__like-count">0</div>
+			</a>
+		</div>
+
+		<!-- to the top -->
+		<div class="to-top to-top__scrollto" id="top">
+			<a class="to-top__link" href="#top" id="to-top__link-id"><img src="source/img/to_the_top.svg"></a>
+		</div>
+	</div>
+	<!-- end to the top -->
+	<!-- Плавающая корзина + подняться наверх + избранное -->
+	<!--Основной блок корзины -->
+
+	<section class="basket">
+		<h2>В корзине <span class="basket__cout">3</span>  товара</h2>
+		<div class="container">
+			
+			<!-- блок с продуктами -->
+			<div class="basket__products">
+				<div class="basket__products-one">
+					<div class="cart__img">
+						<img src="source/img/audi100a.jpg" alt="">
+					</div>
+					<div class="card__title">
+						<p class="name">АВТОЧЕХОЛ ДЛЯ AUDI 100 45 СЕДАН (1990-1994)</p>
+						<span class="material">Материал: Экокожа</span>
+					</div>
+					<!-- <div class="card__material">
+						
+					</div> -->
+					<div class="basket__couter"></div>
+					<div class="card__price">
+						<ul class="card__price">
+							<li class="old-price"><span>2 800 ₽</span></li>
+							<li class="new-price"><span>2 300 ₽</span></li>
+						</ul>
+					</div>
+					<div class="card__like-button">
+						<img class="svg" src="source/img/like.svg" alt="+1">
+					</div>
+				</div>
+
+			</div>
+			<!-- конец блок с продуктами -->
+
+			<!-- Блок с информацией о цене и заказе -->
+			<div class="basket__info">
+				
+					<div class="basket__total-prace">
+						<p class="title">Товары <span>(3)</span></p>
+						<p class="price">5 530 ₽</p>
+
+						<p class="title">Установка</p>
+						<p class="price">2 000 ₽</p>
+
+						<p class="title">Скидка на товары</p>
+						<p class="price">530 ₽</p>
+
+						<p class="title">Итого</p>
+						<p class="price">7 530 ₽</p>
+
+					</div>
+					<div class="button">
+						<a href="#">Отправить</a>
+					</div>
+					<div class="basket__promocode">
+						<input type="text" placeholder="Пропокод на скидку">
+						<div class="button">
+							<a href="#">Отправить</a>
+						</div>
+					</div>
+			</div>
+			<!-- Конец  Блок с информацией о цене и заказе-->
+
+		</div>
+	</section>
+
+	<!-- Конец Основной блок корзины  -->
+
+
+
+
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__rights-reserved">© 2020 PILOT - VRN. Все права защищены.</div>
+			<div class="footer__social-links">
+				<div class="social__links-instagram">
+					<a href="#0" target="_blank"><img src="source/img/social/instagramm.svg"></a>
+				</div>
+				<div class="social__links-instagram">
+					<a href="#0" target="_blank"><img src="source/img/social/vk.svg"></a>
+				</div>
+				<div class="telephone">
+					<a href="tel:8 (473) 232-37-98">8 (473) 232-37-98</a>
+				</div>
+			</div>
+			<div class="footer__made-by">
+				<span>Разработано в
+					<a href="https://stebnev-studio.ru/" title="Разработка и продвижение сайтов"
+						target="_blank">Stebnev-Studio</a>
+				</span>
+			</div>
+		</div>
+	</footer>
+
+</body>
+<!-- maska -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+	type="text/javascript"></script>
+<!-- end maska -->
+<script src="source/js/main.js"></script>
+
+</html>
