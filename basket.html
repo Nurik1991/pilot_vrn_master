@@ -105,7 +105,7 @@
 			<!-- блок с продуктами -->
 			<div class="basket__products">
 				<div class="basket__products-one">
-					<div class="cart__img">
+					<div class="card__image">
 						<img src="source/img/audi100a.jpg" alt="">
 					</div>
 					<div class="card__title">
@@ -124,6 +124,10 @@
 					</div>
 					<div class="card__like-button">
 						<img class="svg" src="source/img/like.svg" alt="+1">
+						
+					</div>
+					<div class="card__delete-button">
+						<img class="svg" src="source/img/delete.svg" alt="+1">
 					</div>
 				</div>
 
@@ -134,21 +138,26 @@
 			<div class="basket__info">
 				
 					<div class="basket__total-prace">
-						<p class="title">Товары <span>(3)</span></p>
-						<p class="price">5 530 ₽</p>
 
-						<p class="title">Установка</p>
-						<p class="price">2 000 ₽</p>
-
-						<p class="title">Скидка на товары</p>
-						<p class="price">530 ₽</p>
-
-						<p class="title">Итого</p>
-						<p class="price">7 530 ₽</p>
-
+						<div class="basket__line">
+							<p class="basket-title">Товары <span>(3)</span></p>
+							<p class="basket-price">5 530 ₽</p>
+						</div>
+                      <div class="basket__line">
+						<p class="basket-title">Установка</p>
+						<p class="basket-price">2 000 ₽</p>
+					  </div>
+					  <div class="basket__line">
+						<p class="basket-title">Скидка на товары</p>
+						<p class="basket-price">530 ₽</p>
+					  </div>
+					  <div class="basket__line">
+						<p class="basket-title">Итого</p>
+						<p class="basket-price">7 530 ₽</p>
+					  </div>
 					</div>
 					<div class="button">
-						<a href="#">Отправить</a>
+						<a href="#">ОФОРМИТЬ ЗАКАЗ</a>
 					</div>
 					<div class="basket__promocode">
 						<input type="text" placeholder="Пропокод на скидку">

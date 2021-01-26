@@ -2265,6 +2265,11 @@ aside {
 .basket h2 {
   text-align: center;
   font-size: 37px;
+  padding-bottom: 69px;
+}
+
+.basket .basket__products {
+  margin-right: 62px;
 }
 
 .basket .basket__products .basket__products-one {
@@ -2272,6 +2277,129 @@ aside {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-top: 1px dashed #D2D2D2;
+  border-bottom: 1px dashed #D2D2D2;
+  padding: 40px 0px 40px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.basket .basket__products .card__title {
+  overflow: initial;
+  max-height: 100%;
+}
+
+.basket .basket__products .card__title p {
+  padding-bottom: 10px;
+}
+
+.basket .basket__products .material {
+  color: #797979;
+  font-weight: normal;
+  display: block;
+}
+
+.basket .basket__products .card__price {
+  display: block;
+}
+
+.basket .basket__products .old-price {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 11px;
+}
+
+.basket .basket__products .old-price::after {
+  width: 100%;
+  left: 0px;
+}
+
+.basket .basket__products .card__like-button {
+  top: 40px;
+  right: 0;
+}
+
+.basket .basket__products .card__image img {
+  padding: 0px;
+  max-width: 120px;
+  max-height: 120px;
+  min-height: 120px;
+}
+
+.basket .basket__info .basket__total-prace {
+  background-color: #F1F1F1;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.basket .basket__info .basket__line {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+.basket .basket__info .basket-title {
+  padding: 50px 0px 20px 30px;
+  color: #1D170F;
+}
+
+.basket .basket__info .basket-title:last-child {
+  font-weight: bold;
+}
+
+.basket .basket__info .basket-price {
+  padding: 50px 30px 20px 0px;
+  text-align: right;
+}
+
+.basket .basket__info .basket__line:nth-child(3) p.basket-price {
+  color: #C98100;
+}
+
+.basket .basket__info .basket__line:last-child p.basket-price,
+.basket .basket__info .basket__line:last-child p.basket-title {
+  font-weight: bold;
+}
+
+.basket .basket__info .button {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #2C2419;
+}
+
+.basket .basket__info .basket__promocode {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
+  margin-top: 70px;
+}
+
+.basket .basket__info .basket__promocode .button {
+  width: 105%;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #2C2419;
+  padding: 12px 0 0 0;
+  margin-left: -10px;
+}
+
+.basket .basket__info .basket__promocode input {
+  padding: 10px;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  background: rgba(225, 218, 208, 0.1);
+}
+
+.basket .basket__info .basket__promocode input:focus {
+  border: 1px solid #EEEEEE;
+  outline: none;
 }
 
 /* ====================Мобильная версия================= */

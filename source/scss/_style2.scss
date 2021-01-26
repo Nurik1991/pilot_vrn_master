@@ -289,17 +289,159 @@
 	h2 {
 		text-align: center;
 		font-size: 37px;
+		padding-bottom: 69px;
 	}
 
 	.basket__products {
+		margin-right: 62px;
+
 		.basket__products-one {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			border-top: 1px dashed #D2D2D2;
+			border-bottom: 1px dashed #D2D2D2;
+			padding: 40px 0px 40px 0px;
+			align-items: center;
+			justify-items: center;
+		}
+
+		.card__title {
+			overflow: initial;
+			max-height: 100%;
+
+			p {
+				padding-bottom: 10px;
+			}
+
+		}
+
+		.material {
+			color: #797979;
+			// margin-bottom: 10px;
+			font-weight: normal;
+			// padding-top: 10px;
+			display: block;
+		}
+
+		.card__price {
+			display: block;
+		}
+
+		.old-price {
+			margin: 0;
+			text-align: center;
+			padding-bottom: 11px;
+		}
+
+		.old-price::after {
+			width: 100%;
+			left: 0px;
+		}
+
+		.card__like-button {
+			top: 40px;
+			right: 0;
+		}
+
+
+
+		.card__image img {
+			padding: 0px;
+			// display: -webkit-box;
+			// display: -ms-flexbox;
+			// display: flex;
+			// margin: 0 auto;
+			// -o-object-fit: cover;
+			// object-fit: cover;
+			// -o-object-position: center;
+			// object-position: center;
+			max-width: 120px;
+			max-height: 120px;
+			min-height: 120px;
 		}
 
 	}
 
+	.basket__info {
+		.basket__total-prace {
+			background-color: #F1F1F1;
+			border-radius: 5px;
+			margin-bottom: 30px;
+		}
 
+
+		.basket__line {
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+		}
+
+		.basket-title {
+			padding: 50px 0px 20px 30px;
+			color: #1D170F;
+		}
+
+		.basket-title:last-child {
+			font-weight: bold;
+		}
+
+		.basket-price {
+			padding: 50px 30px 20px 0px;
+			text-align: right;
+		}
+
+		.basket__line:nth-child(3) p.basket-price {
+			color: #C98100;
+
+		}
+
+
+
+		.basket__line:last-child p.basket-price,
+		.basket__line:last-child p.basket-title {
+
+			font-weight: bold;
+		}
+
+		.button {
+			width: 100%;
+			text-align: center;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #2C2419;
+
+		}
+
+		.basket__promocode {
+			display: grid;
+
+			grid-template-columns: 65% 35%;
+			margin-top: 70px;
+
+			.button {
+				width: 105%;
+				text-align: center;
+				font-size: 14px;
+				text-transform: uppercase;
+				color: #2C2419;
+				padding: 12px 0 0 0;
+				margin-left: -10px;
+			}
+
+			input {
+				padding: 10px;
+				border: 1px solid #EEEEEE;
+				border-radius: 5px;
+				background: rgba(225, 218, 208, 0.1);
+			}
+
+			input:focus {
+				border: 1px solid #EEEEEE;
+				outline: none;
+			}
+		}
+
+
+	}
 
 
 
