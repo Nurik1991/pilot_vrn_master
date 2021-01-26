@@ -1272,6 +1272,7 @@ aside {
 		flex-wrap: wrap;
 		justify-content: start;
 		padding-bottom: 30px;
+		justify-content: right;
 	}
 	.select {
 		min-width: 250px;
@@ -1288,8 +1289,8 @@ aside {
 			margin: 0;
 		}
 	}
-	.select__input {
-	}
+	// .select__input {
+	// }
 	.select__head {
 		color: #797979;
 		background: rgba(235, 235, 235, 0.14);
@@ -1304,26 +1305,55 @@ aside {
 	// .select__item {
 	// }
 }
+
+.page__seat {
+	.goods-block__container {
+		margin-bottom: 70px;
+	}
+}
+
 .reset__button {
 	display: inline-flex;
 	text-align: right;
 	font-size: 14px;
-	border-bottom: 1px solid #ffa401;
+	border-bottom: 2px solid #ffa401;
 	margin-left: 20px;
-	padding: 0 5px 2px 5px;
+	padding: 0 8px 5px 8px;
 	position: absolute;
 	right: 0;
-	bottom: -40px;
+	bottom: -50px;
 }
 
 // каталог брендов
 .brands {
+	.container {
+		flex-wrap: wrap;
+		grid-row-gap: 33px;
+		// grid-column-gap: 23px;
+		grid-column-gap: 30.5px;
+		justify-content: flex-start;
+	}
+
 	&-item {
 		background: #ffffff;
 		border: 1px solid #ebebeb;
 		box-sizing: border-box;
 		border-radius: 5px;
 		position: relative;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
+
+		&:hover {
+			box-shadow: 0px 5px 15px rgba(44, 36, 25, 0.14);
+			transition: 0.5s;
+			-webkit-transition: 0.5s;
+			-moz-transition: 0.5s;
+			-ms-transition: 0.5s;
+			-o-transition: 0.5s;
+		}
 	}
 	&-item-img {
 		width: 100%;
@@ -1353,9 +1383,45 @@ aside {
 	}
 }
 
+.pagination {
+	width: 100%;
+	margin-bottom: 15px;
+
+	.pagination__block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.pagination__block-link {
+		font-size: 15px;
+		border: 2px solid #e3e3e3;
+		padding: 6px 11px;
+		transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+
+		&:hover {
+			border: 2px solid $yellow;
+			transition: 0.3s;
+			-webkit-transition: 0.3s;
+			-moz-transition: 0.3s;
+			-ms-transition: 0.3s;
+			-o-transition: 0.3s;
+		}
+	}
+}
+
 // конец  каталог брендов
 
 /* -----------	конец Страница брендов  -----------	*/
+
+/* -----------	Страница Карточка товара  -----------	*/
+
+/* -----------	конец Карточка товара -----------	*/
 
 .footer {
 	margin-top: 140px;

@@ -1553,6 +1553,9 @@ aside {
       -ms-flex-pack: start;
           justify-content: start;
   padding-bottom: 30px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .page__cat .select {
@@ -1589,18 +1592,32 @@ aside {
   background: url(../img/Polygon2.svg) no-repeat center/cover;
 }
 
+.page__seat .goods-block__container {
+  margin-bottom: 70px;
+}
+
 .reset__button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   text-align: right;
   font-size: 14px;
-  border-bottom: 1px solid #ffa401;
+  border-bottom: 2px solid #ffa401;
   margin-left: 20px;
-  padding: 0 5px 2px 5px;
+  padding: 0 8px 5px 8px;
   position: absolute;
   right: 0;
-  bottom: -40px;
+  bottom: -50px;
+}
+
+.brands .container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-row-gap: 33px;
+  grid-column-gap: 30.5px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .brands-item {
@@ -1610,6 +1627,21 @@ aside {
           box-sizing: border-box;
   border-radius: 5px;
   position: relative;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.brands-item:hover {
+  -webkit-box-shadow: 0px 5px 15px rgba(44, 36, 25, 0.14);
+          box-shadow: 0px 5px 15px rgba(44, 36, 25, 0.14);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .brands-item-img {
@@ -1643,7 +1675,47 @@ aside {
   bottom: 0;
 }
 
+.pagination {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.pagination .pagination__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.pagination .pagination__block-link {
+  font-size: 15px;
+  border: 2px solid #e3e3e3;
+  padding: 6px 11px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.pagination .pagination__block-link:hover {
+  border: 2px solid #ffa401;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
 /* -----------	конец Страница брендов  -----------	*/
+/* -----------	Страница Карточка товара  -----------	*/
+/* -----------	конец Карточка товара -----------	*/
 .footer {
   margin-top: 140px;
   width: 100%;
