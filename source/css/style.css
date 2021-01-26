@@ -1609,6 +1609,7 @@ aside {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
+  position: relative;
 }
 
 .brands-item-img {
@@ -1636,6 +1637,10 @@ aside {
 
 .brands-item-link {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /* -----------	конец Страница брендов  -----------	*/
