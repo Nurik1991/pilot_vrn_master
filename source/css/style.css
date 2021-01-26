@@ -1530,12 +1530,12 @@ aside {
 }
 
 .page__cat .category__offer {
-  min-height: 210px;
+  min-height: 270px;
   background-color: #eee;
 }
 
 .page__cat .search-block {
-  margin-top: -75px;
+  margin-top: -135px;
   border: 1px solid #ebebeb;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1543,6 +1543,7 @@ aside {
   background: #ffffff;
   padding: 50px 130px;
   height: auto;
+  margin-bottom: 70px;
 }
 
 .page__cat .search-block__select {
@@ -1551,6 +1552,7 @@ aside {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  padding-bottom: 30px;
 }
 
 .page__cat .select {
@@ -1588,16 +1590,52 @@ aside {
 }
 
 .reset__button {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   text-align: right;
   font-size: 14px;
   border-bottom: 1px solid #ffa401;
   margin-left: 20px;
   padding: 0 5px 2px 5px;
+  position: absolute;
+  right: 0;
+  bottom: -40px;
 }
 
-.reset__button::after {
-  content: "";
+.brands-item {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.brands-item-img {
+  width: 100%;
+  height: auto;
+  max-height: 106px;
+  min-height: 106px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  max-width: 173px;
+}
+
+.brands-item-img img {
+  margin: 0 auto;
+  display: block;
+}
+
+.brands-item-title {
+  text-align: center;
+  padding: 24px 5px;
+}
+
+.brands-item-link {
+  position: absolute;
 }
 
 /* -----------	конец Страница брендов  -----------	*/

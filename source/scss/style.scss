@@ -1249,27 +1249,29 @@ aside {
 
 .page__cat {
 	.category__offer {
-		min-height: 210px;
+		min-height: 270px;
 		background-color: #eee;
 	}
-	.title {
-	}
-	.title-description {
-	}
-	.title-name {
-	}
+	// .title {
+	// }
+	// .title-description {
+	// }
+	// .title-name {
+	// }
 	.search-block {
-		margin-top: -75px;
+		margin-top: -135px;
 		border: 1px solid #ebebeb;
 		box-sizing: border-box;
 		border-radius: 5px;
 		background: #ffffff;
 		padding: 50px 130px;
 		height: auto;
+		margin-bottom: 70px;
 	}
 	.search-block__select {
 		flex-wrap: wrap;
 		justify-content: start;
+		padding-bottom: 30px;
 	}
 	.select {
 		min-width: 250px;
@@ -1297,23 +1299,56 @@ aside {
 			background: url(../img/Polygon2.svg) no-repeat center/cover;
 		}
 	}
-	.select__list {
-	}
-	.select__item {
-	}
+	// .select__list {
+	// }
+	// .select__item {
+	// }
 }
 .reset__button {
-	display: inline-block;
+	display: inline-flex;
 	text-align: right;
 	font-size: 14px;
 	border-bottom: 1px solid #ffa401;
 	margin-left: 20px;
 	padding: 0 5px 2px 5px;
+	position: absolute;
+	right: 0;
+	bottom: -40px;
+}
 
-	&::after {
-		content: "";
+// каталог брендов
+.brands {
+	&-item {
+		background: #ffffff;
+		border: 1px solid #ebebeb;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
+	&-item-img {
+		width: 100%;
+		height: auto;
+		max-height: 106px;
+		min-height: 106px;
+		overflow: hidden;
+		object-fit: cover;
+		object-position: center;
+		max-width: 173px;
+
+		img {
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	&-item-title {
+		text-align: center;
+		padding: 24px 5px;
+	}
+	&-item-link {
+		position: absolute;
 	}
 }
+
+// конец  каталог брендов
 
 /* -----------	конец Страница брендов  -----------	*/
 
