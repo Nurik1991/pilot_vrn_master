@@ -1740,6 +1740,29 @@ aside {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.single-product__preview-title {
+  font-size: 30px;
+  max-width: 690px;
+  margin-bottom: 45px;
+}
+
+.single-product__preview-image {
+  max-width: 690px;
+  min-height: 690px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
 }
 
 /* -----------	конец Карточка товара -----------	*/
