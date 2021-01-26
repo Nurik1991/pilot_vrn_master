@@ -17,6 +17,12 @@
 		margin-bottom: 67px;
 	}
 
+	h5 {
+		font-weight: normal;
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+
 	.checkout__enter-data {
 		width: 50%;
 		display: inline-block;
@@ -71,12 +77,20 @@
 		}
 	}
 
-	.checkout__shipping-payment {
+	.wrapperbg {
 		background-color: #f1f1f1;
 		border-radius: 5px;
-		margin-left: 30px;
 		padding-bottom: 50px;
 		padding-top: 25px;
+		margin-top: -10px;
+	}
+
+	.checkout__shipping-payment {
+		//background-color: #f1f1f1;
+		//border-radius: 5px;
+		margin-left: 30px;
+		//padding-bottom: 50px;
+		//padding-top: 25px;
 
 		.checkout__summa,
 		.checkout__sale,
