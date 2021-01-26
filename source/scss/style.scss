@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-	@include adaptiv-font(36, 18);
+	@include adaptiv-font(40, 18);
 	font-weight: 600;
 }
 
@@ -1240,6 +1240,82 @@ aside {
 	max-width: 650px;
 }
 /* -----------	Конец Плюсы компании block  -----------	*/
+
+/* -----------	Страница брендов  -----------	*/
+
+.silver {
+	background-color: #eee !important;
+}
+
+.page__cat {
+	.category__offer {
+		min-height: 210px;
+		background-color: #eee;
+	}
+	.title {
+	}
+	.title-description {
+	}
+	.title-name {
+	}
+	.search-block {
+		margin-top: -75px;
+		border: 1px solid #ebebeb;
+		box-sizing: border-box;
+		border-radius: 5px;
+		background: #ffffff;
+		padding: 50px 130px;
+		height: auto;
+	}
+	.search-block__select {
+		flex-wrap: wrap;
+		justify-content: start;
+	}
+	.select {
+		min-width: 250px;
+		max-width: 250px;
+
+		.button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-self: center;
+			align-content: center;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+		}
+	}
+	.select__input {
+	}
+	.select__head {
+		color: #797979;
+		background: rgba(235, 235, 235, 0.14);
+		border: 1px solid #ebebeb;
+
+		&::after {
+			background: url(../img/Polygon2.svg) no-repeat center/cover;
+		}
+	}
+	.select__list {
+	}
+	.select__item {
+	}
+}
+.reset__button {
+	display: inline-block;
+	text-align: right;
+	font-size: 14px;
+	border-bottom: 1px solid #ffa401;
+	margin-left: 20px;
+	padding: 0 5px 2px 5px;
+
+	&::after {
+		content: "";
+	}
+}
+
+/* -----------	конец Страница брендов  -----------	*/
 
 .footer {
 	margin-top: 140px;
