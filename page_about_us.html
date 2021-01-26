@@ -291,30 +291,17 @@
 						<input class="block-help__row-input" type="text" class="phone" placeholder="Телефон *">
 						<input class="block-help__row-input" type="text" class="phone" placeholder="Email *">
 
-						<div class="agree">123123</div>
+						<div class="agree">
+							<input id="contact__formch" type="checkbox" checked hidden />
+							<label for="contact__formch"><span> Я согласен(на) на обработку персональных
+									данных</span></label>
+						</div>
 
 						<div class="button">
 							<a href="#">Отправить</a>
 						</div>
 					</div>
 				</div>
-
-				<!-- <div class="row">
-					<div class="block-help__row-inputs">
-						<div class="checkout__enter-data">
-							<input type="text" class="name" placeholder="Имя*">
-							<input type="text" class="phone" placeholder="Телефон *">
-							<input type="text" class="phone" placeholder="Email *">
-							<label for="contact__formch">
-								<span> Я согласен(на) на обработку персональных
-									данных
-								</span>
-							</label>
-							<a href="#0">Отправить</a>
-						</div>
-					</div>
-
-				</div> -->
 
 			</div>
 		</div>
@@ -355,43 +342,10 @@
 	<!--  End Footer -->
 
 </body>
-<!--  Скрипты для Селекта -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
-
-<script>
-	jQuery(($) => {
-		$('.select').on('click', '.select__head', function () {
-			if ($(this).hasClass('open')) {
-				$(this).removeClass('open');
-				$(this).next().fadeOut();
-			} else {
-				$('.select__head').removeClass('open');
-				$('.select__list').fadeOut();
-				$(this).addClass('open');
-				$(this).next().fadeIn();
-			}
-		});
-
-		$('.select').on('click', '.select__item', function () {
-			$('.select__head').removeClass('open');
-			$(this).parent().fadeOut();
-			$(this).parent().prev().text($(this).text());
-			$(this).parent().prev().prev().val($(this).text());
-		});
-
-		$(document).click(function (e) {
-			if (!$(e.target).closest('.select').length) {
-				$('.select__head').removeClass('open');
-				$('.select__list').fadeOut();
-			}
-		});
-	});
-</script>
-<!--  конец Скрипты для Селекта -->
 
 <!-- maska -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
 	type="text/javascript"></script>
 <!-- end maska -->

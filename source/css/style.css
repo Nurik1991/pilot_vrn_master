@@ -146,6 +146,24 @@ a {
           justify-content: space-between;
 }
 
+::-moz-selection {
+  background: #ffa401;
+  /* Safari */
+  color: black;
+}
+
+::selection {
+  background: #ffa401;
+  /* Safari */
+  color: black;
+}
+
+::-moz-selection {
+  background: #ffa401;
+  /* Firefox */
+  color: black;
+}
+
 /* -----------	Основной стиль -----------	*/
 div,
 header,
@@ -1446,6 +1464,54 @@ aside {
   padding: 15px;
 }
 
+.block-help__bg label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-help__bg label span {
+  display: block;
+  max-width: 196px;
+  margin-top: 0px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.block-help__bg input[type="checkbox"]:checked + label::before {
+  border: 1px solid #fff;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/check.png);
+  background-position: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-filter: drop-shadow(0px 2px 10px rgba(44, 36, 25, 0.1));
+          filter: drop-shadow(0px 2px 10px rgba(44, 36, 25, 0.1));
+  border-radius: 3px;
+}
+
+.block-help__bg input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+  margin: 0 0px 0 0;
+  background-repeat: no-repeat;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.block-help__bg .button {
+  padding: 12px 50px;
+}
+
 .block-help__row-title {
   font-size: 40px;
   line-height: 150%;
@@ -1462,8 +1528,6 @@ aside {
   margin-top: 140px;
   width: 100%;
   min-height: 89px;
-  bottom: 0;
-  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1769,8 +1833,9 @@ aside {
   display: block;
   width: 50%;
   margin-top: 0px;
-  margin-left: 90px;
+  margin-left: 95px;
   text-align: left;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .contact .contact__form input[type="button"] {
@@ -1819,7 +1884,11 @@ aside {
   width: 20px;
   height: 20px;
   background-image: url(../img/check.png);
-  background-position: 4px 5px;
+  background-position: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-filter: drop-shadow(0px 2px 10px rgba(44, 36, 25, 0.1));
+          filter: drop-shadow(0px 2px 10px rgba(44, 36, 25, 0.1));
+  border-radius: 3px;
 }
 
 /*--------конец Контакты -----*/
