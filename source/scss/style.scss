@@ -1445,9 +1445,19 @@ aside {
 	border: 1px solid #eeeeee;
 }
 .single-product__description {
+	max-width: 575px;
 }
-.description__choose-color {
+
+.description__choose-image {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	img {
+		max-width: 49px;
+	}
 }
+
 .description__addition {
 }
 .description__price {
