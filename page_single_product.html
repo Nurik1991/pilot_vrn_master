@@ -197,7 +197,14 @@
 							<span>2800 ₽</span>
 						</div>
 					</div>
-					<div class="description__counter">1</div>
+
+					<div class="description__counter">
+						<div class="number">
+							<span class="minus">-</span>
+							<input type="text" value="1" />
+							<span class="plus">+</span>
+						</div>
+					</div>
 					<div class="description__buttons">1</div>
 					<div class="description__text">1</div>
 
@@ -261,6 +268,24 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<script>
+	$(document).ready(function () {
+		$('.minus').click(function () {
+			var $input = $(this).parent().find('input');
+			var count = parseInt($input.val()) - 1;
+			count = count < 1 ? 1 : count;
+			$input.val(count);
+			$input.change();
+			return false;
+		});
+		$('.plus').click(function () {
+			var $input = $(this).parent().find('input');
+			$input.val(parseInt($input.val()) + 1);
+			$input.change();
+			return false;
+		});
+	});
+</script>
 <script src="source/js/main.js"></script>
 
 
