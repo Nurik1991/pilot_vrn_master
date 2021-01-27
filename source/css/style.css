@@ -2519,18 +2519,16 @@ aside {
 
 .basket .basket__products .card__delete-button .svg {
   background: #ebebeb;
-  width: 60px;
-  height: 60px;
+  width: 42px;
+  height: 42px;
   -o-object-fit: contain;
   object-fit: contain;
   -o-object-position: center;
   object-position: center;
-  position: absolute;
-  top: -9px;
-  right: -10px;
+  padding: 10px;
 }
 
-.basket .basket__products .card__delete-button:hover path {
+.basket .basket__products .card__delete-button:hover svg {
   fill: red;
   stroke: red;
 }
