@@ -136,7 +136,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -151,7 +151,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked + label:before {
+		input[type="radio"]:checked+label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -167,7 +167,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -182,7 +182,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked + label:before {
+		input[type="radio"]:checked+label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -228,7 +228,7 @@
 			display: none;
 		}
 
-		input[type="checkbox"] + label:before {
+		input[type="checkbox"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 20px;
@@ -242,7 +242,7 @@
 			left: 30px;
 		}
 
-		input[type="checkbox"]:checked + label::before {
+		input[type="checkbox"]:checked+label::before {
 			border: 1px solid #fff;
 			width: 20px;
 			height: 20px;
@@ -464,5 +464,83 @@
 				outline: none;
 			}
 		}
+	}
+}
+
+/*--- End Корзина ----*/
+
+/*--- start Страница услуги ----*/
+
+.tabs__head {
+	margin: 30px 0px 30px 0px;
+
+	.tabs__button {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: 0 auto;
+		justify-items: center;
+		grid-gap: 30px;
+
+		.button {
+			grid-column: auto;
+			grid-row: auto;
+			margin: 0;
+			text-transform: uppercase;
+			background-color: #eeeeee;
+			width: 210px;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.tab-active {
+			background-color: #ffa401;
+		}
+
+	}
+}
+
+.our-work {
+	.title-description {
+		text-align: center;
+	}
+
+	.title-name {
+		text-align: center;
+		padding-bottom: 0px;
+	}
+
+	.swiper-wrapper {
+		padding-bottom: 150px;
+	}
+
+	.swiper-pagination {
+		margin-bottom: -10px;
+	}
+}
+
+.our-work__swiper-container {
+	margin-bottom: 140px;
+
+	.swiper-pagination-bullet {
+		width: 5px;
+		height: 5px;
+		display: inline-block;
+		border-radius: 50%;
+		background: #797979;
+
+		//opacity: .2;
+	}
+
+
+	.swiper-pagination-bullet-active {
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		border-radius: 50%;
+		background: #fff;
+		border: 2px solid #FFA401;
+		margin-bottom: -3px !important;
+
+		//opacity: .2;
 	}
 }

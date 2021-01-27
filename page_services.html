@@ -109,14 +109,103 @@
 		<!-- конец хлебные  крошки -->
 		 <!-- Кнопки переключения табов  -->
 		 
-		 <section class="tabs">
+		 <section class="tabs__head">
+			 <div class="container">
 			 <div class="tabs__button">
-				 <div class="tab-one" id="first">Пошив на заказ</div>
-				 <div class="tab-two" id="second">Установка</div>
-				 <div class="tab-three" id="third">ПОДШИВ</div>
+					<div class="button tab-active" ><a href="#first">Пошив на заказ</a> </div>
+					<div class=" button" ><a href="#second">Установка</a></div>
+					<div class=" button" ><a href="#third">ПОДШИВ</a></div>
+				</div>
 			 </div>
 		 </section>
 		 <!-- Конец Кнопки переключения табов -->
+		 	
+
+		 <!-- Блок контента табов  -->
+		 <section class="about-us " id="first">
+			<div class="container">
+				<div class="about-us__swiper-container swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
+						<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
+						<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+	
+				<div class="about-us__text">
+	
+					<!-- Заголовок и описание на сайте повторяются -->
+					<div class="title without-button">
+						<div class="title-description">
+							<span>ПО ИНДИВИДУАЛЬНЫМ МЕРКАМ</span>
+						</div>
+						<div class="title-name">
+							<h2>Пошив на заказ</h2>
+						</div>
+						<div class="title-text">
+							<p>Компания PILOT-VRN официально представляет в Воронеже и области Российскую швейную ассоциацию
+								компаний «АВТОПИЛОТ».Мы впервые вышли на рынок в 1999 году. Целью деятельности нашего
+								интернет-магазина является обеспечение уюта и комфорта для автомобилиста и его пассажиров.
+							</p>
+	
+							<p>Разнообразие цветовой гаммы и материалов позволяет создавать оригинальную продукцию,
+								способную удовлетворить любого клиента.
+								Лозунг нашей компании: «Делаем с любовью – продаем с гордостью».
+							</p>
+						</div>
+	
+						<div class="title-button">
+							<input type="button" value="Подробнее" class="button">
+						</div>
+					</div>
+					<!-- Конец - Заголовок и описание на сайте повторяются -->
+	
+				</div>
+	
+			</div>
+	
+			<div class="about-us__whitespace"></div>
+	
+		</section>
+
+		 <!-- Конец Блок контента табов  -->
+
+		 <!-- Слайдер наши работы  -->
+		 <section class="our-work">
+			<div class="title-description">
+				<span>ФОТО пошива на заказ</span>
+			</div>
+			<div class="title-name">
+				<h2>Наши работы</h2>
+			</div>
+			<div class="container">
+				
+				<div class="our-work__swiper-container swiper-container ">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"> <div class="swiper-zoom-container"> <img src="source/img/our_work/our1.jpg" alt=""></div></div>
+						<div class="swiper-slide"> <div class="swiper-zoom-container"> <img src="source/img/our_work/our2.jpg" alt=""></div></div>
+						<div class="swiper-slide"> <div class="swiper-zoom-container"> <img src="source/img/our_work/our3.jpg" alt=""></div></div>
+						<div class="swiper-slide"> <div class="swiper-zoom-container"> <img src="source/img/our_work/our4.jpg" alt=""></div></div>
+						<div class="swiper-slide"> <div class="swiper-zoom-container"> <img src="source/img/our_work/our5.jpg" alt=""></div></div>
+						<div class="swiper-slide"> <div class="swiper-zoom-container"> <img src="source/img/our_work/our6.jpg" alt=""></div></div>
+					</div>
+					<div class="swiper-pagination"></div>
+					
+				</div>
+			
+
+		</section>
+
+		 <!-- Конец Слайдер наши работы  -->
+
+
+
+		 <section class="test" id="second"></section>
+
+
+
 		<!--   Блок Нужна помощь -->
 	<section class="block-help">
 		<div class="container">
@@ -227,5 +316,34 @@
 		observeParents: true,
 	});
 </script>
+<!-- our worc init -->
+<script>
+  var swiper = new Swiper('.our-work__swiper-container', {
+      slidesPerView: 1,
+	  spaceBetween: 10,
+	  loop:true,
+	  
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 6,
+          spaceBetween: 50,
+        },
+      }
+    });
+</script>
+
 
 </html>
