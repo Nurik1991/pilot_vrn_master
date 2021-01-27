@@ -1785,36 +1785,53 @@ aside {
   max-width: 49px;
 }
 
-.numbers {
-  margin: 100px;
+.number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.numbers span {
+.number span {
   cursor: pointer;
 }
 
-.numbers .minus,
-.numbers .plus {
-  width: 20px;
-  height: 20px;
-  background: #f2f2f2;
-  border-radius: 4px;
-  padding: 8px 5px 8px 5px;
-  border: 1px solid #ddd;
-  display: inline-block;
-  vertical-align: middle;
+.number .minus,
+.number .plus {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b1b1b1;
+  width: 29px;
+  height: 29px;
 }
 
-.numbers input {
-  height: 34px;
-  width: 100px;
+.number input {
+  height: 35px;
+  width: 44px;
   text-align: center;
-  font-size: 26px;
-  border: 1px solid #ddd;
+  font-size: 15px;
+  border: 1px solid #ebebeb;
   border-radius: 4px;
   display: inline-block;
   vertical-align: middle;
+  margin: 10px 3px;
 }
 
 /* -----------	конец Карточка товара -----------	*/
@@ -2341,7 +2358,7 @@ aside {
   width: 22px;
   margin: 0 0px 0 0;
   background-repeat: no-repeat;
-  border: 1px solid #C5C5C5;
+  border: 1px solid #c5c5c5;
   border-radius: 3px;
   bottom: 27px;
   left: 30px;
@@ -2349,7 +2366,7 @@ aside {
 }
 
 .checkout__shipping-payment .checkout__shipping input[type="radio"]:checked + label:before {
-  border: 1px solid #C5C5C5;
+  border: 1px solid #c5c5c5;
   width: 22px;
   height: 22px;
   background-image: url(../img/circle.png);
@@ -2368,7 +2385,7 @@ aside {
   width: 22px;
   margin: 0 0px 0 0;
   background-repeat: no-repeat;
-  border: 1px solid #C5C5C5;
+  border: 1px solid #c5c5c5;
   border-radius: 3px;
   bottom: 27px;
   left: 30px;
@@ -2376,7 +2393,7 @@ aside {
 }
 
 .checkout__shipping-payment .checkout__payment input[type="radio"]:checked + label:before {
-  border: 1px solid #C5C5C5;
+  border: 1px solid #c5c5c5;
   width: 22px;
   height: 22px;
   background-image: url(../img/circle.png);
@@ -2410,7 +2427,7 @@ aside {
 }
 
 .checkout__shipping-payment .checkout__info a {
-  color: #5D5D5D;
+  color: #5d5d5d;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
@@ -2431,7 +2448,7 @@ aside {
   width: 20px;
   margin: 0 0px 0 0;
   background-repeat: no-repeat;
-  border: 1px solid #C5C5C5;
+  border: 1px solid #c5c5c5;
   border-radius: 3px;
   bottom: 27px;
   left: 30px;
@@ -2492,9 +2509,9 @@ aside {
 .basket .basket__products .basket__products-one {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  border-top: 1px dashed #D2D2D2;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 0.3fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;
+  border-top: 1px dashed #d2d2d2;
   padding: 40px 0px 40px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2573,7 +2590,7 @@ aside {
 }
 
 .basket .basket__info .basket__total-prace {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   border-radius: 5px;
   margin-bottom: 30px;
 }
@@ -2587,7 +2604,7 @@ aside {
 
 .basket .basket__info .basket-title {
   padding: 50px 0px 20px 30px;
-  color: #1D170F;
+  color: #1d170f;
 }
 
 .basket .basket__info .basket-title:last-child {
@@ -2600,7 +2617,7 @@ aside {
 }
 
 .basket .basket__info .basket__line:nth-child(3) p.basket-price {
-  color: #C98100;
+  color: #c98100;
 }
 
 .basket .basket__info .basket__line:last-child p.basket-price,
@@ -2613,7 +2630,7 @@ aside {
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
-  color: #2C2419;
+  color: #2c2419;
 }
 
 .basket .basket__info .basket__promocode {
@@ -2629,20 +2646,20 @@ aside {
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
-  color: #2C2419;
+  color: #2c2419;
   padding: 12px 0 0 0;
   margin-left: -10px;
 }
 
 .basket .basket__info .basket__promocode input {
   padding: 10px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-radius: 5px;
   background: rgba(225, 218, 208, 0.1);
 }
 
 .basket .basket__info .basket__promocode input:focus {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   outline: none;
 }
 
