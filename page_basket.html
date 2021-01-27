@@ -71,7 +71,7 @@
 		</div>
 	</section>
 	<!-- конец хлебные  крошки -->
-	
+
 	<!-- Плавающая корзина + подняться наверх + избранное -->
 	<div class="offer__bookmarks">
 
@@ -99,9 +99,9 @@
 	<!--Основной блок корзины -->
 
 	<section class="basket">
-		<h2>В корзине <span class="basket__cout">3</span>  товара</h2>
+		<h2>В корзине <span class="basket__cout">3</span> товара</h2>
 		<div class="container">
-			
+
 			<!-- блок с продуктами -->
 			<div class="basket__products">
 				<div class="basket__products-one">
@@ -115,7 +115,19 @@
 					<!-- <div class="card__material">
 						
 					</div> -->
-					<div class="basket__couter"></div>
+					<div class="basket__couter">
+
+						<div class="number">
+							<span class="minus">
+								<img src="source/img/minus.svg">
+							</span>
+							<input type="text" value="1" />
+							<span class="plus">
+								<img src="source/img/plus.svg">
+							</span>
+						</div>
+
+					</div>
 					<div class="card__price">
 						<ul class="card__price">
 							<li class="old-price"><span>2 800 ₽</span></li>
@@ -124,7 +136,7 @@
 					</div>
 					<div class="card__like-button">
 						<img class="svg" src="source/img/like.svg" alt="+1">
-						
+
 					</div>
 					<div class="card__delete-button">
 						<img class="svg" src="source/img/delete.svg" alt="+1">
@@ -141,7 +153,20 @@
 					<!-- <div class="card__material">
 						
 					</div> -->
-					<div class="basket__couter"></div>
+					<div class="basket__couter">
+
+						<div class="number">
+							<span class="minus">
+								<img src="source/img/minus.svg">
+							</span>
+							<input type="text" value="1" />
+							<span class="plus">
+								<img src="source/img/plus.svg">
+							</span>
+						</div>
+
+					</div>
+
 					<div class="card__price">
 						<ul class="card__price">
 							<li class="old-price"><span>2 800 ₽</span></li>
@@ -150,7 +175,7 @@
 					</div>
 					<div class="card__like-button">
 						<img class="svg" src="source/img/like.svg" alt="+1">
-						
+
 					</div>
 					<div class="card__delete-button">
 						<img class="svg" src="source/img/delete.svg" alt="+1">
@@ -167,7 +192,20 @@
 					<!-- <div class="card__material">
 						
 					</div> -->
-					<div class="basket__couter"></div>
+					<div class="basket__couter">
+
+						<div class="number">
+							<span class="minus">
+								<img src="source/img/minus.svg">
+							</span>
+							<input type="text" value="1" />
+							<span class="plus">
+								<img src="source/img/plus.svg">
+							</span>
+						</div>
+
+					</div>
+
 					<div class="card__price">
 						<ul class="card__price">
 							<li class="old-price"><span>2 800 ₽</span></li>
@@ -176,7 +214,7 @@
 					</div>
 					<div class="card__like-button">
 						<img class="svg" src="source/img/like.svg" alt="+1">
-						
+
 					</div>
 					<div class="card__delete-button">
 						<img class="svg" src="source/img/delete.svg" alt="+1">
@@ -188,35 +226,35 @@
 
 			<!-- Блок с информацией о цене и заказе -->
 			<div class="basket__info">
-				
-					<div class="basket__total-prace">
 
-						<div class="basket__line">
-							<p class="basket-title">Товары <span>(3)</span></p>
-							<p class="basket-price">5 530 ₽</p>
-						</div>
-                      <div class="basket__line">
+				<div class="basket__total-prace">
+
+					<div class="basket__line">
+						<p class="basket-title">Товары <span>(3)</span></p>
+						<p class="basket-price">5 530 ₽</p>
+					</div>
+					<div class="basket__line">
 						<p class="basket-title">Установка</p>
 						<p class="basket-price">2 000 ₽</p>
-					  </div>
-					  <div class="basket__line">
+					</div>
+					<div class="basket__line">
 						<p class="basket-title">Скидка на товары</p>
 						<p class="basket-price">530 ₽</p>
-					  </div>
-					  <div class="basket__line">
+					</div>
+					<div class="basket__line">
 						<p class="basket-title">Итого</p>
 						<p class="basket-price">7 530 ₽</p>
-					  </div>
 					</div>
+				</div>
+				<div class="button">
+					<a href="#">ОФОРМИТЬ ЗАКАЗ</a>
+				</div>
+				<div class="basket__promocode">
+					<input type="text" placeholder="Пропокод на скидку">
 					<div class="button">
-						<a href="#">ОФОРМИТЬ ЗАКАЗ</a>
+						<a href="#">Отправить</a>
 					</div>
-					<div class="basket__promocode">
-						<input type="text" placeholder="Пропокод на скидку">
-						<div class="button">
-							<a href="#">Отправить</a>
-						</div>
-					</div>
+				</div>
 			</div>
 			<!-- Конец  Блок с информацией о цене и заказе-->
 
@@ -260,5 +298,26 @@
 	type="text/javascript"></script>
 <!-- end maska -->
 <script src="source/js/main.js"></script>
+
+
+<script>
+	$(document).ready(function () {
+		$('.minus').click(function () {
+			var $input = $(this).parent().find('input');
+			var count = parseInt($input.val()) - 1;
+			count = count < 1 ? 1 : count;
+			$input.val(count);
+			$input.change();
+			return false;
+		});
+		$('.plus').click(function () {
+			var $input = $(this).parent().find('input');
+			$input.val(parseInt($input.val()) + 1);
+			$input.change();
+			return false;
+		});
+	});
+</script>
+
 
 </html>

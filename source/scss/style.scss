@@ -1479,6 +1479,43 @@ aside {
 .reviews {
 }
 
+.number {
+	display: flex;
+	align-items: center;
+
+	span {
+		cursor: pointer;
+	}
+
+	.minus,
+	.plus {
+		background: #ffffff;
+		border: 1px solid #ebebeb;
+		box-sizing: border-box;
+		border-radius: 5px;
+		display: inline-flex;
+		text-align: center;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+
+		color: #b1b1b1;
+		width: 29px;
+		height: 29px;
+	}
+	input {
+		height: 35px;
+		width: 44px;
+		text-align: center;
+		font-size: 15px;
+		border: 1px solid #ebebeb;
+		border-radius: 4px;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 10px 3px;
+	}
+}
+
 /* -----------	конец Карточка товара -----------	*/
 
 .footer {
