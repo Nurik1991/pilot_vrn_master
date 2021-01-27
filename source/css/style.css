@@ -1765,6 +1765,26 @@ aside {
   border: 1px solid #eeeeee;
 }
 
+.single-product__description {
+  max-width: 575px;
+}
+
+.description__choose-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.description__choose-image img {
+  max-width: 49px;
+}
+
 /* -----------	конец Карточка товара -----------	*/
 .footer {
   margin-top: 140px;
