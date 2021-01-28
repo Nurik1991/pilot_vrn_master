@@ -1769,6 +1769,143 @@ aside {
   max-width: 575px;
 }
 
+.additional-block div {
+  border: 0px solid red;
+}
+
+.single-product__preview-recomended {
+  width: 50%;
+}
+
+.single-product__preview-recomended-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.recommended {
+  margin: 10px;
+  padding: 10px;
+}
+
+.recommended .swiper-slide {
+  padding-bottom: 50px;
+}
+
+.recommended .swiper-pagination-bullet {
+  background: #797979 !important;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07) !important;
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07) !important;
+}
+
+.recommended .swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+  border: 2px solid #ffa401 !important;
+  background: white !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.recommended .swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recommended .recomended-card {
+  position: relative;
+  border: 1px solid #eeeeee;
+  padding: 0 10px;
+  padding-bottom: 12px;
+}
+
+.recommended .recomended-card:hover {
+  -webkit-box-shadow: 0px 5px 15px rgba(44, 36, 25, 0.14);
+          box-shadow: 0px 5px 15px rgba(44, 36, 25, 0.14);
+}
+
+.recommended .recomended-card .recomended-card__image {
+  padding: 26px 10px 10px 10px;
+}
+
+.recommended .recomended-card .recomended-card__title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  color: #2c2419;
+  margin-bottom: 8px;
+}
+
+.recommended .recomended-card .old-price {
+  font-size: 12px;
+}
+
+.recommended .recomended-card .new-price {
+  font-size: 16px;
+}
+
+.recommended .recomended-card .card__buy-button {
+  position: absolute;
+  right: 0px !important;
+  bottom: -18px !important;
+}
+
+.recommended .recomended-card .card__buy-button .svg {
+  width: 33px;
+  height: 33px;
+  padding: 6px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.recommended .recomended-card .recomended-card__link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.reviews {
+  max-width: 575px;
+  width: 100%;
+}
+
+.reviews .reviews-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reviews .button {
+  margin: 0;
+}
+
+.additional-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .description__choose-image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1779,10 +1916,142 @@ aside {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
 }
 
 .description__choose-image img {
   max-width: 49px;
+  max-height: 59px;
+  padding: 2px;
+  border: 1px solid #ebebeb;
+  outline: 3px solid white;
+}
+
+.description__choose-image img:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #ffa401;
+  outline: 1px solid #ffa401;
+  margin-top: -1px;
+}
+
+.description__choose-title {
+  font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
+  color: #161616;
+  margin-bottom: 20px;
+}
+
+.services {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.services input[type="checkbox"] {
+  display: none;
+}
+
+.services input[type="checkbox"] + label {
+  cursor: pointer;
+}
+
+.services input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+  margin: 0 0px 0 0;
+  background-repeat: no-repeat;
+  border: 2px solid #eeeeee;
+  border-radius: 3px;
+  left: 0px;
+  bottom: 0;
+}
+
+.services input[type="checkbox"]:checked + label:before {
+  border: 2px solid #eeeeee;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/check.png);
+  background-position: center;
+  border: 2px solid #eeeeee;
+  -webkit-filter: drop-shadow(0px 2px 10px rgba(44, 36, 25, 0.1));
+          filter: drop-shadow(0px 2px 10px rgba(44, 36, 25, 0.1));
+  border-radius: 3px;
+}
+
+.services span {
+  margin-left: 35px;
+  color: #2c2419;
+  font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
+}
+
+.services b {
+  margin-left: 15px;
+  color: #ffa401;
+  font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
+}
+
+.description__price {
+  margin-bottom: 50px;
+}
+
+.description__price .new-price {
+  margin-left: 30px;
+  font-size: calc(16px + 10 * ((100vw - 320px) / 1600));
+}
+
+.description__buttons {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description__buttons .button {
+  margin-right: 30px;
+  padding: 10px 36px;
+}
+
+.description__buttons .svg-silver {
+  background: #ebebeb;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description__title {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.description__text {
+  font-size: 16px;
+  color: #797979;
+  padding-bottom: 35px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #d2d2d2;
+}
+
+.description__list {
+  font-size: 16px;
+  color: #797979;
+  padding-bottom: 35px !important;
+  margin-bottom: 30px !important;
+  border-bottom: 1px dashed #d2d2d2;
 }
 
 .number {
@@ -1792,6 +2061,7 @@ aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 36px;
 }
 
 .number span {
