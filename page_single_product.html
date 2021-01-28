@@ -370,27 +370,9 @@
 							<div class="swiper-pagination"></div>
 						</div>
 
-						<!-- Swiper JS -->
-						<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-						<!-- Initialize Swiper -->
-						<script>
-							var swiper = new Swiper('.recommended', {
-								slidesPerView: 3,
-								spaceBetween: 30,
-								pagination: {
-									el: '.swiper-pagination',
-									dynamicBullets: true,
-								},
-								autoplay: {
-									delay: 8500,
-								},
-								loop: true,
-								updateOnWindowResize: true,
-								observer: true,
-								// observeParents: true,
-							});
-						</script>
+
+
 
 					</div>
 				</div>
@@ -400,7 +382,7 @@
 					<div class="reviews-header">
 						<div class="reviews-title">
 							<span>Отзывы</span>
-							<b>2</b>
+							<b class="reviews-count">2</b>
 						</div>
 
 						<div class="reviews-button">
@@ -461,6 +443,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+
 <script>
 	$(document).ready(function () {
 		$('.minus').click(function () {
@@ -479,6 +462,27 @@
 		});
 	});
 </script>
+
+
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper('.recommended', {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		pagination: {
+			el: '.swiper-pagination',
+			dynamicBullets: true,
+		},
+		autoplay: {
+			delay: 8500,
+		},
+		loop: true,
+		updateOnWindowResize: true,
+		observer: true,
+		// observeParents: true,
+	});
+</script>
+
 
 <script src="source/js/main.js"></script>
 
