@@ -50,7 +50,46 @@ $(document).ready(function () {
 			return false;
 		});
 	});
+
+	// показать и скрыть отзывы
+	$('.reviews-title').click(function (event) {
+
+		if ($('.reviews-title').hasClass('open')) {
+
+			$(this).removeClass('open').addClass('close');
+			$('.reviews-body').slideUp();
+
+		}
+		else {
+
+			$(this).removeClass('close').addClass('open');
+			$('.reviews-body').slideDown();
+		}
+
+
+	});
+
+
+	$('.description__choose-image img').click(function (event) {
+		let $this_img = $(this).attr('src')
+		$('.single-product__preview-image img').attr('src', $this_img);
+
+	});
+
+
+
 });
+
 
 // маска для телефонов
 $("[placeholder*='Тел']").mask("+7(999) 999-9999");
+
+
+
+
+
+
+
+
+
+
