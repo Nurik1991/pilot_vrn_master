@@ -136,7 +136,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -151,7 +151,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked+label:before {
+		input[type="radio"]:checked + label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -167,7 +167,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -182,7 +182,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked+label:before {
+		input[type="radio"]:checked + label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -228,7 +228,7 @@
 			display: none;
 		}
 
-		input[type="checkbox"]+label:before {
+		input[type="checkbox"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 20px;
@@ -242,7 +242,7 @@
 			left: 30px;
 		}
 
-		input[type="checkbox"]:checked+label::before {
+		input[type="checkbox"]:checked + label::before {
 			border: 1px solid #fff;
 			width: 20px;
 			height: 20px;
@@ -495,7 +495,6 @@
 		.tab-active {
 			background-color: #ffa401;
 		}
-
 	}
 }
 
@@ -519,7 +518,6 @@
 	}
 
 	.swiper-slide {
-
 		height: 250px;
 
 		a:hover {
@@ -540,9 +538,7 @@
 				// background-image: url(../img/magnifier.png) no-repeat;
 				background-position: center;
 				z-index: 3;
-
 			}
-
 		}
 
 		img {
@@ -550,9 +546,6 @@
 			height: 250px !important;
 			margin-right: 30px !important;
 			z-index: 1;
-
-
-
 		}
 
 		img:hover {
@@ -560,16 +553,12 @@
 			height: 250px !important;
 			// margin-right: 30px !important;
 			// margin-top: -10px;
-
 		}
-
-
 	}
 }
 
 .our-work__swiper-container {
 	margin-bottom: 140px;
-
 
 	.swiper-pagination-bullet {
 		width: 5px;
@@ -581,26 +570,20 @@
 		//opacity: .2;
 	}
 
-
 	.swiper-pagination-bullet-active {
 		width: 10px;
 		height: 10px;
 		display: inline-block;
 		border-radius: 50%;
 		background: #fff;
-		border: 2px solid #FFA401;
+		border: 2px solid #ffa401;
 		margin-bottom: -3px !important;
 
 		//opacity: .2;
 	}
-
-
-
 }
 
-
 .our-work {
-
 	/* CSS */
 	/*************************************
 * Базовые стили lightbox. 
@@ -622,6 +605,9 @@
 		top: 0;
 		left: 0;
 		background: rgba(0, 0, 0, 0.8);
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.lightbox img {
@@ -633,7 +619,7 @@
 		margin: 1% auto;
 		/** полная прозрачность изначально */
 		opacity: 0;
-		border: 1px solid #4D4D4D;
+		border: 1px solid #4d4d4d;
 		/** тени у картинок - это по желанию */
 		-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 		-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
