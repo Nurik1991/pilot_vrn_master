@@ -136,7 +136,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -151,7 +151,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked + label:before {
+		input[type="radio"]:checked+label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -167,7 +167,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -182,7 +182,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked + label:before {
+		input[type="radio"]:checked+label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -228,7 +228,7 @@
 			display: none;
 		}
 
-		input[type="checkbox"] + label:before {
+		input[type="checkbox"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 20px;
@@ -242,7 +242,7 @@
 			left: 30px;
 		}
 
-		input[type="checkbox"]:checked + label::before {
+		input[type="checkbox"]:checked+label::before {
 			border: 1px solid #fff;
 			width: 20px;
 			height: 20px;
@@ -470,7 +470,7 @@
 /*--- End Корзина ----*/
 
 /*--- start Страница услуги ----*/
-
+/*------- start Табы -------*/
 .tabs__head {
 	margin: 30px 0px 30px 0px;
 
@@ -480,6 +480,14 @@
 		margin: 0 auto;
 		justify-items: center;
 		grid-gap: 30px;
+
+		input {
+			display: none;
+		}
+
+		label {
+			cursor: pointer;
+		}
 
 		.button {
 			grid-column: auto;
@@ -497,6 +505,37 @@
 		}
 	}
 }
+
+#tab-1 #tabsadd1,
+#tab-2 #tabsadd2 {
+	display: none;
+}
+
+#tab-1:checked label #tabsadd1 {
+
+
+	display: block;
+
+
+}
+
+#tab-2:checked label #tabsadd2 {
+
+
+	display: block;
+
+
+}
+
+// input .tab-content {
+// 	display: none;
+// }
+
+// input:checked .tab-content {
+// 	display: block;
+// }
+
+/*------- End Табы -------*/
 
 .our-work {
 	.title-description {
@@ -584,6 +623,7 @@
 }
 
 .our-work {
+
 	/* CSS */
 	/*************************************
 * Базовые стили lightbox. 
@@ -653,4 +693,40 @@
 		// -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.6);
 		// -moz-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.6);
 	}
+}
+
+.pay-delivery {
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	// display: grid;
+	// grid-template-columns: 1fr 1fr;
+	h2 {
+		text-align: center;
+		font-size: 40px;
+		padding-bottom: 67px;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+
+		li {
+			list-style-image: url(../img/li_marck.png);
+		}
+	}
+
+	.paymant {
+		padding-right: 140px;
+
+		p {
+			line-height: 150%;
+			padding-bottom: 40px;
+		}
+	}
+
+
 }

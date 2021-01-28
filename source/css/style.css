@@ -3112,6 +3112,7 @@ aside {
 
 /*--- End Корзина ----*/
 /*--- start Страница услуги ----*/
+/*------- start Табы -------*/
 .tabs__head {
   margin: 30px 0px 30px 0px;
 }
@@ -3124,6 +3125,14 @@ aside {
   margin: 0 auto;
   justify-items: center;
   grid-gap: 30px;
+}
+
+.tabs__head .tabs__button input {
+  display: none;
+}
+
+.tabs__head .tabs__button label {
+  cursor: pointer;
 }
 
 .tabs__head .tabs__button .button {
@@ -3141,6 +3150,20 @@ aside {
   background-color: #ffa401;
 }
 
+#tab-1 #tabsadd1,
+#tab-2 #tabsadd2 {
+  display: none;
+}
+
+#tab-1:checked label #tabsadd1 {
+  display: block;
+}
+
+#tab-2:checked label #tabsadd2 {
+  display: block;
+}
+
+/*------- End Табы -------*/
 .our-work .title-description {
   text-align: center;
 }
@@ -3288,6 +3311,37 @@ aside {
 
 .our-work .thumb img {
   width: 100%;
+}
+
+.pay-delivery .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.pay-delivery h2 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 67px;
+}
+
+.pay-delivery ul {
+  padding: 0;
+  margin: 0;
+}
+
+.pay-delivery ul li {
+  list-style-image: url(../img/li_marck.png);
+}
+
+.pay-delivery .paymant {
+  padding-right: 140px;
+}
+
+.pay-delivery .paymant p {
+  line-height: 150%;
+  padding-bottom: 40px;
 }
 
 /* ====================Мобильная версия================= */
