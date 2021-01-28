@@ -3037,6 +3037,12 @@ aside {
   margin-bottom: -10px;
 }
 
+.our-work .swiper-slide {
+  width: 210px;
+  height: 250px;
+  margin-right: 30px;
+}
+
 .our-work__swiper-container {
   margin-bottom: 140px;
 }
@@ -3057,6 +3063,69 @@ aside {
   background: #fff;
   border: 2px solid #FFA401;
   margin-bottom: -3px !important;
+}
+
+.our-work {
+  /* CSS */
+  /*************************************
+* Базовые стили lightbox. 
+* по умолчанию 'opacity' в значении '0'.
+*/
+  /** стиль миниатюр для демо-страницы */
+}
+
+.our-work a img {
+  border: none;
+  /* убираем рамку */
+}
+
+.our-work .lightbox {
+  /** определяем базовый стиль lightbox */
+  position: fixed;
+  overflow: hidden;
+  z-index: 9999;
+  width: 0;
+  height: 0;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.our-work .lightbox img {
+  /** базовый стиль изображений lightbox*/
+  width: 95%;
+  max-width: 800px;
+  height: auto;
+  margin: 5% auto;
+  /** полная прозрачность изначально */
+  opacity: 0;
+  border: 1px solid #4D4D4D;
+  /** тени у картинок - это по желанию */
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  /* трансформация прозрачности при открытии  */
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+.our-work .lightbox:target {
+  /** активируем lightbox при нажатии */
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  /** удаляем контур по умолчанию */
+  outline: none;
+}
+
+.our-work .lightbox:target img {
+  /** делаем элемент непрозрачным  */
+  opacity: 1;
+}
+
+.our-work .thumb img {
+  width: 100%;
 }
 
 /* ====================Мобильная версия================= */
