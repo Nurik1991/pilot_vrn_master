@@ -138,7 +138,17 @@
 
 					<!-- Big img -->
 					<div class="single-product__preview-image">
-						<img src="source/img/single_product/big_img01.png">
+
+
+						<span class='zoom' id='ex1'>
+
+							<img src="source/img/single_product/big_img01.png" width="70%" height="70%">
+						</span>
+
+
+						<div class="single-product__preview-image-zoom">
+							<img src="source/img/zoom.svg" alt="">
+						</div>
 					</div>
 					<!-- end Big img -->
 
@@ -380,7 +390,7 @@
 				<div class="reviews">
 
 					<div class="reviews-header">
-						<div class="reviews-title">
+						<div class="reviews-title open">
 							<span>Отзывы</span>
 							<b class="reviews-count">2</b>
 						</div>
@@ -400,10 +410,30 @@
 								вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на
 								русском языке, а начинающему оратору отточить навык публичных выступлений.</p>
 						</div>
-					</div>
 
+						<div class="comment">
+							<ul class="comment__list">
+								<li class="comment__name">ВАСИЛИЙ ИВАНОВ </li>
+								<li class="comment__date">19 ЯНВАРЯ 2020 </li>
+							</ul>
+							<p class="comment__text">H7 Headline Сайт рыбатекст поможет дизайнеру, верстальщику,
+								вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на
+								русском языке, а начинающему оратору отточить навык публичных выступлений.</p>
+						</div>
+
+
+
+					</div>
+					<div class="additional">
+						<a class="additional-link" href="#0">Доставка и оплата</a>
+						<a class="additional-link" href="#0">Пошив на заказ</a>
+						<a class="additional-link" href="#0">Все услуги</a>
+					</div>
 				</div>
 				<!-- end recomended -->
+
+
+
 			</section>
 		</div>
 		<!--! конец карта -->
@@ -486,6 +516,20 @@
 
 <script src="source/js/main.js"></script>
 
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+<script src='source/js/jquery.zoom.min.js'></script>
 
+<script>
+	$(document).ready(function () {
+		$('.single-product__preview-image-zoom').click(function (event) {
+			$('#ex1').zoom();
+		});
+
+
+		$('#ex2').zoom({ on: 'grab' });
+		$('#ex3').zoom({ on: 'click' });
+		$('#ex4').zoom({ on: 'toggle' });
+	});
+</script>
 
 </html>
