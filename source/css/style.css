@@ -2970,11 +2970,12 @@ aside {
 
 .our-work .title-name {
   text-align: center;
-  padding-bottom: 0px;
+  padding-bottom: 69px;
 }
 
 .our-work .swiper-wrapper {
   padding-bottom: 150px;
+  padding-top: 20px;
 }
 
 .our-work .swiper-pagination {
@@ -2982,9 +2983,39 @@ aside {
 }
 
 .our-work .swiper-slide {
-  width: 210px;
   height: 250px;
-  margin-right: 30px;
+}
+
+.our-work .swiper-slide a:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.our-work .swiper-slide a:hover:before {
+  content: "";
+  height: 46px;
+  position: absolute;
+  width: 46px;
+  left: 40%;
+  top: 40%;
+  background: url(../img/magnifier.png) no-repeat rgba(233, 233, 233, 0.7);
+  border-radius: 46px;
+  background-position: center;
+  z-index: 3;
+}
+
+.our-work .swiper-slide img {
+  width: 210px !important;
+  height: 250px !important;
+  margin-right: 30px !important;
+  z-index: 1;
+}
+
+.our-work .swiper-slide img:hover {
+  width: 210px !important;
+  height: 250px !important;
 }
 
 .our-work__swiper-container {
@@ -3038,10 +3069,11 @@ aside {
 
 .our-work .lightbox img {
   /** базовый стиль изображений lightbox*/
-  width: 95%;
+  width: auto;
   max-width: 800px;
   height: auto;
-  margin: 5% auto;
+  max-height: 768px;
+  margin: 1% auto;
   /** полная прозрачность изначально */
   opacity: 0;
   border: 1px solid #4D4D4D;
