@@ -3313,6 +3313,10 @@ aside {
   width: 100%;
 }
 
+.pay-delivery {
+  margin-bottom: 140px;
+}
+
 .pay-delivery .container {
   display: -ms-grid;
   display: grid;
@@ -3329,19 +3333,31 @@ aside {
 .pay-delivery ul {
   padding: 0;
   margin: 0;
+  padding-left: 17px;
 }
 
 .pay-delivery ul li {
+  padding-bottom: 10px;
   list-style-image: url(../img/li_marck.png);
+  line-height: 150%;
 }
 
-.pay-delivery .paymant {
+.paymant {
   padding-right: 140px;
 }
 
-.pay-delivery .paymant p {
+.paymant p {
   line-height: 150%;
   padding-bottom: 40px;
+}
+
+.paymant .paymant__card {
+  margin-top: 40px;
+}
+
+.delivery p {
+  line-height: 150%;
+  padding-bottom: 30px;
 }
 
 /* ====================Мобильная версия================= */
