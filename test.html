@@ -1,37 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="source/css/test.css">
-</head>
-<body>
-	
-	<main>
-		<div>
-		  <div>
-		
-		  </div>
-		  <svg viewBox='0 0 200 600'>
-			<polygon points='118.302698 8 59.5369448 66.7657528 186.487016 193.715824 14 366.202839 153.491505 505.694344 68.1413353 591.044514 200 591.044514 200 8'></polygon>
-		  </svg>
-		</div>
-		<svg class='crack' viewBox='0 0 200 600'>
-		  <polyline points='118.302698 8 59.5369448 66.7657528 186.487016 193.715824 14 366.202839 153.491505 505.694344 68.1413353 591.044514'></polyline>
-		</svg>
-		<div>
-		  <svg viewBox='0 0 200 600'>
-			<polygon points='118.302698 8 59.5369448 66.7657528 186.487016 193.715824 14 366.202839 153.491505 505.694344 68.1413353 591.044514 0 591.044514 0 8'></polygon>
-		  </svg>
-		  <div>
-			
-			
-		  </div>
-		</div>
-	  </main>
-	  
-
-
-</body>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Вкладки</title>
+  <style>
+   .tabs {
+    position: relative; /* Относительное позиционирование */
+   }
+   .tab, .tab-title {
+    display: inline-block; /* Выстраиваем по горизонтали */
+   }
+   .tab input[type="radio"] { display: none; }
+   .tab-title {
+    background: #ccc; /* Цвет фона */
+    padding: 5px 10px; /* Поля вокруг текста */
+    border: 1px solid #666; /* Параметры рамки */
+    border-bottom: none; /* Снизу линию убираем */
+   }
+   .tab-content {
+    position: absolute; /* Абсолютное позиционирование */
+    border: 1px solid #666; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    left: 0; /* Размещаем у левого края */
+    width: calc(100% - 20px); /* Ширина содержимого */
+    display: none; /* Прячем вкладку */
+   }
+   .tab :checked + .tab-title {
+    position: relative; /* Относительное позиционирование */
+    background: #fff; /* Цвет фона */
+    top: 1px; /* Сдвигаем вниз */
+    z-index: 1; /* Отображаем поверх содержимого */
+   }
+   .tab :checked ~ .tab-content {
+    display: block; /* Показываем активную вкладку */
+   }
+  </style>
+ </head>
+ <body>
+  <div class="tabs">
+   <div class="tab">
+    <input type="radio" id="tab1" name="tab-group" checked>
+    <label for="tab1" class="tab-title">Вкладка 1</label> 
+	<section class="tab-content">Один</section>
+	<section class="tab-content">Два</section>
+	<section class="tab-content">Три</section>
+   </div> 
+   <div class="tab">
+    <input type="radio" id="tab2" name="tab-group">
+    <label for="tab2" class="tab-title">Вкладка 2</label> 
+    
+   </div>
+   <div class="tab">
+    <input type="radio" id="tab3" name="tab-group">
+    <label for="tab3" class="tab-title">Вкладка 3</label> 
+    
+   </div> 
+  </div>
+ </body>
 </html>

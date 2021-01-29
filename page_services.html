@@ -112,18 +112,12 @@
 	<section class="tabs__head">
 		<div class="container">
 			<div class="tabs__button">
+				
+					<div class="tablinks button" onclick="openServ(event, 'sewing')" id="defaultOpen">Пошив на заказ</div>
+					<div class="tablinks button" onclick="openServ(event, 'installation')">Установка</div>
+					<div class="tablinks button" onclick="openServ(event, 'armchairs')">ПОДШИВ</div>
+				
 
-				<input type="radio" name="tabs" id="tab-1" checked>
-		<label for="tab-1">Пошив на заказ</label>
-
-		<input type="radio" name="tabs" id="tab-2">
-		<label for="tab-2">Установка</label>
-
-		<input type="radio" name="tabs" id="tab-3">
-		<label for="tab-3">ПОДШИВ</label>
-				<!-- <div class="button tab-active"><a href="#first">Пошив на заказ</a> </div>
-				<div class=" button"><a href="#second">Установка</a></div>
-				<div class=" button"><a href="#third">ПОДШИВ</a></div> -->
 			</div>
 		</div>
 	</section>
@@ -131,7 +125,8 @@
 
 
 	<!-- Блок контента табов  -->
-	<section class="about-us tab-content " id="tabsadd1" >
+	<div class="tabcontent" id="sewing"  >
+	<section class="about-us "  >
 		<div class="container">
 			<div class="about-us__swiper-container swiper-container">
 				<div class="swiper-wrapper">
@@ -223,12 +218,7 @@
 												<img src="source/img/our_work/our8.jpg" alt="">
 											  </a>
 											</div>
-						<!-- <div class="swiper-slide">  </div>
-						<div class="swiper-slide">  <img src="source/img/our_work/our2.jpg" alt=""></div>
-						<div class="swiper-slide"> <img src="source/img/our_work/our3.jpg" alt=""></div>
-						<div class="swiper-slide">  <img src="source/img/our_work/our4.jpg" alt=""></div>
-						<div class="swiper-slide">  <img src="source/img/our_work/our5.jpg" alt=""></div>
-						<div class="swiper-slide">  <img src="source/img/our_work/our6.jpg" alt=""></div> -->
+					
 				</div>
 				<a href="#close" class="lightbox" id="img1">
 					<img src="source/img/our_work/our1.jpg">
@@ -265,11 +255,281 @@
 
 
 
-	<section class="test tab-content" id="tabsadd2" >
+	
 
-		121212
-	</section>
 
+</div>
+<!-- Второй таб -->
+<section class="test tabcontent" id="installation" >
+
+	
+		<section class="about-us "  >
+			<div class="container">
+				<div class="about-us__swiper-container swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
+						<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
+						<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+	
+				<div class="about-us__text">
+	
+					<!-- Заголовок и описание на сайте повторяются -->
+					<div class="title without-button">
+						<div class="title-description">
+							<span>ПО ИНДИВИДУАЛЬНЫМ МЕРКАМ</span>
+						</div>
+						<div class="title-name">
+							<h2>Установка на заказ</h2>
+						</div>
+						<div class="title-text">
+							<p>Компания PILOT-VRN официально представляет в Воронеже и области Российскую швейную ассоциацию
+								компаний «АВТОПИЛОТ».Мы впервые вышли на рынок в 1999 году. Целью деятельности нашего
+								интернет-магазина является обеспечение уюта и комфорта для автомобилиста и его пассажиров.
+							</p>
+	
+							<p>Разнообразие цветовой гаммы и материалов позволяет создавать оригинальную продукцию,
+								способную удовлетворить любого клиента.
+								Лозунг нашей компании: «Делаем с любовью – продаем с гордостью».
+							</p>
+						</div>
+	
+						<div class="title-button">
+							<input type="button" value="Подробнее" class="button">
+						</div>
+					</div>
+					<!-- Конец - Заголовок и описание на сайте повторяются -->
+	
+				</div>
+	
+			</div>
+	
+			<div class="about-us__whitespace"></div>
+	
+		</section>
+	
+		<!-- Конец Блок контента табов  -->
+	
+		<!-- Слайдер наши работы  -->
+		<section class="our-work">
+			<div class="title-description">
+				<span>ФОТО пошива на заказ</span>
+			</div>
+			<div class="title-name">
+				<h2>Наши работы</h2>
+			</div>
+			<div class="container">
+	
+				<div class="our-work__swiper-container swiper-container ">
+					<div class="swiper-wrapper thumb">
+						<div class="swiper-slide">
+							<a href="#img1">
+								<img src="source/img/our_work/our1.jpg" alt="">
+							  </a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#img2">
+									<img src="source/img/our_work/our2.jpg" alt="">
+								  </a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#img3">
+										<img src="source/img/our_work/our3.jpg" alt="">
+									  </a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#img4">
+											<img src="source/img/our_work/our4.jpg" alt="">
+										  </a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#img5">
+												<img src="source/img/our_work/our5.jpg" alt="">
+											  </a>
+											</div>
+											<div class="swiper-slide">
+												<a href="#img6">
+													<img src="source/img/our_work/our8.jpg" alt="">
+												  </a>
+												</div>
+						
+					</div>
+					<a href="#close" class="lightbox" id="img1">
+						<img src="source/img/our_work/our1.jpg">
+					</a>
+	
+						  <a href="#close" class="lightbox" id="img2">
+							<img src="source/img/our_work/our2.jpg">
+						  </a>
+						  <a href="#close" class="lightbox" id="img3">
+							<img src="source/img/our_work/our3.jpg">
+						  </a>
+						  <a href="#close" class="lightbox" id="img4">
+							<img src="source/img/our_work/our4.jpg">
+						  </a>
+						  <a href="#close" class="lightbox" id="img5">
+							<img src="source/img/our_work/our5.jpg">
+						  </a>
+						  <a href="#close" class="lightbox" id="img6">
+							<img src="source/img/our_work/our8.jpg">
+						  </a>
+	
+	
+	
+	
+	
+					<div class="swiper-pagination"></div>
+	
+				</div>
+	
+	
+		</section>
+	
+		<!-- Конец Слайдер наши работы  -->
+	
+</section>
+<!-- Конец Второй таб -->
+
+
+<!-- Третий таб -->
+
+
+	<section class="test tabcontent" id="armchairs" >
+
+	
+		<section class="about-us "  >
+			<div class="container">
+				<div class="about-us__swiper-container swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
+						<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
+						<div class="swiper-slide"><img src="source/img/slider_abous_us/img1.png" alt=""></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+	
+				<div class="about-us__text">
+	
+					<!-- Заголовок и описание на сайте повторяются -->
+					<div class="title without-button">
+						<div class="title-description">
+							<span>ПО ИНДИВИДУАЛЬНЫМ МЕРКАМ</span>
+						</div>
+						<div class="title-name">
+							<h2>Подшив на заказ</h2>
+						</div>
+						<div class="title-text">
+							<p>Компания PILOT-VRN официально представляет в Воронеже и области Российскую швейную ассоциацию
+								компаний «АВТОПИЛОТ».Мы впервые вышли на рынок в 1999 году. Целью деятельности нашего
+								интернет-магазина является обеспечение уюта и комфорта для автомобилиста и его пассажиров.
+							</p>
+	
+							<p>Разнообразие цветовой гаммы и материалов позволяет создавать оригинальную продукцию,
+								способную удовлетворить любого клиента.
+								Лозунг нашей компании: «Делаем с любовью – продаем с гордостью».
+							</p>
+						</div>
+	
+						<div class="title-button">
+							<input type="button" value="Подробнее" class="button">
+						</div>
+					</div>
+					<!-- Конец - Заголовок и описание на сайте повторяются -->
+	
+				</div>
+	
+			</div>
+	
+			<div class="about-us__whitespace"></div>
+	
+		</section>
+	
+		<!-- Конец Блок контента табов  -->
+	
+		<!-- Слайдер наши работы  -->
+		<section class="our-work">
+			<div class="title-description">
+				<span>ФОТО пошива на заказ</span>
+			</div>
+			<div class="title-name">
+				<h2>Наши работы</h2>
+			</div>
+			<div class="container">
+	
+				<div class="our-work__swiper-container swiper-container ">
+					<div class="swiper-wrapper thumb">
+						<div class="swiper-slide">
+							<a href="#img1">
+								<img src="source/img/our_work/our1.jpg" alt="">
+							  </a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#img2">
+									<img src="source/img/our_work/our2.jpg" alt="">
+								  </a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#img3">
+										<img src="source/img/our_work/our3.jpg" alt="">
+									  </a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#img4">
+											<img src="source/img/our_work/our4.jpg" alt="">
+										  </a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#img5">
+												<img src="source/img/our_work/our5.jpg" alt="">
+											  </a>
+											</div>
+											<div class="swiper-slide">
+												<a href="#img6">
+													<img src="source/img/our_work/our8.jpg" alt="">
+												  </a>
+												</div>
+						
+					</div>
+					<a href="#close" class="lightbox" id="img1">
+						<img src="source/img/our_work/our1.jpg">
+					</a>
+	
+						  <a href="#close" class="lightbox" id="img2">
+							<img src="source/img/our_work/our2.jpg">
+						  </a>
+						  <a href="#close" class="lightbox" id="img3">
+							<img src="source/img/our_work/our3.jpg">
+						  </a>
+						  <a href="#close" class="lightbox" id="img4">
+							<img src="source/img/our_work/our4.jpg">
+						  </a>
+						  <a href="#close" class="lightbox" id="img5">
+							<img src="source/img/our_work/our5.jpg">
+						  </a>
+						  <a href="#close" class="lightbox" id="img6">
+							<img src="source/img/our_work/our8.jpg">
+						  </a>
+	
+	
+	
+	
+	
+					<div class="swiper-pagination"></div>
+	
+				</div>
+	
+	
+		</section>
+	
+		<!-- Конец Слайдер наши работы  -->
+	
+
+</section>
+<!-- Конет Третий  таб -->
 
 
 	<!--   Блок Нужна помощь -->
@@ -313,6 +573,10 @@
 		</div>
 	</section>
 	<!--  Конец Блок Нужна помощь -->
+
+
+
+
 
 	<!--  Footer -->
 	<footer class="footer">
@@ -410,6 +674,26 @@
 		}
 	});
 </script>
+
+<script>
+	function openServ(evt, servName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(servName).style.display = "block";
+		evt.currentTarget.className += " active";
+		
+	}
+	</script>
+	<script>
+		document.getElementById("defaultOpen").click();
+	</script>
 
 
 </html>
