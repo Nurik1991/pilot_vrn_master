@@ -448,7 +448,7 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 680px;
+  top: 630px;
   z-index: 9999999999999999999;
   gap: 25px;
 }
@@ -3214,11 +3214,16 @@ aside {
   height: 250px !important;
 }
 
-.our-work__swiper-container {
+.our-work__swiper-container,
+.our-work__swiper-container2,
+.our-work__swiper-container3 {
   margin-bottom: 140px;
+  width: 1410px;
 }
 
-.our-work__swiper-container .swiper-pagination-bullet {
+.our-work__swiper-container .swiper-pagination-bullet,
+.our-work__swiper-container2 .swiper-pagination-bullet,
+.our-work__swiper-container3 .swiper-pagination-bullet {
   width: 5px;
   height: 5px;
   display: inline-block;
@@ -3226,7 +3231,9 @@ aside {
   background: #797979;
 }
 
-.our-work__swiper-container .swiper-pagination-bullet-active {
+.our-work__swiper-container .swiper-pagination-bullet-active,
+.our-work__swiper-container2 .swiper-pagination-bullet-active,
+.our-work__swiper-container3 .swiper-pagination-bullet-active {
   width: 10px;
   height: 10px;
   display: inline-block;
@@ -3354,6 +3361,10 @@ aside {
 .delivery p {
   line-height: 150%;
   padding-bottom: 30px;
+}
+
+.tabcontent .about-us {
+  z-index: 0;
 }
 
 /* ====================Мобильная версия================= */

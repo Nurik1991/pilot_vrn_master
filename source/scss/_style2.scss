@@ -612,8 +612,12 @@
 	}
 }
 
-.our-work__swiper-container {
+.our-work__swiper-container,
+.our-work__swiper-container2,
+.our-work__swiper-container3 {
+
 	margin-bottom: 140px;
+	width: 1410px;
 
 	.swiper-pagination-bullet {
 		width: 5px;
@@ -761,4 +765,11 @@
 		padding-bottom: 30px;
 	}
 
+}
+
+
+.tabcontent {
+	.about-us {
+		z-index: 0;
+	}
 }
