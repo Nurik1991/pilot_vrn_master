@@ -783,3 +783,146 @@
 		z-index: 0;
 	}
 }
+
+
+/*---- Start всплывающее окно  ------*/
+.modalwind {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modalwind {
+	.contact__form {
+		background-color: #2c2419;
+		text-align: center;
+		width: auto;
+		max-width: 416px;
+		height: auto;
+		max-height: 616px;
+		margin-top: 50px;
+		margin-right: -90px;
+		z-index: 2;
+		margin: 1% auto;
+
+		h2 {
+			color: #ffa401;
+			font-size: 16px;
+			font-weight: normal;
+			padding-top: 104px;
+			padding-bottom: 34px;
+			text-transform: uppercase;
+		}
+
+		input {
+			color: #fff;
+			display: block;
+			margin: 20px auto;
+			border: 1px solid rgba(225, 218, 208, 0.15);
+			border-radius: 3px;
+			padding: 10px;
+			background-color: rgba(225, 218, 208, 0.1);
+			width: 70%;
+
+			&:focus {
+				border: 1px solid rgba(225, 218, 208, 0.15);
+				outline: none;
+			}
+
+			::-webkit-input-placeholder {
+				color: #fff;
+			}
+
+			::-moz-placeholder {
+				color: #fff;
+			}
+
+			/* Firefox 19+ */
+			:-moz-placeholder {
+				color: #fff;
+			}
+
+			/* Firefox 18- */
+			:-ms-input-placeholder {
+				color: #fff;
+			}
+		}
+
+		label {
+			font-size: 13px;
+			color: #fff;
+			font-weight: normal;
+
+			span {
+				display: block;
+				width: 50%;
+				margin-top: 0px;
+				margin-left: 95px;
+				text-align: left;
+				color: rgba(255, 255, 255, 0.5);
+			}
+		}
+
+		input[type="button"] {
+			background-color: #ffa401;
+			border: none;
+			border-radius: 0;
+			cursor: pointer;
+		}
+
+		.button {
+			width: 162px;
+			text-align: center;
+			margin: 50px auto;
+			padding: 13px;
+		}
+	}
+
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	input[type="checkbox"]+label {
+		cursor: pointer;
+	}
+
+	input[type="checkbox"]+label::before {
+		content: "";
+		display: inline-block;
+		height: 20px;
+		position: absolute;
+		width: 20px;
+		margin: 0 0px 0 0;
+		background-repeat: no-repeat;
+		border: 1px solid #fff;
+		border-radius: 3px;
+		bottom: 168px;
+		left: 63px;
+	}
+
+	input[type="checkbox"]:checked+label:before {
+		border: 1px solid #fff;
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/check.png);
+		background-position: center;
+		border: 2px solid rgba(255, 255, 255, 0.5);
+		filter: drop-shadow(0px 2px 10px rgba(44, 36, 25, 0.1));
+		border-radius: 3px;
+	}
+
+}
+
+/*---- End всплывающее окно  ------*/

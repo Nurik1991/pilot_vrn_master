@@ -56,7 +56,7 @@
 			<div class="header__tel">
 				<ul class="header__tel-links">
 					<li class="number"><a href="tel:8 (473) 232-37-98">8 (473) 232-37-98</a></li>
-					<li class="callback"><a href="#0">Заказать звонок</a></li>
+					<li class="callback" id="myBtn"><a href="#0">Заказать звонок</a></li>
 				</ul>
 			</div>
 		</div>
@@ -652,8 +652,8 @@
 					<p class="questions-block__bg-text">Наши специалисты с удовольствием ответят на все Ваши вопросы.
 					</p>
 				</div>
-				<div class="questions-block__bg-columns">
-					<a href="#0" class="questions-block__bg-button button">Задать вопрос</a>
+				<div class="questions-block__bg-columns" id="myBtn">
+					<a href="#0" class="questions-block__bg-button button" >Задать вопрос</a>
 				</div>
 			</div>
 
@@ -697,6 +697,27 @@
 	</footer>
 	<!-- End Footer -->
 
+	<!-- Всплывающее окно  -->
+<div id="myModal" class="modalwind">
+	<div class="contact__form" >
+		<h2>Мы сважемся с Вами</h2>
+		<input type="text" placeholder="Имя">
+		<input type="text" placeholder="Телефон">
+		<input type="text" placeholder="E-mail">
+
+		<input id="contact__formch" type="checkbox" checked hidden />
+		<label for="contact__formch"><span> Я согласен(на) на обработку персональных данных</span></label>
+
+		<div class="button">
+			<a href="#">Отправить</a>
+		</div>
+		<span class="close">Закрыть</span>
+
+		<!-- <input type="button" value="ОТПРАВИТЬ"> -->
+
+	</div>
+	<!-- Конец Всплывающее окно  -->
+</div>
 </body>
 <!-- Скрипты для Селекта -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -784,5 +805,33 @@
 		observeParents: true,
 	});
 </script>
+
+<script>
+	// Get the modal
+	var modal = document.getElementById("myModal");
+	
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+	
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+	
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+	</script>
 
 </html>
