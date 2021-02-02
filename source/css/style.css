@@ -1319,8 +1319,14 @@ aside {
           align-items: center;
 }
 
-.questions-block__bg div {
+.questions-block__bg .questions-block__bg-columns {
   width: 33%;
+}
+
+.questions-block__bg .button {
+  width: 35%;
+  margin: 0 auto;
+  padding: 13px;
 }
 
 .questions-block__bg::after {
