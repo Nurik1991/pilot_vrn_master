@@ -1418,6 +1418,7 @@ aside {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  font-size: 20px;
 }
 
 .company__advantag .company__advantag-item {
@@ -1463,7 +1464,7 @@ aside {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 135px;
+  gap: 157px;
   margin-bottom: 50px;
 }
 
