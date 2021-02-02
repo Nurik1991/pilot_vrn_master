@@ -1157,8 +1157,8 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 200px;
+      grid-template-columns: 1fr 200px;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: center;
@@ -1171,6 +1171,11 @@ aside {
   top: -125px;
   z-index: 9;
   right: -320px;
+}
+
+.column .offer__text-button {
+  margin-top: 10px;
+  margin-left: 90px;
 }
 
 .column-title {
