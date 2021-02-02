@@ -3422,6 +3422,10 @@ aside {
   line-height: 150%;
 }
 
+.pay-delivery ul li {
+  padding-left: 5px;
+}
+
 .delivery {
   padding-right: 70px;
 }
