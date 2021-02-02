@@ -1806,7 +1806,7 @@ aside {
 
 .single-product__preview-title {
   font-size: 30px;
-  max-width: 690px;
+  max-width: 625px;
   margin-bottom: 45px;
 }
 
@@ -3119,27 +3119,23 @@ aside {
   background-color: #f1f1f1;
   border-radius: 5px;
   margin-bottom: 30px;
+  padding: 50px 30px;
 }
 
 .basket .basket__info .basket__line {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-}
-
-.basket .basket__info .basket-title {
-  padding: 50px 0px 20px 30px;
-  color: #1d170f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .basket .basket__info .basket-title:last-child {
   font-weight: bold;
-}
-
-.basket .basket__info .basket-price {
-  padding: 50px 30px 20px 0px;
-  text-align: right;
 }
 
 .basket .basket__info .basket__line:nth-child(3) p.basket-price {
@@ -3256,7 +3252,7 @@ aside {
 }
 
 .our-work .swiper-pagination {
-  margin-bottom: -10px;
+  margin-bottom: 60px;
 }
 
 .our-work .swiper-slide {
@@ -3426,17 +3422,21 @@ aside {
   line-height: 150%;
 }
 
+.delivery {
+  padding-right: 70px;
+}
+
 .paymant {
   padding-right: 140px;
 }
 
 .paymant p {
   line-height: 150%;
-  padding-bottom: 40px;
+  padding-bottom: 46px;
 }
 
 .paymant .paymant__card {
-  margin-top: 40px;
+  margin-top: 33px;
 }
 
 .delivery p {

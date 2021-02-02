@@ -136,7 +136,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -151,7 +151,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked+label:before {
+		input[type="radio"]:checked + label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -167,7 +167,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -182,7 +182,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked+label:before {
+		input[type="radio"]:checked + label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -228,7 +228,7 @@
 			display: none;
 		}
 
-		input[type="checkbox"]+label:before {
+		input[type="checkbox"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 20px;
@@ -242,7 +242,7 @@
 			left: 30px;
 		}
 
-		input[type="checkbox"]:checked+label::before {
+		input[type="checkbox"]:checked + label::before {
 			border: 1px solid #fff;
 			width: 20px;
 			height: 20px;
@@ -261,14 +261,11 @@
 	.button {
 		margin-left: 30px;
 		padding: 16px 36px;
-
 	}
 
 	.offer__text-button {
 		margin-top: 70px;
 	}
-
-
 }
 
 /*-------End Оформление заказа------*/
@@ -406,26 +403,29 @@
 			background-color: #f1f1f1;
 			border-radius: 5px;
 			margin-bottom: 30px;
+			padding: 50px 30px;
 		}
 
 		.basket__line {
-			display: grid;
-			grid-template-columns: 2fr 1fr;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-bottom: 20px;
 		}
 
-		.basket-title {
-			padding: 50px 0px 20px 30px;
-			color: #1d170f;
-		}
+		// .basket-title {
+		// 	padding: 50px 0px 20px 30px;
+		// 	color: #1d170f;
+		// }
 
 		.basket-title:last-child {
 			font-weight: bold;
 		}
 
-		.basket-price {
-			padding: 50px 30px 20px 0px;
-			text-align: right;
-		}
+		// .basket-price {
+		// 	padding: 50px 30px 20px 0px;
+		// 	text-align: right;
+		// }
 
 		.basket__line:nth-child(3) p.basket-price {
 			color: #c98100;
@@ -539,17 +539,13 @@
 
 // .tabsheadd #tab-1:checked .tab-content1 {
 
-
 // 	display: block;
-
 
 // }
 
 // .tabsheadd #tab-2:checked .tab-content2 {
 
-
 // 	display: block;
-
 
 // }
 
@@ -579,7 +575,7 @@
 	}
 
 	.swiper-pagination {
-		margin-bottom: -10px;
+		margin-bottom: 60px;
 	}
 
 	.swiper-slide {
@@ -625,7 +621,6 @@
 .our-work__swiper-container,
 .our-work__swiper-container2,
 .our-work__swiper-container3 {
-
 	margin-bottom: 140px;
 	width: 1410px;
 
@@ -653,7 +648,6 @@
 }
 
 .our-work {
-
 	/* CSS */
 	/*************************************
 * Базовые стили lightbox. 
@@ -726,7 +720,6 @@
 }
 
 .pay-delivery {
-
 	margin-bottom: 140px;
 
 	.container {
@@ -751,21 +744,25 @@
 			padding-bottom: 10px;
 			list-style-image: url(../img/li_marck.png);
 			line-height: 150%;
-
 		}
 	}
 }
-
+.pay-delivery ul li {
+	padding-left: 5px;
+}
+.delivery {
+	padding-right: 70px;
+}
 .paymant {
 	padding-right: 140px;
 
 	p {
 		line-height: 150%;
-		padding-bottom: 40px;
+		padding-bottom: 46px;
 	}
 
 	.paymant__card {
-		margin-top: 40px;
+		margin-top: 33px;
 	}
 }
 
@@ -774,9 +771,7 @@
 		line-height: 150%;
 		padding-bottom: 30px;
 	}
-
 }
-
 
 .tabcontent {
 	.about-us {
