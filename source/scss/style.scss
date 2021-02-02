@@ -335,12 +335,16 @@ aside {
 
 .offer__text-button {
 	margin-top: 10px;
+
+	.button {
+		padding: 14px 40px;
+	}
 }
 
 .offer__bookmarks {
 	position: fixed;
 	right: 0;
-	width: 100px;
+	width: 75px;
 	display: flex;
 	flex-direction: column;
 	top: 630px;
@@ -715,6 +719,7 @@ aside {
 	-o-transition: 0.5s;
 	max-width: 330px;
 	min-height: 425px;
+	margin-bottom: 35px;
 
 	&:hover {
 		transition: 0.5s;
@@ -969,6 +974,7 @@ aside {
 	color: white;
 	font-size: 40px;
 	margin-bottom: 22px;
+	margin-top: 11px;
 }
 
 .column-text {
@@ -992,11 +998,11 @@ aside {
 		padding-right: 70px;
 	}
 
-	.swiper-container-vertical>.swiper-pagination-bullets {
-		right: -36px;
+	.swiper-container-vertical > .swiper-pagination-bullets {
+		right: -23px;
 		top: 50%;
 		transform: translate3d(0px, -50%, 0);
-		height: 250px;
+		height: 294px;
 		width: 68px;
 	}
 
@@ -1007,6 +1013,7 @@ aside {
 	.title {
 		margin-top: 150px;
 		text-align: left;
+		margin-left: 135px;
 	}
 
 	.without-button {
@@ -1017,15 +1024,18 @@ aside {
 
 	.title-text {
 		max-width: 570px;
-		margin: 50px 0 60px 0;
+		margin: 50px 0 76px 0;
 		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.15px;
 
 		p {
-			margin-bottom: 35px;
+			margin-bottom: 22px;
 		}
 
 		p:nth-child(1) {
 			color: #797979;
+			margin-top: -6px;
 		}
 	}
 
@@ -1090,7 +1100,7 @@ aside {
 	background-image: url(../img/faq_bg.png);
 	background-repeat: no-repeat;
 	width: 100%;
-	min-height: 150px;
+	min-height: 148px;
 	margin: 0 auto;
 	z-index: 1;
 	display: inline-flex;
@@ -1099,6 +1109,10 @@ aside {
 
 	.questions-block__bg-columns {
 		width: 33%;
+		height: 208px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.button {
@@ -1246,7 +1260,7 @@ aside {
 		text-align: left;
 	}
 
-	input[type="checkbox"]:checked+label::before {
+	input[type="checkbox"]:checked + label::before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -1257,7 +1271,7 @@ aside {
 		border-radius: 3px;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -1809,7 +1823,8 @@ aside {
 	margin-bottom: 20px;
 }
 
-.description__addition {}
+.description__addition {
+}
 
 .services {
 	position: relative;
@@ -1819,11 +1834,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -1837,7 +1852,7 @@ aside {
 		bottom: 0;
 	}
 
-	input[type="checkbox"]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 2px solid #eeeeee;
 		width: 20px;
 		height: 20px;
@@ -1891,7 +1906,8 @@ aside {
 	}
 }
 
-.description {}
+.description {
+}
 
 .description__title {
 	font-weight: 600;
@@ -1916,7 +1932,8 @@ aside {
 	border-bottom: 1px dashed #d2d2d2;
 }
 
-.description__list-item {}
+.description__list-item {
+}
 
 .number {
 	display: flex;
@@ -1991,8 +2008,6 @@ aside {
 	color: #2c2419;
 	text-align: center;
 
-
-
 	&:hover {
 		&::after {
 			content: "";
@@ -2000,7 +2015,7 @@ aside {
 			top: 4px;
 			left: -4px;
 			padding: 10px 50px;
-			border: 1px solid #CE8400;
+			border: 1px solid #ce8400;
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -2009,13 +2024,12 @@ aside {
 }
 
 .disabled {
-	background-color: #CE8400;
-
+	background-color: #ce8400;
 }
 
 .not-active {
 	background: rgba(75, 62, 44, 0.4);
-	color: #5D5D5D;
+	color: #5d5d5d;
 
 	&:hover {
 		&::after {
@@ -2095,7 +2109,7 @@ aside {
 	position: fixed;
 	z-index: 999999999;
 	bottom: 50px;
-	right: 40px;
+	right: 15px;
 }
 
 #to-top__link-id {
@@ -2306,11 +2320,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -2324,7 +2338,7 @@ aside {
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
