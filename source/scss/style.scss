@@ -1725,6 +1725,7 @@ aside {
 
 	.button {
 		margin: 0;
+		padding: 16px 47px;
 	}
 
 	.comment {
@@ -1872,10 +1873,11 @@ aside {
 .description__buttons {
 	margin-bottom: 100px;
 	display: flex;
+	margin-top: 44px;
 
 	.button {
 		margin-right: 30px;
-		padding: 10px 36px;
+		padding: 16px 36px;
 	}
 
 	.svg-silver {
