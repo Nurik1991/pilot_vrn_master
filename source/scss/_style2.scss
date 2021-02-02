@@ -14,7 +14,7 @@
 		font-size: 40px;
 		text-align: center;
 		font-weight: bold;
-		margin-bottom: 67px;
+		margin-bottom: 40px;
 	}
 
 	h5 {
@@ -136,7 +136,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -150,14 +150,19 @@
 			left: 30px;
 			border-radius: 20px;
 		}
+		input[type="radio"] + label:before {
+			background: white;
+		}
 
-		input[type="radio"]:checked+label:before {
+		input[type="radio"]:checked + label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
+			background-color: #fff;
 			background-image: url(../img/circle.png);
-			background-position: 3px 3px;
+			background-position: center;
 			border-radius: 20px;
+			background-repeat: no-repeat;
 		}
 	}
 
@@ -166,8 +171,10 @@
 			display: none;
 			//margin-left: -999999999px;
 		}
-
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
+			background: white;
+		}
+		input[type="radio"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -182,7 +189,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked+label:before {
+		input[type="radio"]:checked + label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -228,7 +235,7 @@
 			display: none;
 		}
 
-		input[type="checkbox"]+label:before {
+		input[type="checkbox"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 20px;
@@ -242,7 +249,7 @@
 			left: 30px;
 		}
 
-		input[type="checkbox"]:checked+label::before {
+		input[type="checkbox"]:checked + label::before {
 			border: 1px solid #fff;
 			width: 20px;
 			height: 20px;
@@ -648,7 +655,6 @@
 }
 
 .our-work {
-
 	/* CSS */
 	/*************************************
 * Базовые стили lightbox. 
@@ -783,7 +789,6 @@
 	}
 }
 
-
 /*---- Start всплывающее окно  ------*/
 .modalwind {
 	display: none;
@@ -801,7 +806,6 @@
 	/* Fallback color */
 	background-color: rgba(0, 0, 0, 0.4);
 }
-
 
 .modalwind {
 	.contact__form {
@@ -893,11 +897,11 @@
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -911,7 +915,7 @@
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -921,7 +925,6 @@
 		filter: drop-shadow(0px 2px 10px rgba(44, 36, 25, 0.1));
 		border-radius: 3px;
 	}
-
 }
 
 /*---- End всплывающее окно  ------*/
