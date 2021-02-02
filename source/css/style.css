@@ -1521,7 +1521,7 @@ aside {
 }
 
 .block-help__bg .button {
-  padding: 12px 50px;
+  padding: 13px 42px;
 }
 
 .block-help__row-title {
@@ -2295,6 +2295,9 @@ aside {
   z-index: 99;
   text-transform: uppercase;
   position: relative;
+  font-size: 14px;
+  color: #2c2419;
+  text-align: center;
 }
 
 .button:hover::after {
@@ -2606,6 +2609,13 @@ aside {
   border: none;
   border-radius: 0;
   cursor: pointer;
+}
+
+.contact .contact__form .button {
+  width: 162px;
+  text-align: center;
+  margin: 50px auto;
+  padding: 13px;
 }
 
 .contact .contact__map {
@@ -2953,6 +2963,11 @@ aside {
 
 .checkout__shipping-payment .button {
   margin-left: 30px;
+  padding: 16px 36px;
+}
+
+.checkout__shipping-payment .offer__text-button {
+  margin-top: 70px;
 }
 
 /*-------End Оформление заказа------*/
@@ -3109,9 +3124,7 @@ aside {
 .basket .basket__info .button {
   width: 100%;
   text-align: center;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #2c2419;
+  padding: 20px 50px;
 }
 
 .basket .basket__info .basket__promocode {

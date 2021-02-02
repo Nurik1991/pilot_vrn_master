@@ -1264,7 +1264,7 @@ aside {
 	}
 
 	.button {
-		padding: 12px 50px;
+		padding: 13px 42px;
 	}
 }
 
@@ -1979,6 +1979,9 @@ aside {
 	z-index: 99;
 	text-transform: uppercase;
 	position: relative;
+	font-size: 14px;
+	color: #2c2419;
+	text-align: center;
 
 
 
@@ -2271,6 +2274,13 @@ aside {
 			border: none;
 			border-radius: 0;
 			cursor: pointer;
+		}
+
+		.button {
+			width: 162px;
+			text-align: center;
+			margin: 50px auto;
+			padding: 13px;
 		}
 	}
 
