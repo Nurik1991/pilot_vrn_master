@@ -868,10 +868,6 @@ aside {
 	height: 38px;
 	z-index: 5;
 
-	&:hover path {
-		fill: red;
-	}
-
 	.svg {
 		background: #ebebeb;
 		width: 40px;
@@ -879,7 +875,24 @@ aside {
 		object-fit: contain;
 		object-position: center;
 		padding: 10px;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
+
+		&:hover {
+			background-color: #b9b4ad;
+			transition: 0.5s;
+			-webkit-transition: 0.5s;
+			-moz-transition: 0.5s;
+			-ms-transition: 0.5s;
+			-o-transition: 0.5s;
+		}
 	}
+}
+.card__like-button.active .svg {
+	background: #b9b4ad;
 }
 
 .card__buy-button {
@@ -899,13 +912,25 @@ aside {
 		object-fit: contain;
 		object-position: center;
 		padding: 12px;
-	}
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
 
-	&:hover path {
-		fill: red;
+		&:hover {
+			background-color: #ce8400;
+			transition: 0.5s;
+			-webkit-transition: 0.5s;
+			-moz-transition: 0.5s;
+			-ms-transition: 0.5s;
+			-o-transition: 0.5s;
+		}
 	}
 }
-
+.card__buy-button.active .svg {
+	background: #ce8400;
+}
 .card__attributes {
 	position: absolute;
 	top: 12px;
@@ -939,9 +964,9 @@ aside {
 		max-height: 100%;
 		width: 100%;
 
-		&:hover path {
-			fill: red;
-		}
+		// &:hover path {
+		// 	fill: red;
+		// }
 	}
 }
 
