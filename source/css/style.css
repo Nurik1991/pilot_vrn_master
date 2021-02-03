@@ -452,7 +452,7 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 630px;
+  bottom: 140px;
   z-index: 9999999999999999999;
   gap: 25px;
 }
