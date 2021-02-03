@@ -11,6 +11,7 @@
 	<!-- end swiper -->
 
 	<!-- стили -->
+	<link type="text/css" rel="stylesheet" href="source/css/t-scroll.min.css">
 	<link rel="stylesheet" href="source/css/style.css">
 	<!-- конец стили -->
 
@@ -160,7 +161,7 @@
 	<!--  Конец  О нас -->
 
 	<!--  Плюсы компании -->
-	<section class="company__advantag">
+	<section class="company__advantag fadeUp t-default" data-t-show="2">
 		<div class="container">
 
 			<!--   Заголовок и описание на сайте повторяются -->
@@ -212,7 +213,7 @@
 	<!--  Плюсы компании -->
 
 	<!--   Заголовок и описание на сайте повторяются -->
-	<div class="title">
+	<div class="title fadeUp t-default" data-t-show="2">
 		<div class="title-description">
 			<span>Есть всё необходимое</span>
 		</div>
@@ -223,7 +224,7 @@
 	<!--  Конец - Заголовок и описание на сайте повторяются -->
 
 	<!--  Переход по каталогу -->
-	<section class="catalog">
+	<section class="catalog fadeUp t-default" data-t-show="2">
 		<div class="container">
 			<div class="catalog__grid">
 				<!-- Каталог 1 -->
@@ -277,7 +278,7 @@
 	<!--  Конец Переход по каталогу -->
 
 	<!--   Блок Нужна помощь -->
-	<section class="block-help">
+	<section class="block-help fadeUp t-default" data-t-show="2">
 		<div class="container">
 			<div class="block-help__bg ">
 
@@ -380,7 +381,12 @@
 
 </body>
 
-
+<script type="text/javascript" src="source/js/t-scroll.min.js"></script>
+<script type="text/javascript">
+	Tu.tScroll({
+		't-element': '.fadeUp'
+	})
+</script>
 <!-- maska -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
