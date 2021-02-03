@@ -277,10 +277,10 @@
 							<li class="new-price"><span>2 300 ₽</span></li>
 						</ul>
 					</div>
-					<div class="card__like-button">
+					<div class="card__like-button active">
 						<img class="svg" src="source/img/like.svg" alt="+1">
 					</div>
-					<div class="card__buy-button">
+					<div class="card__buy-button active">
 						<img class="svg" src="source/img/buy.svg" alt="Купить">
 					</div>
 					<div class="card__attributes">
@@ -653,7 +653,7 @@
 					</p>
 				</div>
 				<div class="questions-block__bg-columns" id="myBtn2">
-					<a href="#0" class="questions-block__bg-button button" >Задать вопрос</a>
+					<a href="#0" class="questions-block__bg-button button">Задать вопрос</a>
 				</div>
 			</div>
 
@@ -698,29 +698,29 @@
 	<!-- End Footer -->
 
 	<!-- Всплывающее окно  -->
-<div id="myModal" class="modalwind">
-  <!-- <div class="modalwind__position"> -->
-	<div class="contact__form" >
-		<h2>Мы сважемся с Вами</h2>
-		<input type="text" placeholder="Имя">
-		<input type="text" placeholder="Телефон">
-		<input type="text" placeholder="E-mail">
+	<div id="myModal" class="modalwind">
+		<!-- <div class="modalwind__position"> -->
+		<div class="contact__form">
+			<h2>Мы сважемся с Вами</h2>
+			<input type="text" placeholder="Имя">
+			<input type="text" placeholder="Телефон">
+			<input type="text" placeholder="E-mail">
 
-		<input id="contact__formch" type="checkbox" checked hidden />
-		<label for="contact__formch"><span> Я согласен(на) на обработку персональных данных</span></label>
+			<input id="contact__formch" type="checkbox" checked hidden />
+			<label for="contact__formch"><span> Я согласен(на) на обработку персональных данных</span></label>
 
-		<div class="button">
-			<a href="#">Отправить</a>
+			<div class="button">
+				<a href="#">Отправить</a>
+			</div>
+			<span class="close"></span>
+
+			<!-- <input type="button" value="ОТПРАВИТЬ"> -->
+
 		</div>
-		<span class="close"></span>
 
-		<!-- <input type="button" value="ОТПРАВИТЬ"> -->
-
+		<!-- </div> -->
+		<!-- Конец Всплывающее окно  -->
 	</div>
-
-  <!-- </div> -->
-	<!-- Конец Всплывающее окно  -->
-</div>
 </body>
 <!-- Скрипты для Селекта -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -812,57 +812,57 @@
 <script>
 	// Get the modal
 	var modal = document.getElementById("myModal");
-	
+
 	// Get the button that opens the modal
 	var btn = document.getElementById("myBtn");
-	
+
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];
-	
+
 	// When the user clicks the button, open the modal 
-	btn.onclick = function() {
-	  modal.style.display = "block";
+	btn.onclick = function () {
+		modal.style.display = "block";
 	}
-	
+
 	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
-	  modal.style.display = "none";
-	}
-	
-	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = function(event) {
-	  if (event.target == modal) {
+	span.onclick = function () {
 		modal.style.display = "none";
-	  }
 	}
-	</script>
-	<script>
-		// Get the modal
-		var modal = document.getElementById("myModal");
-		
-		// Get the button that opens the modal
-		var btn = document.getElementById("myBtn2");
-		
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-		
-		// When the user clicks the button, open the modal 
-		btn.onclick = function() {
-		  modal.style.display = "block";
-		}
-		
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		  modal.style.display = "none";
-		}
-		
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		  if (event.target == modal) {
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function (event) {
+		if (event.target == modal) {
 			modal.style.display = "none";
-		  }
 		}
-		</script>
-	
+	}
+</script>
+<script>
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn2");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function () {
+		modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function (event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+</script>
+
 
 </html>
