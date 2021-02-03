@@ -2239,6 +2239,9 @@ aside {
   display: -ms-flexbox;
   display: flex;
   margin-top: 44px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .description__buttons .button {
@@ -2260,6 +2263,10 @@ aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.description__buttons .svg-silver:hover {
+  background: #b9b4ad;
 }
 
 .description__title {
