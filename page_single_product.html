@@ -11,9 +11,9 @@
 	<!-- end swiper -->
 
 	<!-- стили -->
+	<link type="text/css" rel="stylesheet" href="source/css/t-scroll.min.css">
 	<link rel="stylesheet" href="source/css/style.css">
 	<!-- конец стили -->
-
 	<title>Карточка товара</title>
 </head>
 
@@ -227,23 +227,23 @@
 						<a href="#like" class="svg-silver"><img class="svg" src="source/img/like_offer.svg" alt=""></a>
 					</div>
 
-					<div class="description">
+					<div class="description fadeUp t-default" data-t-show="2">
 
-						<span class="description__title">Безопасная оплата:</span>
+						<span class="description__title  ">Безопасная оплата:</span>
 						<p class="description__text">Наличными при получении, банковской картой при получении,
 							бесконтактным платежом, безналичным способом.</p>
 
-						<span class="description__title">ОПИСАНИЕ:</span>
+						<span class="description__title ">ОПИСАНИЕ:</span>
 						<p class="description__text">Чехлы изготовлены из матовой экокожи Аригон с полиуретановым
 							покрытием на хлопковой основе. Прочный, легкий, экологически чистый материал не вызывающий
 							аллергической реакции. Тыльные и боковые части чехлов сделаны из гладкой экокожи, а
 							центральная часть из перфорированной экокожи, алькантары или велюра. Чехлы изготовлены со
 							всеми технологическими отверстиями и не нарушают заводскую функциональность салона.</p>
 
-						<span class="description__title">Страна производства:</span>
+						<span class="description__title  ">Страна производства:</span>
 						<p class="description__text">Россия</p>
 
-						<span class="description__title">Характеристики:</span>
+						<span class="description__title  ">Характеристики:</span>
 						<ul class="description__list">
 							<li class="description__list-item">Толщина экокожи : 1.15 – 1.2 мм. </li>
 							<li class="description__list-item">Толщина алькантары : 1.00 – 1.05 мм. </li>
@@ -253,7 +253,8 @@
 
 						</ul>
 
-						<span class="description__title">Комплект чехлов состоит:</span>
+						<span class="description__title ">Комплект чехлов
+							состоит:</span>
 						<p class="description__text">Спинки передние-2, сидения передние-2, спинка задняя-1, сидение
 							заднее-1, подлокотник-передний-1, подлокотник задний-1, подголовники-4.</p>
 
@@ -266,7 +267,7 @@
 
 		</div>
 
-		<div class="container">
+		<div class="container fadeUp t-default" data-t-show="2">
 			<section class="additional-block">
 				<!-- recomended -->
 				<div class="single-product__preview-recomended">
@@ -495,6 +496,14 @@
 	</div>
 	<!-- Конец Всплывающее окно  -->
 </body>
+
+<script type="text/javascript" src="source/js/t-scroll.min.js"></script>
+<script type="text/javascript">
+	Tu.tScroll({
+		't-element': '.fadeUp'
+	})
+</script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"

@@ -4,8 +4,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Корзина</title>
+
+	<!-- swiper -->
+	<link rel="stylesheet" href="source/js/swiper-bundle.min.css">
+	<script src="source/js/swiper-bundle.min.js"></script>
+	<!-- end swiper -->
+
+	<!-- стили -->
+	<link type="text/css" rel="stylesheet" href="source/css/t-scroll.min.css">
 	<link rel="stylesheet" href="source/css/style.css">
+	<!-- конец стили -->
+
+	<title>Корзина</title>
 </head>
 
 <body>
@@ -293,33 +303,40 @@
 	</footer>
 
 
-<!-- Всплывающее окно  -->
-<div id="myModal" class="modalwind">
-	<!-- <div class="modalwind__position"> -->
-	  <div class="contact__form" >
-		  <h2>Мы сважемся с Вами</h2>
-		  <input type="text" placeholder="Имя">
-		  <input type="text" placeholder="Телефон">
-		  <input type="text" placeholder="E-mail">
-  
-		  <input id="contact__formch" type="checkbox" checked hidden />
-		  <label for="contact__formch"><span> Я согласен(на) на обработку персональных данных</span></label>
-  
-		  <div class="button">
-			  <a href="#">Отправить</a>
-		  </div>
-		  <span class="close"></span>
-  
-		  <!-- <input type="button" value="ОТПРАВИТЬ"> -->
-  
-	  </div>
-  
-	<!-- </div> -->
-	  
-  </div>
-  <!-- Конец Всплывающее окно  -->
+	<!-- Всплывающее окно  -->
+	<div id="myModal" class="modalwind">
+		<!-- <div class="modalwind__position"> -->
+		<div class="contact__form">
+			<h2>Мы сважемся с Вами</h2>
+			<input type="text" placeholder="Имя">
+			<input type="text" placeholder="Телефон">
+			<input type="text" placeholder="E-mail">
+
+			<input id="contact__formch" type="checkbox" checked hidden />
+			<label for="contact__formch"><span> Я согласен(на) на обработку персональных данных</span></label>
+
+			<div class="button">
+				<a href="#">Отправить</a>
+			</div>
+			<span class="close"></span>
+
+			<!-- <input type="button" value="ОТПРАВИТЬ"> -->
+
+		</div>
+
+		<!-- </div> -->
+
+	</div>
+	<!-- Конец Всплывающее окно  -->
 
 </body>
+<script type="text/javascript" src="source/js/t-scroll.min.js"></script>
+<script type="text/javascript">
+	Tu.tScroll({
+		't-element': '.fadeUp'
+	})
+</script>
+
 <!-- maska -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
