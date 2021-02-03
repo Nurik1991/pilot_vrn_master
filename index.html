@@ -11,6 +11,7 @@
 	<!-- end swiper -->
 
 	<!-- стили -->
+	<link type="text/css" rel="stylesheet" href="source/css/t-scroll.min.css">
 	<link rel="stylesheet" href="source/css/style.css">
 	<!-- конец стили -->
 
@@ -19,7 +20,7 @@
 
 <body>
 	<!-- Хедер -->
-	<header class="header header__scrollto" id="top">
+	<header class="header header__scrollto " id="top">
 		<div class="container">
 			<div class="header__logo">
 				<a href="index.html">
@@ -64,7 +65,7 @@
 	<!-- Конец Хедер -->
 
 	<!-- Плавающая корзина + подняться наверх + избранное -->
-	<div class="offer__bookmarks">
+	<div class="offer__bookmarks ">
 
 		<div class="offer__buy">
 			<a href="#0" class="offer__buy-button">
@@ -189,7 +190,7 @@
 	<!-- Конец Блок поиска -->
 
 	<!-- Переход по каталогу -->
-	<section class="catalog">
+	<section class="catalog fadeUp t-default" data-t-show="2">
 		<div class="container">
 			<div class="catalog__grid">
 				<!-- Каталог 1 -->
@@ -244,7 +245,7 @@
 
 
 	<!-- Товары дня -->
-	<section class="goods-block">
+	<section class="goods-block fadeUp t-default" data-t-show="2">
 		<div class="container">
 			<!--! Заголовок и описание на сайте повторяются -->
 			<div class="title">
@@ -548,7 +549,7 @@
 	<!-- Конец Товары дня-->
 
 	<!-- СпецПредложения -->
-	<aside class="special-goods">
+	<aside class="special-goods fadeUp t-default" data-t-show="2">
 		<div class="container">
 
 			<div class="special-goods__column  ">
@@ -586,7 +587,7 @@
 	<!--конец  СпецПредложения -->
 
 	<!-- О нас -->
-	<section class="about-us ">
+	<section class="about-us fadeUp t-default" data-t-show="3">
 		<div class="container">
 			<div class="about-us__swiper-container swiper-container">
 				<div class="swiper-wrapper">
@@ -641,7 +642,7 @@
 	<!--Конец  О нас -->
 
 	<!-- блока оставить вопрос -->
-	<aside class="questions-block ">
+	<aside class="questions-block fadeUp t-default" data-t-show="3">
 		<div class="container">
 
 			<div class="questions-block__bg">
@@ -723,6 +724,12 @@
 	</div>
 </body>
 <!-- Скрипты для Селекта -->
+<script type="text/javascript" src="source/js/t-scroll.min.js"></script>
+<script type="text/javascript">
+	Tu.tScroll({
+		't-element': '.fadeUp'
+	})
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script src="source/js/main.js"></script>

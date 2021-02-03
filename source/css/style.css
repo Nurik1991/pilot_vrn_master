@@ -349,7 +349,7 @@ aside {
 
 .offer .offer-swiper-container {
   position: absolute;
-  max-height: 989px;
+  max-height: 907px;
   z-index: 99;
 }
 
@@ -543,7 +543,7 @@ aside {
   margin: 0 auto;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-top: -160px;
+  margin-top: -255px;
   margin-bottom: 140px;
 }
 
@@ -2463,6 +2463,30 @@ aside {
 .footer__social-links .telephone a {
   color: #afafaf;
   margin-left: 47px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.social__links-instagram {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.social__links-instagram:hover,
+.telephone a:hover {
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .to-top {

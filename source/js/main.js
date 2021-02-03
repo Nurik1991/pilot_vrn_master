@@ -82,5 +82,6 @@ $(document).ready(function () {
 
 
 // маска для телефонов
+
 $("[placeholder*='Тел']").mask("+7(999) 999-9999");
 
