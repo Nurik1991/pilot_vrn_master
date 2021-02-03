@@ -100,9 +100,9 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function () {
-	modal.style.display = "block";
-}
+// btn.onclick = function () {
+// 	modal.style.display = "block";
+// }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -128,9 +128,9 @@ var btn = document.getElementById("myBtn2");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function () {
-	modal.style.display = "block";
-}
+// btn.onclick = function () {
+// 	modal.style.display = "block";
+// }
 $('.callback').click(function (event) {
 	$('.modalwind').css('display', 'block');
 });
