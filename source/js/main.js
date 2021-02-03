@@ -27,12 +27,21 @@ $(document).ready(function () {
 // маска для телефонов
 $("[placeholder*='Тел']").mask("+7(999) 999-9999");
 
+// при клике на покупку перекрасится корзинка
+if ($('body').hasClass('card__buy-button')) {
+	$('.card__buy-button').click(function (event) {
+		$('.offer__buy-button').css('background', '#ffa401');
+	});
+}
 
 
 
 // When the user scrolls down 20px from the top of the document, show the button
 // When the user scrolls down 20px from the top of the document, show the button
 $(document).ready(function () {
+	$("body,html").animate({
+		scrollTop: 2
+	}, 800);
 
 	$(function () {
 		$("#to-top__link-id").hide();
