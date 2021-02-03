@@ -1,60 +1,83 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Вкладки</title>
-  <style>
-   .tabs {
-    position: relative; /* Относительное позиционирование */
-   }
-   .tab, .tab-title {
-    display: inline-block; /* Выстраиваем по горизонтали */
-   }
-   .tab input[type="radio"] { display: none; }
-   .tab-title {
-    background: #ccc; /* Цвет фона */
-    padding: 5px 10px; /* Поля вокруг текста */
-    border: 1px solid #666; /* Параметры рамки */
-    border-bottom: none; /* Снизу линию убираем */
-   }
-   .tab-content {
-    position: absolute; /* Абсолютное позиционирование */
-    border: 1px solid #666; /* Параметры рамки */
-    padding: 10px; /* Поля вокруг текста */
-    left: 0; /* Размещаем у левого края */
-    width: calc(100% - 20px); /* Ширина содержимого */
-    display: none; /* Прячем вкладку */
-   }
-   .tab :checked + .tab-title {
-    position: relative; /* Относительное позиционирование */
-    background: #fff; /* Цвет фона */
-    top: 1px; /* Сдвигаем вниз */
-    z-index: 1; /* Отображаем поверх содержимого */
-   }
-   .tab :checked ~ .tab-content {
-    display: block; /* Показываем активную вкладку */
-   }
-  </style>
- </head>
- <body>
-  <div class="tabs">
-   <div class="tab">
-    <input type="radio" id="tab1" name="tab-group" checked>
-    <label for="tab1" class="tab-title">Вкладка 1</label> 
-	<section class="tab-content">Один</section>
-	<section class="tab-content">Два</section>
-	<section class="tab-content">Три</section>
-   </div> 
-   <div class="tab">
-    <input type="radio" id="tab2" name="tab-group">
-    <label for="tab2" class="tab-title">Вкладка 2</label> 
-    
-   </div>
-   <div class="tab">
-    <input type="radio" id="tab3" name="tab-group">
-    <label for="tab3" class="tab-title">Вкладка 3</label> 
-    
-   </div> 
-  </div>
- </body>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Swiper demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+	<!-- Demo styles -->
+	<style>
+		body,
+		html {
+			padding: 0;
+			margin: 0;
+			position: relative;
+			height: 100%;
+		}
+
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Swiper -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="source/img/sed1.png"></div>
+			<div class="swiper-slide"><img src="source/img/sed2.png"></div>
+
+			<div class="swiper-slide "><img src="source/img/sed1.png"></div>
+			<div class="swiper-slide"><img src="source/img/sed2.png"></div>
+
+			<div class="swiper-slide"><img src="source/img/sed1.png"></div>
+			<div class="swiper-slide"><img src="source/img/sed2.png"></div>
+
+			<div class="swiper-slide"><img src="source/img/sed1.png"></div>
+			<div class="swiper-slide"><img src="source/img/sed2.png"></div>
+
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 1,
+			centeredSlides: false,
+			loop: true,
+			slidesPerGroupSkip: 1,
+			grabCursor: true,
+			initialSlide: 2,
+			breakpoints: { 769: { slidesPerView: 2, slidesPerGroup: 2 } },
+			navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+			pagination: { el: '.swiper-pagination', clickable: true }
+		});
+	</script>
+</body>
+
 </html>

@@ -711,8 +711,11 @@ aside {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #eee;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .catalog__grid .catalog__block:hover {
@@ -736,14 +739,29 @@ aside {
   z-index: 1;
   opacity: 0.5;
   right: -0.5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .catalog__grid .catalog__block:hover::after {
   background-color: #cf8700;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .catalog__grid .catalog__block:hover:nth-child(2)::after {
   background-color: #cf8700;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .catalog__grid .catalog__block:nth-child(2)::after {
@@ -1385,7 +1403,7 @@ aside {
 
 .questions-block__bg .questions-block__bg-button {
   background-color: #ffa401;
-  padding: 10px 27px;
+  padding: 13.5px 27px;
   color: #2c2419;
   display: inline-block;
   float: right;
