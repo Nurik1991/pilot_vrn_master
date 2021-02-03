@@ -3491,6 +3491,12 @@ aside {
   margin-right: -90px;
   z-index: 2;
   margin: 1% auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .modalwind .contact__form h2 {

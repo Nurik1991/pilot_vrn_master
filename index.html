@@ -652,7 +652,7 @@
 					<p class="questions-block__bg-text">Наши специалисты с удовольствием ответят на все Ваши вопросы.
 					</p>
 				</div>
-				<div class="questions-block__bg-columns" id="myBtn">
+				<div class="questions-block__bg-columns" id="myBtn2">
 					<a href="#0" class="questions-block__bg-button button" >Задать вопрос</a>
 				</div>
 			</div>
@@ -699,6 +699,7 @@
 
 	<!-- Всплывающее окно  -->
 <div id="myModal" class="modalwind">
+  <!-- <div class="modalwind__position"> -->
 	<div class="contact__form" >
 		<h2>Мы сважемся с Вами</h2>
 		<input type="text" placeholder="Имя">
@@ -711,11 +712,13 @@
 		<div class="button">
 			<a href="#">Отправить</a>
 		</div>
-		<span class="close">Закрыть</span>
+		<span class="close"></span>
 
 		<!-- <input type="button" value="ОТПРАВИТЬ"> -->
 
 	</div>
+
+  <!-- </div> -->
 	<!-- Конец Всплывающее окно  -->
 </div>
 </body>
@@ -833,5 +836,33 @@
 	  }
 	}
 	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+		
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn2");
+		
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+		
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+		
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+		
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+			modal.style.display = "none";
+		  }
+		}
+		</script>
+	
 
 </html>
