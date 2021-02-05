@@ -268,6 +268,7 @@ aside {
 /* -----------	 Offer -----------	*/
 .offer {
 	// background-image: url(../img/sed1.png);
+	// background-color: #1d170f;
 	background-repeat: no-repeat;
 	height: 1000px;
 	background-attachment: fixed;
@@ -450,7 +451,7 @@ aside {
 .search-block {
 	background: #2c2419;
 	border-radius: 5px;
-	width: 1410px;
+	max-width: 1410px;
 	height: 165px;
 	display: flex;
 	margin: 0 auto;
