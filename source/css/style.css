@@ -3764,6 +3764,60 @@ aside {
 
 /*---- End всплывающее окно  ------*/
 /* ====================Мобильная версия================= */
+@media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .contact .contact__info {
+    width: 100%;
+    margin: 0;
+    margin-top: 100px;
+  }
+  .contact .contact__map {
+    width: 100%;
+    height: unset;
+  }
+  .contact .container {
+    padding: 20px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contact .contact__form {
+    width: 100%;
+    margin: 0;
+  }
+  .contact .contact__formch-check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .contact__form label span {
+    width: unset;
+  }
+  .contact input[type="checkbox"] + label::before {
+    bottom: unset;
+  }
+  .footer {
+    margin-top: unset;
+  }
+  .footer .container {
+    gap: 30px;
+    height: auto;
+  }
+  iframe {
+    width: 100%;
+    max-height: 400px;
+    margin: 40px 0;
+  }
+}
+
 /* ============Конец - Мобильная версия================= */
 /* ====================Мобильная версия================= */
 @media screen and (max-width: 768px) {
@@ -3799,6 +3853,7 @@ aside {
         grid-template-columns: 1fr;
     width: 100%;
     text-align: center;
+    padding: 20px;
   }
   .footer .footer__social-links {
     padding-left: 90px;
@@ -3806,15 +3861,6 @@ aside {
   }
   .footer .footer__social-links .telephone a {
     margin-left: 0px;
-  }
-  .contact .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    justify-items: center;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
   }
 }
 

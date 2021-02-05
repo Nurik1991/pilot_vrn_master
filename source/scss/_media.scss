@@ -1,7 +1,55 @@
 /* ====================Мобильная версия================= */
 @media screen and (max-width: 768px) {
 	// mobile
+	.header {
+		display: none;
+	}
+	.contact {
+		.contact__info {
+			width: 100%;
+			margin: 0;
+			margin-top: 100px;
+		}
+		.contact__map {
+			width: 100%;
+			height: unset;
+		}
+		.container {
+			padding: 20px;
+			grid-template-columns: 1fr;
+		}
+		.contact__form {
+			width: 100%;
+			margin: 0;
+		}
+		.contact__formch-check {
+			display: flex;
+			align-items: center;
+			height: 50px;
+			justify-content: center;
+		}
+		.contact__form label span {
+			width: unset;
+		}
+	}
 
+	.contact input[type="checkbox"] + label::before {
+		bottom: unset;
+	}
+
+	.footer {
+		margin-top: unset;
+		.container {
+			gap: 30px;
+			height: auto;
+		}
+	}
+
+	iframe {
+		width: 100%;
+		max-height: 400px;
+		margin: 40px 0;
+	}
 	// end mobile
 }
 // ____________________________________________________________________________________ //

@@ -1,6 +1,5 @@
 /* ====================Мобильная версия================= */
 @media screen and (max-width: 768px) {
-
 	// mobile
 	.breadcrumb {
 		display: none;
@@ -35,7 +34,7 @@
 			grid-template-columns: 1fr;
 			width: 100%;
 			text-align: center;
-
+			padding: 20px;
 		}
 
 		.footer__social-links {
@@ -43,20 +42,8 @@
 
 			/* text-align: center; */
 			.telephone a {
-
 				margin-left: 0px;
-
 			}
-		}
-	}
-
-	.contact {
-		.container {
-			display: grid;
-			grid-template-rows: 1fr;
-			justify-items: center;
-			grid-template-columns: none;
-
 		}
 	}
 
