@@ -119,6 +119,21 @@
 		}
 	}
 
+	.basket {
+		.container {
+			grid-template-rows: 2fr 1fr;
+			grid-template-columns: 1fr;
+		}
+
+		.basket__products {
+			.basket__products-one {
+				grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+				grid-template-columns: 1fr;
+			}
+		}
+
+	}
+
 	// end mobile
 }
 
