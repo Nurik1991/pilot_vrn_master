@@ -129,24 +129,38 @@
 			margin-right: 0;
 
 			.basket__products-one {
-				grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+				grid-template-rows: 1fr;
 				grid-template-columns: 1fr;
+				grid-gap: 15px;
+				padding: 40px 0px 0px 0px;
 
 				.card__like-button {
 					position: relative;
 					top: 0;
-					left: 0;
+					left: -100px;
 				}
 
 				.card__delete-button {
 					position: relative;
-					top: 0;
-					right: 0;
+					top: -57px;
+					right: -100px;
 				}
 			}
 		}
 
+		.basket__info {
+			.basket__promocode {
+
+				margin-top: 40px;
+				margin-bottom: 40px;
+
+			}
+		}
 	}
+
+
+
+
 
 	// end mobile
 }

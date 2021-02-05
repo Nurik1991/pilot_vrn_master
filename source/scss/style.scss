@@ -914,15 +914,16 @@ aside {
 	right: 88px;
 	bottom: 21px;
 	cursor: pointer;
-	border-radius: 40px;
+	border-radius: 42px;
 	overflow: hidden;
-	height: 38px;
+	height: 42px;
+	width: 42px;
 	z-index: 5;
 
 	.svg {
 		background: #ebebeb;
-		width: 40px;
-		height: 40px;
+		width: 42px;
+		height: 42px;
 		object-fit: contain;
 		object-position: center;
 		padding: 10px;
@@ -1096,7 +1097,7 @@ aside {
 		padding-right: 70px;
 	}
 
-	.swiper-container-vertical > .swiper-pagination-bullets {
+	.swiper-container-vertical>.swiper-pagination-bullets {
 		right: -23px;
 		top: 50%;
 		transform: translate3d(0px, -50%, 0);
@@ -1359,7 +1360,7 @@ aside {
 		text-align: left;
 	}
 
-	input[type="checkbox"]:checked + label::before {
+	input[type="checkbox"]:checked+label::before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -1370,7 +1371,7 @@ aside {
 		border-radius: 3px;
 	}
 
-	input[type="checkbox"] + label::before {
+	input[type="checkbox"]+label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -1940,8 +1941,7 @@ aside {
 	margin-bottom: 20px;
 }
 
-.description__addition {
-}
+.description__addition {}
 
 .services {
 	position: relative;
@@ -1951,11 +1951,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"] + label {
+	input[type="checkbox"]+label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"] + label::before {
+	input[type="checkbox"]+label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -1969,7 +1969,7 @@ aside {
 		bottom: 0;
 	}
 
-	input[type="checkbox"]:checked + label:before {
+	input[type="checkbox"]:checked+label:before {
 		border: 2px solid #eeeeee;
 		width: 20px;
 		height: 20px;
@@ -2028,8 +2028,7 @@ aside {
 	background: #b9b4ad;
 }
 
-.description {
-}
+.description {}
 
 .description__title {
 	font-weight: 600;
@@ -2054,8 +2053,7 @@ aside {
 	border-bottom: 1px dashed #d2d2d2;
 }
 
-.description__list-item {
-}
+.description__list-item {}
 
 .number {
 	display: flex;
@@ -2502,11 +2500,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"] + label {
+	input[type="checkbox"]+label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"] + label::before {
+	input[type="checkbox"]+label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -2520,7 +2518,7 @@ aside {
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked + label:before {
+	input[type="checkbox"]:checked+label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
