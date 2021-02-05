@@ -2672,23 +2672,15 @@ aside {
 /*--------конец 404 -----*/
 /*------- Контакты -------*/
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #eeeeee;
-  position: relative;
-  min-width: 774px;
-  height: 774px;
+  overflow: hidden;
+}
+
+.contact .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 .contact .contact__info {
@@ -3774,4 +3766,56 @@ aside {
 /* ====================Мобильная версия================= */
 /* ============Конец - Мобильная версия================= */
 /* ====================Мобильная версия================= */
+@media screen and (max-width: 768px) {
+  .breadcrumb {
+    display: none;
+  }
+  .page-404 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page-404 .page-404__number p {
+    text-align: center;
+    margin: 0;
+  }
+  .page-404 .page-404__text {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  .page-404 .page-404__lightning {
+    display: none;
+  }
+  .footer .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    text-align: center;
+  }
+  .footer .footer__social-links {
+    padding-left: 90px;
+    /* text-align: center; */
+  }
+  .footer .footer__social-links .telephone a {
+    margin-left: 0px;
+  }
+  .contact .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    justify-items: center;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+}
+
 /* ============Конец - Мобильная версия================= */

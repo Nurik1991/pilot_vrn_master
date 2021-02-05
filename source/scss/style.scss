@@ -251,6 +251,7 @@ aside {
 			-ms-transition: 0.3s;
 			-o-transition: 0.3s;
 		}
+
 		.callback a:hover {
 			border-bottom: 1px solid rgba(255, 164, 1, 1);
 			transition: 0.3s;
@@ -1095,7 +1096,7 @@ aside {
 		padding-right: 70px;
 	}
 
-	.swiper-container-vertical > .swiper-pagination-bullets {
+	.swiper-container-vertical>.swiper-pagination-bullets {
 		right: -23px;
 		top: 50%;
 		transform: translate3d(0px, -50%, 0);
@@ -1358,7 +1359,7 @@ aside {
 		text-align: left;
 	}
 
-	input[type="checkbox"]:checked + label::before {
+	input[type="checkbox"]:checked+label::before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -1369,7 +1370,7 @@ aside {
 		border-radius: 3px;
 	}
 
-	input[type="checkbox"] + label::before {
+	input[type="checkbox"]+label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -1939,8 +1940,7 @@ aside {
 	margin-bottom: 20px;
 }
 
-.description__addition {
-}
+.description__addition {}
 
 .services {
 	position: relative;
@@ -1950,11 +1950,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"] + label {
+	input[type="checkbox"]+label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"] + label::before {
+	input[type="checkbox"]+label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -1968,7 +1968,7 @@ aside {
 		bottom: 0;
 	}
 
-	input[type="checkbox"]:checked + label:before {
+	input[type="checkbox"]:checked+label:before {
 		border: 2px solid #eeeeee;
 		width: 20px;
 		height: 20px;
@@ -2022,12 +2022,12 @@ aside {
 		align-items: center;
 	}
 }
+
 .description__buttons .svg-silver:hover {
 	background: #b9b4ad;
 }
 
-.description {
-}
+.description {}
 
 .description__title {
 	font-weight: 600;
@@ -2052,8 +2052,7 @@ aside {
 	border-bottom: 1px dashed #d2d2d2;
 }
 
-.description__list-item {
-}
+.description__list-item {}
 
 .number {
 	display: flex;
@@ -2362,14 +2361,21 @@ aside {
 
 /*------- Контакты -------*/
 .contact {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
+	// display: flex;
+	// flex-direction: row;
+	// justify-content: flex-end;
+	// align-items: center;
 	background-color: #eeeeee;
-	position: relative;
-	min-width: 774px;
-	height: 774px;
+	overflow: hidden;
+
+	// position: relative;
+	// min-width: 774px;
+	// height: 774px;
+	.container {
+		// max-width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 
 	.contact__info {
 		width: 448px;
@@ -2493,11 +2499,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"] + label {
+	input[type="checkbox"]+label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"] + label::before {
+	input[type="checkbox"]+label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -2511,7 +2517,7 @@ aside {
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked + label:before {
+	input[type="checkbox"]:checked+label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
