@@ -1,5 +1,6 @@
 /* ====================Мобильная версия================= */
 @media screen and (max-width: 768px) {
+
 	// mobile
 	.breadcrumb {
 		display: none;
@@ -38,9 +39,58 @@
 		}
 
 		.footer__social-links {
+
 			/* text-align: center; */
 			.telephone a {
 				margin-left: 0px;
+			}
+		}
+	}
+
+	.pay-delivery {
+		.container {
+			display: grid;
+			grid-template-columns: 1fr;
+			width: 100%;
+			grid-gap: 50px;
+		}
+
+		.paymant {
+			padding: 20px;
+
+			.paymant__card {
+				text-align: center;
+			}
+		}
+
+		.delivery {
+			padding: 20px;
+		}
+
+	}
+
+	.questions-block__bg {
+		flex-direction: column;
+		height: 100%;
+		min-height: 208px;
+		margin-bottom: 30px;
+
+		&::after {
+			display: none;
+			clip-path: none;
+			width: 100%;
+			height: 65%;
+		}
+
+		.questions-block__bg-columns {
+			width: 100%;
+			height: 100%;
+			background-color: #ffa401;
+			opacity: 0.8;
+
+			&:last-child {
+				background: none;
+				margin-top: 10px;
 			}
 		}
 	}
