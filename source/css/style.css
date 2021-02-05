@@ -4404,6 +4404,37 @@ aside {
     padding-left: 0px;
     width: 75%;
   }
+  .contact input[type="checkbox"] + label::before {
+    left: 15%;
+  }
+  .contact .contact__form label span {
+    margin-left: 23%;
+  }
+  .basket .container {
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .basket .basket__products {
+    margin-right: 0;
+  }
+  .basket .basket__products .basket__products-one {
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .basket .basket__products .basket__products-one .card__like-button {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .basket .basket__products .basket__products-one .card__delete-button {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 }
 
 /* ============Конец - Мобильная версия================= */
