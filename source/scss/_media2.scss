@@ -121,14 +121,28 @@
 
 	.basket {
 		.container {
-			grid-template-rows: 2fr 1fr;
+			grid-template-rows: 1fr;
 			grid-template-columns: 1fr;
 		}
 
 		.basket__products {
+			margin-right: 0;
+
 			.basket__products-one {
 				grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 				grid-template-columns: 1fr;
+
+				.card__like-button {
+					position: relative;
+					top: 0;
+					left: 0;
+				}
+
+				.card__delete-button {
+					position: relative;
+					top: 0;
+					right: 0;
+				}
 			}
 		}
 
