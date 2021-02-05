@@ -159,3 +159,27 @@ window.onclick = function (event) {
 
 
 
+// Для моб меню
+$('.have-sub').click(function(event) {
+
+
+if ($('.have-sub').children('.sub-menu').hasClass('active')) {
+		$(this).children('.sub-menu').removeClass('active');
+}
+else{
+		$(this).children('.sub-menu').addClass('active');
+}
+
+
+});
+
+
+$('.sub-menu__links').click(function(event) {
+	// $('#checkbox').removeClass('mobile-menu__checkbox');
+	// $('#checkbox').addClass('mobile-menu__checkbox');
+});
+$('.menu__item a').click(function(event) {
+	// $('#checkbox').removeClass('mobile-menu__checkbox');
+	// $('#checkbox').addClass('mobile-menu__checkbox');
+});
+// mobile-menu__checkbox
