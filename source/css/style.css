@@ -4404,6 +4404,12 @@ aside {
     padding-left: 0px;
     width: 75%;
   }
+  .contact input[type="checkbox"] + label::before {
+    left: 15%;
+  }
+  .contact .contact__form label span {
+    margin-left: 23%;
+  }
 }
 
 /* ============Конец - Мобильная версия================= */

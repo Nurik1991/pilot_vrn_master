@@ -105,6 +105,20 @@
 		}
 	}
 
+	.contact {
+		input[type="checkbox"]+label::before {
+			left: 15%;
+		}
+
+		.contact__form {
+			label {
+				span {
+					margin-left: 23%;
+				}
+			}
+		}
+	}
+
 	// end mobile
 }
 
