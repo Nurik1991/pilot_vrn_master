@@ -4557,6 +4557,12 @@ aside {
     margin-top: 40px;
     margin-bottom: 40px;
   }
+  .checkout .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
 }
 
 /* ============Конец - Мобильная версия================= */
