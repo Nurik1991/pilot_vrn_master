@@ -5,6 +5,11 @@
 
 /* -----------	Основной стиль -----------	*/
 // типография
+html {
+	overflow-x: hidden;
+	width: 100%;
+	min-width: 300px;
+}
 body {
 	font-family: "Exo 2";
 	overflow-x: hidden;
@@ -268,6 +273,7 @@ aside {
 /* -----------	 Offer -----------	*/
 .offer {
 	// background-image: url(../img/sed1.png);
+	// background-color: #1d170f;
 	background-repeat: no-repeat;
 	height: 1000px;
 	background-attachment: fixed;
@@ -450,7 +456,7 @@ aside {
 .search-block {
 	background: #2c2419;
 	border-radius: 5px;
-	width: 1410px;
+	max-width: 1410px;
 	height: 165px;
 	display: flex;
 	margin: 0 auto;
@@ -1097,7 +1103,7 @@ aside {
 		padding-right: 70px;
 	}
 
-	.swiper-container-vertical>.swiper-pagination-bullets {
+	.swiper-container-vertical > .swiper-pagination-bullets {
 		right: -23px;
 		top: 50%;
 		transform: translate3d(0px, -50%, 0);
@@ -1360,7 +1366,7 @@ aside {
 		text-align: left;
 	}
 
-	input[type="checkbox"]:checked+label::before {
+	input[type="checkbox"]:checked + label::before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -1371,7 +1377,7 @@ aside {
 		border-radius: 3px;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -1941,7 +1947,8 @@ aside {
 	margin-bottom: 20px;
 }
 
-.description__addition {}
+.description__addition {
+}
 
 .services {
 	position: relative;
@@ -1951,11 +1958,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -1969,7 +1976,7 @@ aside {
 		bottom: 0;
 	}
 
-	input[type="checkbox"]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 2px solid #eeeeee;
 		width: 20px;
 		height: 20px;
@@ -2028,7 +2035,8 @@ aside {
 	background: #b9b4ad;
 }
 
-.description {}
+.description {
+}
 
 .description__title {
 	font-weight: 600;
@@ -2053,7 +2061,8 @@ aside {
 	border-bottom: 1px dashed #d2d2d2;
 }
 
-.description__list-item {}
+.description__list-item {
+}
 
 .number {
 	display: flex;
@@ -2500,11 +2509,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -2518,7 +2527,7 @@ aside {
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
