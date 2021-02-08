@@ -13,11 +13,11 @@ $(document).ready(function () {
 
    setTimeout(function(){
     show_third();
-},3500);
+},2500);
 
     setTimeout(function(){
     show_fourth();
-},4500);
+},3000);
 
 });
  
@@ -46,7 +46,8 @@ $('.offer__text').css({
 function show_fourth() {
 
 	$('.offer-swiper-pagination').css({
-		visibility: 'visible' 
+		visibility: 'visible' ,
+		opacity: '1'
 	});
 }
 
