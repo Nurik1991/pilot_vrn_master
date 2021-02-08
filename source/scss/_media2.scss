@@ -265,6 +265,19 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
 	// mobile
+	.contact {
+		.contact__info {
+			width: 265px;
+		}
+	}
+
+	.basket__products-one {
+		.card__title {
+			padding: 10px;
+			min-width: 215px;
+		}
+	}
+
 	.checkout {
 		.checkout__enter-data {
 			width: 100%;
