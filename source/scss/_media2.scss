@@ -236,6 +236,10 @@
 	}
 
 	.our-work {
+		.title-name {
+			padding: 0;
+		}
+
 		.swiper-slide {
 			img {
 				width: 100% !important;
@@ -247,6 +251,11 @@
 				}
 			}
 		}
+	}
+
+	.our-work__swiper-container {
+		width: 100%;
+		margin: 0;
 	}
 
 	// end mobile
@@ -280,6 +289,27 @@
 
 	.wrapperbg {
 		margin-top: 0;
+	}
+
+	.our-work {
+		.title-name {
+			text-align: center;
+			padding-bottom: 0px;
+		}
+
+		.swiper-wrapper {
+			padding-bottom: 20px;
+		}
+
+		.swiper-slide {
+			img {
+				height: 130px !important;
+			}
+		}
+	}
+
+	.our-work__swiper-container {
+		margin-bottom: 0;
 	}
 
 	// end mobile
