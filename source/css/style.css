@@ -4777,6 +4777,24 @@ aside {
     text-align: center;
     height: 100%;
   }
+  .tabs__head {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+  .tabs__head .tabs__button {
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .our-work .swiper-slide img {
+    width: 100% !important;
+    height: 120% !important;
+  }
+  .our-work .swiper-slide img:hover {
+    width: 100% !important;
+    height: 120% !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

@@ -231,8 +231,29 @@
 
 
 
+	.tabs__head {
+		margin-top: 60px;
+		margin-bottom: 0;
 
+		.tabs__button {
+			grid-template-rows: 1fr;
+			grid-template-columns: 1fr;
+		}
+	}
 
+	.our-work {
+		.swiper-slide {
+			img {
+				width: 100% !important;
+				height: 120% !important;
+
+				&:hover {
+					width: 100% !important;
+					height: 120% !important;
+				}
+			}
+		}
+	}
 
 	// end mobile
 }
