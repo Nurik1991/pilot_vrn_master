@@ -103,13 +103,15 @@ body {
 .header,
 .offer__text,
 .offer-swiper-pagination,
-.offer-swiper-container {
+.offer-swiper-container,
+.search-block,
+.offer__bookmarks {
   visibility: hidden;
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
 }
 
 .header {
@@ -124,7 +126,9 @@ body {
   opacity: 0;
 }
 
-.offer-swiper-container {
+.offer-swiper-container,
+.search-block,
+.offer__bookmarks {
   opacity: 0;
 }
 
