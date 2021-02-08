@@ -239,7 +239,33 @@
 
 // ____________________________________________________________________________________ //
 @media (min-width: 768px) and (max-width: 1024px) {
+
 	// mobile
+	.checkout {
+		.checkout__enter-data {
+			width: 100%;
+		}
+
+		input {
+			width: 100%;
+			padding-right: 15px;
+		}
+
+		.note {
+			width: 100% !important;
+			height: 316px;
+		}
+
+		.phone,
+		.city,
+		.index {
+			width: 100%;
+		}
+	}
+
+	.wrapperbg {
+		margin-top: 0;
+	}
 
 	// end mobile
 }
