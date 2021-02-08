@@ -1,3 +1,62 @@
+ 
+
+ 
+$(document).ready(function () {
+
+ setTimeout(function(){
+    show_first();
+},500);
+
+  setTimeout(function(){
+    show_second();
+},2000);
+
+   setTimeout(function(){
+    show_third();
+},3500);
+
+    setTimeout(function(){
+    show_fourth();
+},4500);
+
+});
+ 
+
+function show_first() {
+	$('.offer-swiper-container').css({
+		visibility: 'visible',
+		opacity: '1'
+	});
+}
+function  show_second() {
+	$('.header').css({
+		visibility: 'visible',
+		top: '0px'
+	});
+}
+function show_third() {
+	  
+$('.offer__text').css({
+		visibility: 'visible',
+		left: '0px'
+	});
+}
+
+
+function show_fourth() {
+
+	$('.offer-swiper-pagination').css({
+		visibility: 'visible' 
+	});
+}
+
+
+
+
+
+
+
+
 // svg поддержка
 $(document).ready(function () {
 	$('img[src$=".svg"]').each(function () {
@@ -29,11 +88,11 @@ $("[placeholder*='Тел']").mask("+7(999) 999-9999");
 
 // при клике на покупку перекрасится корзинка
 
- 
-	$('.card__buy-button').click(function (event) {
-		$('.offer__buy-button').css('background', '#ffa401');
-	});
- 
+
+$('.card__buy-button').click(function (event) {
+	$('.offer__buy-button').css('background', '#ffa401');
+});
+
 
 
 
@@ -161,25 +220,25 @@ window.onclick = function (event) {
 
 
 // Для моб меню
-$('.have-sub').click(function(event) {
+$('.have-sub').click(function (event) {
 
 
-if ($('.have-sub').children('.sub-menu').hasClass('active')) {
+	if ($('.have-sub').children('.sub-menu').hasClass('active')) {
 		$(this).children('.sub-menu').removeClass('active');
-}
-else{
+	}
+	else {
 		$(this).children('.sub-menu').addClass('active');
-}
+	}
 
 
 });
 
 
-$('.sub-menu__links').click(function(event) {
+$('.sub-menu__links').click(function (event) {
 	// $('#checkbox').removeClass('mobile-menu__checkbox');
 	// $('#checkbox').addClass('mobile-menu__checkbox');
 });
-$('.menu__item a').click(function(event) {
+$('.menu__item a').click(function (event) {
 	// $('#checkbox').removeClass('mobile-menu__checkbox');
 	// $('#checkbox').addClass('mobile-menu__checkbox');
 });

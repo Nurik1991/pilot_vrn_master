@@ -100,8 +100,34 @@ body {
   z-index: 3;
 }
 
-.main {
+.header,
+.offer__text,
+.offer-swiper-pagination,
+.offer-swiper-container {
+  visibility: hidden;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.header {
+  top: -100px;
+}
+
+.offer__text {
+  left: -450px;
+}
+
+.offer-swiper-container {
+  opacity: 0;
+}
+
+.main-page {
   overflow-x: hidden;
+  position: relative;
+  z-index: 0;
 }
 
 h1 {
