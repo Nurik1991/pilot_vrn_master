@@ -5013,6 +5013,81 @@ aside {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
   }
+  .checkout .checkout__enter-data {
+    width: 100%;
+  }
+  .checkout input {
+    width: 100%;
+  }
+  .checkout .note {
+    width: 100% !important;
+    height: 316px;
+  }
+  .checkout .phone,
+  .checkout .city,
+  .checkout .index {
+    width: 100%;
+  }
+  .checkout__shipping-payment .checkout__summa,
+  .checkout__shipping-payment .checkout__sale,
+  .checkout__shipping-payment .checkout__shipping,
+  .checkout__shipping-payment .checkout__total,
+  .checkout__shipping-payment .checkout__payment {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .checkout__shipping-payment {
+    margin-left: 0px;
+  }
+  .checkout__shipping-payment .checkout__title {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .checkout__shipping-payment .checkout__number {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .checkout__shipping-payment .checkout__info a {
+    width: 100%;
+  }
+  .checkout__shipping-payment .checkout__info input[type="checkbox"] + label:before {
+    bottom: 38px;
+  }
+  .checkout__shipping-payment .button {
+    margin: 0;
+  }
+  .wrapperbg {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .checkout .checkout__enter-data {
+    width: 100%;
+  }
+  .checkout input {
+    width: 100%;
+    padding-right: 15px;
+  }
+  .checkout .note {
+    width: 100% !important;
+    height: 316px;
+  }
+  .checkout .phone,
+  .checkout .city,
+  .checkout .index {
+    width: 100%;
+  }
+  .wrapperbg {
+    margin-top: 0;
+  }
 }
 
 /* ============Конец - Мобильная версия================= */
