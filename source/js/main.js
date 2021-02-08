@@ -19,6 +19,10 @@ $(document).ready(function () {
     show_fourth();
 },3500);
 
+        setTimeout(function(){
+    show_fiveth();
+},4500);
+
 });
  
 
@@ -50,6 +54,15 @@ function show_fourth() {
 		opacity: '1'
 	});
 }
+function show_fiveth() {
+
+	$('.search-block, .offer__bookmarks').css({
+		visibility: 'visible' ,
+		opacity: '1'
+	});
+}
+
+
 
 
 
