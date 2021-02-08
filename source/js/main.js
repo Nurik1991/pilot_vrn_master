@@ -13,11 +13,11 @@ $(document).ready(function () {
 
    setTimeout(function(){
     show_third();
-},2500);
+},3000);
 
     setTimeout(function(){
     show_fourth();
-},3000);
+},3500);
 
 });
  
