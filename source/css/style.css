@@ -119,7 +119,7 @@ body {
 }
 
 .offer__text {
-  left: -450px;
+  opacity: 0;
 }
 
 .offer-swiper-pagination {
@@ -3208,6 +3208,7 @@ aside {
 .checkout__shipping-payment .button {
   margin-left: 30px;
   padding: 16px 36px;
+  position: relative;
 }
 
 .checkout__shipping-payment .offer__text-button {
