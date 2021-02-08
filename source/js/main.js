@@ -1,30 +1,34 @@
  
 
- 
+
 $(document).ready(function () {
 
- setTimeout(function(){
-    show_first();
-},500);
+	setTimeout(function(){
+		show_first();
+	},500);
 
-  setTimeout(function(){
-    show_second();
-},2000);
+	setTimeout(function(){
+		show_second();
+	},2000);
 
-   setTimeout(function(){
-    show_third();
-},3000);
+	setTimeout(function(){
+		show_third();
+	},3000);
 
-    setTimeout(function(){
-    show_fourth();
-},3500);
+	setTimeout(function(){
+		show_fourth();
+	},4000);
 
-        setTimeout(function(){
-    show_fiveth();
-},4500);
+	setTimeout(function(){
+		show_fiveth();
+	},5000);
+
+	setTimeout(function(){
+		show_sixth();
+	},5500);
 
 });
- 
+
 
 function show_first() {
 	$('.offer-swiper-container').css({
@@ -39,10 +43,10 @@ function  show_second() {
 	});
 }
 function show_third() {
-	  
-$('.offer__text').css({
+
+	$('.offer__text').css({
 		visibility: 'visible',
-		left: '0px'
+		opacity: '1'
 	});
 }
 
@@ -56,7 +60,14 @@ function show_fourth() {
 }
 function show_fiveth() {
 
-	$('.search-block, .offer__bookmarks').css({
+	$('.search-block').css({
+		visibility: 'visible' ,
+		opacity: '1'
+	});
+}
+function show_sixth() {
+
+	$('.offer__bookmarks').css({
 		visibility: 'visible' ,
 		opacity: '1'
 	});
