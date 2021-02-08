@@ -39,45 +39,36 @@
 	</style>
 </head>
 
+
+<style>
+	body {
+		height: 1000px;
+	}
+
+	.col {
+		position: sticky;
+		top: 0;
+		height: 50px;
+		width: 50%;
+		border: 1px solid red;
+	}
+
+	.row {
+		width: 500px;
+		border: 1px solid green;
+		margin: 0 auto;
+		height: 500px;
+	}
+</style>
+
 <body>
-	<!-- Swiper -->
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide"><img src="source/img/sed1.png"></div>
-			<div class="swiper-slide"><img src="source/img/sed2.png"></div>
 
-			<div class="swiper-slide "><img src="source/img/sed1.png"></div>
-			<div class="swiper-slide"><img src="source/img/sed2.png"></div>
-
-			<div class="swiper-slide"><img src="source/img/sed1.png"></div>
-			<div class="swiper-slide"><img src="source/img/sed2.png"></div>
-
-			<div class="swiper-slide"><img src="source/img/sed1.png"></div>
-			<div class="swiper-slide"><img src="source/img/sed2.png"></div>
-
-		</div>
-		<div class="swiper-button-next"></div>
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-pagination"></div>
+	<div class="row" style="display: flex; flex-direction: row;">
+		<div class="col">1</div>
+		<div class="col">2</div>
 	</div>
 
-	<!-- Swiper JS -->
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-	<!-- Initialize Swiper -->
-	<script>
-		var swiper = new Swiper('.swiper-container', {
-			slidesPerView: 1,
-			centeredSlides: false,
-			loop: true,
-			slidesPerGroupSkip: 1,
-			grabCursor: true,
-			initialSlide: 2,
-			breakpoints: { 769: { slidesPerView: 2, slidesPerGroup: 2 } },
-			navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-			pagination: { el: '.swiper-pagination', clickable: true }
-		});
-	</script>
 </body>
 
 </html>
