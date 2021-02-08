@@ -12,8 +12,11 @@ html {
 }
 body {
 	font-family: "Exo 2";
-	overflow-x: hidden;
 	z-index: 3;
+}
+
+.main {
+	overflow-x: hidden;
 }
 
 h1 {
