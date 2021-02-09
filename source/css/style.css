@@ -3369,6 +3369,11 @@ aside {
   display: block;
 }
 
+.basket .basket__info .button-back-shop {
+  background-color: silver;
+  margin-top: 25px;
+}
+
 .basket .basket__info .basket__promocode {
   display: -ms-grid;
   display: grid;
@@ -3814,6 +3819,10 @@ aside {
 /*---- End всплывающее окно  ------*/
 /* ====================Мобильная версия================= */
 @media screen and (max-width: 768px) {
+  .paymant__card svg {
+    width: 100%;
+    display: block;
+  }
   .header {
     display: none;
   }
