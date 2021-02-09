@@ -3854,6 +3854,16 @@ aside {
   border-bottom: 2px solid #ffa401;
 }
 
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background: url(../img/cli.png) no-repeat;
+  cursor: pointer;
+}
+
 /* ====================Мобильная версия================= */
 @media screen and (max-width: 768px) {
   .paymant__card svg {
