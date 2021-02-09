@@ -2667,7 +2667,7 @@ aside {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 100%;
-  min-height: 500px;
+  min-height: 63vh;
 }
 
 .page-404 .page-404__number p {
@@ -3850,6 +3850,10 @@ aside {
 }
 
 /*-----end Анимация 404 -*/
+.link__home {
+  border-bottom: 2px solid #ffa401;
+}
+
 /* ====================Мобильная версия================= */
 @media screen and (max-width: 768px) {
   .paymant__card svg {
