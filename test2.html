@@ -9,20 +9,32 @@
 		.test{
 			width: 200px;
 			height: 500px;
-			animation: drawStroke 1500ms ease-out 500ms forwards;
+			
+			stroke:#ffa401;
 		}
+		.path {
+			background: #fff;
+  stroke-dasharray:340;
+  stroke-dashoffset: 340;
+  animation: dash 3s linear forwards;
+  fill:#fff;
+  /* animation-fill-mode: forwards; */
+ 
+}
+@keyframes dash {
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 	</style>
 </head>
 <body>
 	<svg  class="test">
-		<path
-		  stroke="crimson"
-		  stroke-width="2"
-		  d="M 20,20 L 50,70  
-		     M 10,100 L 50,70
-		     M 10,100 L 50,150
-			 M 10,190 L 50,150 
-			 M 10,190 L 50,250 
+		<path class="path"
+		  stroke="#ffa401"
+		  stroke-width="4"
+		  d="M 50,10,30,42, 33,45,70,70, 72,69,20,130,22,132,70,170,70,170,20,220,22,219,45,240      
 			 "/>
 	  </svg>
 </body>
