@@ -258,6 +258,31 @@
 		margin: 0;
 	}
 
+	.page-404 {
+		.page-404__text {
+			p {
+				font-size: 50px;
+			}
+		}
+	}
+
+	.crack {
+		position: relative;
+		z-index: 4;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.page-404 {
+		.page-404__text {
+			p {
+
+				font-weight: bold;
+				margin-right: 4px;
+			}
+		}
+	}
+
 	// end mobile
 }
 

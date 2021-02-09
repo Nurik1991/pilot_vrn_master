@@ -2364,15 +2364,18 @@ aside {
 	height: 100%;
 	min-height: 63vh;
 
-	.page-404__number p {
-		font-size: 100px;
-		font-weight: bold;
-		margin-right: 62px;
+	.page-404__text {
+		p {
+			font-size: 100px;
+			font-weight: bold;
+			margin-right: 62px;
+		}
+
 	}
 
 	.page-404__text {
 		font-size: 20px;
-		width: 492px;
+		width: 100%;
 		margin-left: 56px;
 	}
 
