@@ -3821,6 +3821,35 @@ aside {
 }
 
 /*---- End всплывающее окно  ------*/
+/*----- Анимация 404 -*/
+.test {
+  width: 100px;
+  height: 244px;
+  stroke: #ffa401;
+}
+
+.path {
+  background: #fff;
+  stroke-dasharray: 340;
+  stroke-dashoffset: 340;
+  -webkit-animation: dash 2s linear forwards;
+          animation: dash 2s linear forwards;
+  fill: #fff;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*-----end Анимация 404 -*/
 /* ====================Мобильная версия================= */
 @media screen and (max-width: 768px) {
   .paymant__card svg {

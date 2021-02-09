@@ -136,7 +136,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -151,11 +151,11 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			background: white;
 		}
 
-		input[type="radio"]:checked + label:before {
+		input[type="radio"]:checked+label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -173,11 +173,11 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			background: white;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -192,7 +192,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked + label:before {
+		input[type="radio"]:checked+label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -253,7 +253,7 @@
 			display: none;
 		}
 
-		input[type="checkbox"] + label:before {
+		input[type="checkbox"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 20px;
@@ -267,7 +267,7 @@
 			left: 30px;
 		}
 
-		input[type="checkbox"]:checked + label::before {
+		input[type="checkbox"]:checked+label::before {
 			border: 1px solid #fff;
 			width: 20px;
 			height: 20px;
@@ -680,6 +680,7 @@
 }
 
 .our-work {
+
 	/* CSS */
 	/*************************************
 * Базовые стили lightbox. 
@@ -928,11 +929,11 @@
 		display: none;
 	}
 
-	input[type="checkbox"] + label {
+	input[type="checkbox"]+label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"] + label::before {
+	input[type="checkbox"]+label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -946,7 +947,7 @@
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked + label:before {
+	input[type="checkbox"]:checked+label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -972,3 +973,28 @@
 // }
 
 /*---- End всплывающее окно  ------*/
+
+/*----- Анимация 404 -*/
+.test {
+	width: 100px;
+	height: 244px;
+
+	stroke: #ffa401;
+}
+
+.path {
+	background: #fff;
+	stroke-dasharray: 340;
+	stroke-dashoffset: 340;
+	animation: dash 2s linear forwards;
+	fill: #fff;
+}
+
+@keyframes dash {
+
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+/*-----end Анимация 404 -*/
