@@ -2377,6 +2377,7 @@ aside {
 }
 
 .description__title {
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   display: -webkit-box;
@@ -2914,6 +2915,21 @@ aside {
 
 .zoom img::selection {
   background-color: transparent;
+}
+
+.silver::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -4px;
+  padding: 10px 50px;
+  border: 1px solid #b9b4ad;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 /*--------конец Контакты -----*/
@@ -4024,13 +4040,13 @@ aside {
     color: white;
   }
   25% {
-    color: #43CB9D;
+    color: #43cb9d;
   }
   50% {
     color: white;
   }
   75% {
-    color: #43CB9D;
+    color: #43cb9d;
   }
   100% {
     color: white;
@@ -4042,13 +4058,13 @@ aside {
     color: white;
   }
   25% {
-    color: #43CB9D;
+    color: #43cb9d;
   }
   50% {
     color: white;
   }
   75% {
-    color: #43CB9D;
+    color: #43cb9d;
   }
   100% {
     color: white;
