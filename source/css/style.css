@@ -2673,7 +2673,6 @@ aside {
 .page-404 .page-404__text p {
   font-size: 100px;
   font-weight: bold;
-  margin-right: 62px;
 }
 
 .page-404 .page-404__text {
@@ -3878,7 +3877,7 @@ aside {
 .page-404 .crack {
   position: relative;
   z-index: 4;
-  margin-left: -50px;
+  margin: 50px;
 }
 
 .page-404 .crack polyline {
