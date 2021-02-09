@@ -3877,7 +3877,7 @@ aside {
 .page-404 .crack {
   position: relative;
   z-index: 4;
-  margin: 50px;
+  margin: 62px;
 }
 
 .page-404 .crack polyline {
@@ -5619,14 +5619,13 @@ aside {
     width: 100%;
     margin: 0;
   }
-  .page-404 .page-404__text p {
-    font-size: 50px;
-  }
-  .crack {
+  .page-404 .crack {
     position: relative;
     z-index: 4;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0px 10px 0 0;
+  }
+  .page-404 .page-404__text p {
+    font-size: 50px;
   }
   .page-404 .page-404__text p {
     font-weight: bold;
