@@ -136,7 +136,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -151,11 +151,11 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			background: white;
 		}
 
-		input[type="radio"]:checked+label:before {
+		input[type="radio"]:checked + label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -173,11 +173,11 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			background: white;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -192,7 +192,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked+label:before {
+		input[type="radio"]:checked + label:before {
 			border: 1px solid #c5c5c5;
 			width: 22px;
 			height: 22px;
@@ -253,7 +253,7 @@
 			display: none;
 		}
 
-		input[type="checkbox"]+label:before {
+		input[type="checkbox"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 20px;
@@ -267,7 +267,7 @@
 			left: 30px;
 		}
 
-		input[type="checkbox"]:checked+label::before {
+		input[type="checkbox"]:checked + label::before {
 			border: 1px solid #fff;
 			width: 20px;
 			height: 20px;
@@ -467,6 +467,11 @@
 			text-align: center;
 			padding: 20px 50px;
 			display: block;
+		}
+
+		.button-back-shop {
+			background-color: silver;
+			margin-top: 25px;
 		}
 
 		.basket__promocode {
@@ -675,7 +680,6 @@
 }
 
 .our-work {
-
 	/* CSS */
 	/*************************************
 * Базовые стили lightbox. 
@@ -924,11 +928,11 @@
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -942,7 +946,7 @@
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;

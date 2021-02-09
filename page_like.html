@@ -16,7 +16,7 @@
 	<!-- конец стили -->
 	<link rel="shortcut icon" href="source/img/favicon.png" type="image/png">
 
-	<title>Корзина</title>
+	<title>Избранное</title>
 </head>
 
 <body>
@@ -171,7 +171,7 @@
 	<!--Основной блок корзины -->
 
 	<section class="basket">
-		<h2>В корзине <span class="basket__cout">3</span> товара</h2>
+		<h2>В избранном <span class="basket__cout">3</span> товара</h2>
 		<div class="container">
 
 			<!-- блок с продуктами -->
@@ -206,7 +206,9 @@
 							<li class="new-price"><span>2 300 ₽</span></li>
 						</ul>
 					</div>
-
+					<div class="card__like-button">
+						<img class="svg" src="source/img/buy.svg" alt="+1">
+					</div>
 					<div class="card__delete-button">
 						<img class="svg" src="source/img/delete.svg" alt="+1">
 					</div>
@@ -242,7 +244,9 @@
 							<li class="new-price"><span>2 300 ₽</span></li>
 						</ul>
 					</div>
-
+					<div class="card__like-button">
+						<img class="svg" src="source/img/buy.svg" alt="+1">
+					</div>
 					<div class="card__delete-button">
 						<img class="svg" src="source/img/delete.svg" alt="+1">
 					</div>
@@ -278,7 +282,9 @@
 							<li class="new-price"><span>2 300 ₽</span></li>
 						</ul>
 					</div>
-
+					<div class="card__like-button">
+						<img class="svg" src="source/img/buy.svg" alt="+1">
+					</div>
 					<div class="card__delete-button">
 						<img class="svg" src="source/img/delete.svg" alt="+1">
 					</div>
@@ -296,10 +302,7 @@
 						<p class="basket-title">Товары <span>(3)</span></p>
 						<p class="basket-price">5 530 ₽</p>
 					</div>
-					<div class="basket__line">
-						<p class="basket-title">Установка</p>
-						<p class="basket-price">2 000 ₽</p>
-					</div>
+
 					<div class="basket__line">
 						<p class="basket-title">Скидка на товары</p>
 						<p class="basket-price">530 ₽</p>
@@ -312,11 +315,9 @@
 				<div class="button">
 					<a href="page_checkout.html" class="button__button-link">ОФОРМИТЬ ЗАКАЗ</a>
 				</div>
-				<div class="basket__promocode">
-					<input type="text" placeholder="Пропокод на скидку">
-					<div class="button">
-						<a href="#">Применить</a>
-					</div>
+
+				<div class="button button-back-shop">
+					<a href="/" class="button__button-link">Продолжить покупки</a>
 				</div>
 			</div>
 			<!-- Конец  Блок с информацией о цене и заказе-->

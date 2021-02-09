@@ -222,6 +222,9 @@ aside {
   height: 80px;
   background: -webkit-gradient(linear, left top, left bottom, from(#1d170f), color-stop(146.88%, rgba(29, 23, 15, 0.6)));
   background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%);
+  position: fixed;
+  width: 100%;
+  z-index: 9999999999;
 }
 
 .header__logo {
@@ -2685,6 +2688,7 @@ aside {
 }
 
 .breadcrumb {
+  margin-top: 80px;
   background-color: #fff;
   font-size: 13px;
   color: #9a9a9a;
@@ -3369,6 +3373,11 @@ aside {
   display: block;
 }
 
+.basket .basket__info .button-back-shop {
+  background-color: silver;
+  margin-top: 25px;
+}
+
 .basket .basket__info .basket__promocode {
   display: -ms-grid;
   display: grid;
@@ -3814,6 +3823,10 @@ aside {
 /*---- End всплывающее окно  ------*/
 /* ====================Мобильная версия================= */
 @media screen and (max-width: 768px) {
+  .paymant__card svg {
+    width: 100%;
+    display: block;
+  }
   .header {
     display: none;
   }

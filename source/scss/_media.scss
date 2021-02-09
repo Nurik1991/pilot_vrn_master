@@ -1,6 +1,12 @@
 /* ====================Мобильная версия================= */
 @media screen and (max-width: 768px) {
 	// mobile
+
+	.paymant__card svg {
+		width: 100%;
+		display: block;
+	}
+
 	.header {
 		display: none;
 	}
@@ -838,11 +844,6 @@
 
 	.pay-delivery {
 		margin: 100px auto;
-	}
-
-	.offer {
-		.offer-swiper-container {
-		}
 	}
 
 	.catalog__grid {
