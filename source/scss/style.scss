@@ -1144,7 +1144,7 @@ aside {
 		padding-right: 70px;
 	}
 
-	.swiper-container-vertical>.swiper-pagination-bullets {
+	.swiper-container-vertical > .swiper-pagination-bullets {
 		right: -23px;
 		top: 50%;
 		transform: translate3d(0px, -50%, 0);
@@ -1409,7 +1409,7 @@ aside {
 		text-align: left;
 	}
 
-	input[type="checkbox"]:checked+label::before {
+	input[type="checkbox"]:checked + label::before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -1420,7 +1420,7 @@ aside {
 		border-radius: 3px;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -1990,7 +1990,8 @@ aside {
 	margin-bottom: 20px;
 }
 
-.description__addition {}
+.description__addition {
+}
 
 .services {
 	position: relative;
@@ -2000,11 +2001,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -2018,7 +2019,7 @@ aside {
 		bottom: 0;
 	}
 
-	input[type="checkbox"]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 2px solid #eeeeee;
 		width: 20px;
 		height: 20px;
@@ -2043,7 +2044,7 @@ aside {
 }
 
 .description__price {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 
 	.new-price {
 		margin-left: 30px;
@@ -2077,7 +2078,8 @@ aside {
 	background: #b9b4ad;
 }
 
-.description {}
+.description {
+}
 
 .description__title {
 	font-weight: 600;
@@ -2102,7 +2104,8 @@ aside {
 	border-bottom: 1px dashed #d2d2d2;
 }
 
-.description__list-item {}
+.description__list-item {
+}
 
 .number {
 	display: flex;
@@ -2370,7 +2373,6 @@ aside {
 			font-weight: bold;
 			// margin-right: 62px;
 		}
-
 	}
 
 	.page-404__text {
@@ -2553,11 +2555,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -2571,7 +2573,7 @@ aside {
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
