@@ -3865,18 +3865,23 @@ aside {
 }
 
 /*---ан--*/
-svg {
+.page-404 {
+  /* https://goo.gl/v323yz */
+  /* https://goo.gl/p1Hnde */
+}
+
+.page-404 svg {
   width: 50px;
   height: auto;
 }
 
-.crack {
+.page-404 .crack {
   position: relative;
   z-index: 4;
   margin-left: -50px;
 }
 
-.crack polyline {
+.page-404 .crack polyline {
   fill: none;
   stroke: #ffa401;
   stroke-width: 10px;
@@ -3888,7 +3893,7 @@ svg {
   animation: drawStroke 1500ms ease-out 500ms forwards;
 }
 
-main {
+.page-404 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3902,7 +3907,7 @@ main {
           justify-content: center;
 }
 
-main > div {
+.page-404 main > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3915,16 +3920,16 @@ main > div {
   overflow: hidden;
 }
 
-main > div svg {
+.page-404 main > div svg {
   position: relative;
   z-index: 1;
 }
 
-main > div svg polygon {
+.page-404 main > div svg polygon {
   fill: #ffffff;
 }
 
-main > div span {
+.page-404 main > div span {
   display: block;
   position: relative;
   z-index: 0;
@@ -3932,12 +3937,12 @@ main > div span {
   line-height: 1.4;
 }
 
-main > div:first-child {
+.page-404 main > div:first-child {
   text-align: right;
   z-index: 1;
 }
 
-main > div:first-child span:first-child {
+.page-404 main > div:first-child span:first-child {
   opacity: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -3945,7 +3950,7 @@ main > div:first-child span:first-child {
   animation: translateLeft 1000ms linear 1250ms forwards;
 }
 
-main > div:first-child span:last-child {
+.page-404 main > div:first-child span:last-child {
   opacity: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -3953,17 +3958,17 @@ main > div:first-child span:last-child {
   animation: translateLeft 1000ms linear 1450ms forwards;
 }
 
-main > div:first-child svg polygon {
+.page-404 main > div:first-child svg polygon {
   -webkit-animation: removeFill 10ms ease-out 1600ms forwards;
   animation: removeFill 10ms ease-out 1600ms forwards;
 }
 
-main > div:last-child {
+.page-404 main > div:last-child {
   z-index: 0;
   margin-left: -50px;
 }
 
-main > div:last-child span:first-child {
+.page-404 main > div:last-child span:first-child {
   opacity: 0;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -3971,7 +3976,7 @@ main > div:last-child span:first-child {
   animation: translateRight 1000ms linear 1650ms forwards;
 }
 
-main > div:last-child span:last-child {
+.page-404 main > div:last-child span:last-child {
   opacity: 0;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -4051,7 +4056,6 @@ main > div:last-child span:last-child {
   }
 }
 
-/* https://goo.gl/v323yz */
 @-webkit-keyframes translateLeft {
   0% {
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 150, 0, 0, 1);
@@ -4142,7 +4146,6 @@ main > div:last-child span:last-child {
   }
 }
 
-/* https://goo.gl/p1Hnde */
 @-webkit-keyframes translateRight {
   0% {
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -150, 0, 0, 1);
