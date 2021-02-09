@@ -127,6 +127,9 @@ aside {
 .header {
 	height: 80px;
 	background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%);
+	position: fixed;
+	width: 100%;
+	z-index: 9999999999;
 }
 
 .header__logo {
@@ -2379,6 +2382,7 @@ aside {
 }
 
 .breadcrumb {
+	margin-top: 80px;
 	background-color: #fff;
 	font-size: 13px;
 	color: #9a9a9a;
