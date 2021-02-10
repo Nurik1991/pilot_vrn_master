@@ -5658,7 +5658,8 @@ aside {
     width: 100%;
   }
   .checkout__shipping-payment .checkout__info input[type="checkbox"] + label:before {
-    bottom: 38px;
+    bottom: 7px;
+    left: 20px;
   }
   .checkout__shipping-payment .button {
     margin: 0;
