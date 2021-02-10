@@ -15,15 +15,15 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		show_fourth();
-	}, 2700);
+	}, 2500);
 
 	setTimeout(function () {
 		show_fiveth();
-	}, 3500);
+	}, 3000);
 
 	setTimeout(function () {
 		show_sixth();
-	}, 4000);
+	}, 3500);
 
 });
 
@@ -143,12 +143,12 @@ $(document).ready(function () {
 
 	// показать и скрыть отзывы
 	$('.reviews-title').click(function (event) {
-		if ($('.reviews-title').hasClass('open')) {
-			$(this).removeClass('open').addClass('close');
+		if ($('.reviews-title').hasClass('reviews-title__open')) {
+			$(this).removeClass('reviews-title__open').addClass('reviews-title__close');
 			$('.reviews-body').slideUp();
 		}
 		else {
-			$(this).removeClass('close').addClass('open');
+			$(this).removeClass('reviews-title__close').addClass('reviews-title__open');
 			$('.reviews-body').slideDown();
 		}
 	});
@@ -198,9 +198,9 @@ var btn = document.getElementById("myBtn2");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function () {
-	modal.style.display = "block";
-}
+// btn.onclick = function () {
+// 	modal.style.display = "block";
+// }
 $('.callback').click(function (event) {
 	$('.modalwind').css('display', 'block');
 });

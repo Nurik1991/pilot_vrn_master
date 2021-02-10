@@ -726,9 +726,7 @@ aside {
   left: 0;
   right: 0;
   background: #fff;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 5px;
   max-height: 205px;
   overflow-x: hidden;
@@ -741,6 +739,11 @@ aside {
   scrollbar-color: dark;
   scrollbar-width: thin;
   overscroll-behavior: contain;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #ebebeb;
 }
 
 .select__list::-webkit-scrollbar {
@@ -1887,7 +1890,7 @@ aside {
 
 .pagination {
   width: 100%;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .pagination .pagination__block {
@@ -2152,7 +2155,7 @@ aside {
   cursor: pointer;
 }
 
-.reviews .reviews-header .open::before {
+.reviews .reviews-header .reviews-title__open::before {
   content: "";
   position: absolute;
   left: -25px;
@@ -2167,7 +2170,7 @@ aside {
   -o-transition: 0.3s;
 }
 
-.reviews .reviews-header .close::before {
+.reviews .reviews-header .reviews-title__close::before {
   content: "";
   position: absolute;
   left: -25px;
@@ -2358,6 +2361,7 @@ aside {
 .description__price .new-price {
   margin-left: 30px;
   font-size: calc(16px + 10 * ((100vw - 320px) / 1600));
+  font-weight: 700;
 }
 
 .description__buttons {
@@ -2365,7 +2369,7 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 44px;
+  margin-top: 34px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2954,6 +2958,11 @@ aside {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.page__cat .search-block,
+.page__seat .search-block {
+  padding-bottom: 70px;
 }
 
 /*--------конец Контакты -----*/
