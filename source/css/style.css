@@ -3123,7 +3123,7 @@ aside {
   width: 22px;
   margin: 0 0px 0 0;
   background-repeat: no-repeat;
-  border: 1px solid #c5c5c5;
+  border: 1px solid #E3E3E3;
   border-radius: 3px;
   bottom: 27px;
   left: 30px;
@@ -3160,7 +3160,7 @@ aside {
   width: 22px;
   margin: 0 0px 0 0;
   background-repeat: no-repeat;
-  border: 1px solid #c5c5c5;
+  border: 1px solid #E3E3E3;
   border-radius: 3px;
   bottom: 27px;
   left: 30px;
@@ -3168,7 +3168,7 @@ aside {
 }
 
 .checkout__shipping-payment .checkout__payment input[type="radio"]:checked + label:before {
-  border: 1px solid #c5c5c5;
+  border: 1px solid #fff;
   width: 22px;
   height: 22px;
   background-image: url(../img/circle.png);
