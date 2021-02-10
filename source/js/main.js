@@ -117,9 +117,9 @@ $('.card__buy-button').click(function (event) {
 // When the user scrolls down 20px from the top of the document, show the button
 // When the user scrolls down 20px from the top of the document, show the button
 $(document).ready(function () {
-	$("body,html").animate({
-		scrollTop: 1
-	}, 800);
+	// $("body,html").animate({
+	// 	scrollTop: 1
+	// }, 800);
 
 	$(function () {
 		$("#to-top__link-id").hide();
@@ -128,8 +128,10 @@ $(document).ready(function () {
 
 				$("#to-top__link-id").fadeIn();
 				$("#to-top__link-id").css('display', 'block');
+				$('.main-page .header').css('background', 'linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 1.0) 146.88%)');
 			} else {
 				$("#to-top__link-id").fadeOut();
+				$('.main-page .header').css('background', 'linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%)');
 
 			}
 		});
