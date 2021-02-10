@@ -168,10 +168,6 @@ h6 {
   font-weight: 400;
 }
 
-p {
-  font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
-}
-
 a {
   color: black;
   text-decoration: none;

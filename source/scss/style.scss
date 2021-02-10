@@ -84,9 +84,9 @@ h6 {
 	font-weight: 400;
 }
 
-p {
-	@include adaptiv-font(16, 14);
-}
+// p {
+// 	@include adaptiv-font(16, 14);
+// }
 
 a {
 	color: black;
