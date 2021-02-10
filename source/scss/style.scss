@@ -596,8 +596,8 @@ aside {
 	left: 0;
 	right: 0;
 	background: #fff;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-	border-radius: 10px;
+	// box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
 	margin-top: 5px;
 	max-height: 205px;
 	overflow-x: hidden;
@@ -610,6 +610,11 @@ aside {
 	scrollbar-color: dark;
 	scrollbar-width: thin;
 	overscroll-behavior: contain;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border: 1px solid #ebebeb;
 }
 
 .select__list::-webkit-scrollbar {
@@ -1630,7 +1635,7 @@ aside {
 
 .pagination {
 	width: 100%;
-	margin-bottom: 15px;
+	padding-bottom: 15px;
 
 	.pagination__block {
 		display: flex;
@@ -1885,7 +1890,7 @@ aside {
 			cursor: pointer;
 		}
 
-		.open::before {
+		.reviews-title__open::before {
 			content: "";
 			position: absolute;
 			left: -25px;
@@ -1900,7 +1905,7 @@ aside {
 			-o-transition: 0.3s;
 		}
 
-		.close::before {
+		.reviews-title__close::before {
 			content: "";
 			position: absolute;
 			left: -25px;
@@ -2076,13 +2081,14 @@ aside {
 	.new-price {
 		margin-left: 30px;
 		@include adaptiv-font(26, 16);
+		font-weight: 700;
 	}
 }
 
 .description__buttons {
 	margin-bottom: 100px;
 	display: flex;
-	margin-top: 44px;
+	margin-top: 34px;
 	align-items: center;
 
 	.button {
@@ -2656,6 +2662,10 @@ aside {
 	transition: 1s;
 }
 
+.page__cat .search-block,
+.page__seat .search-block {
+	padding-bottom: 70px;
+}
 /*--------конец Контакты -----*/
 
 @import "_style2";
