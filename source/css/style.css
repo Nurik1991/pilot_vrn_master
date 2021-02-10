@@ -3136,7 +3136,7 @@ aside {
   width: 22px;
   margin: 0 0px 0 0;
   background-repeat: no-repeat;
-  border: 1px solid #E3E3E3;
+  border: 1px solid #e3e3e3;
   border-radius: 3px;
   bottom: 27px;
   left: 30px;
@@ -3173,7 +3173,7 @@ aside {
   width: 22px;
   margin: 0 0px 0 0;
   background-repeat: no-repeat;
-  border: 1px solid #E3E3E3;
+  border: 1px solid #e3e3e3;
   border-radius: 3px;
   bottom: 27px;
   left: 30px;
@@ -3491,7 +3491,7 @@ aside {
 /*--- start Страница услуги ----*/
 /*------- start Табы -------*/
 .tabs__head {
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px 80px 0px;
 }
 
 .tabs__head .tabs__button {
@@ -3556,7 +3556,7 @@ aside {
 }
 
 .our-work .swiper-pagination {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .our-work .swiper-slide {
@@ -3602,8 +3602,8 @@ aside {
 .our-work__swiper-container,
 .our-work__swiper-container2,
 .our-work__swiper-container3 {
-  margin-bottom: 140px;
   width: 1410px;
+  margin-top: -20px;
 }
 
 .our-work__swiper-container .swiper-pagination-bullet,
@@ -3613,6 +3613,7 @@ aside {
   height: 5px;
   display: inline-block;
   border-radius: 50%;
+  opacity: 1;
   background: #797979;
 }
 

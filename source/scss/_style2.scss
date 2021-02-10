@@ -78,7 +78,7 @@
 	}
 }
 
-.checkout__shipping-payment .checkout__info input[type="checkbox"]:checked+label::before {
+.checkout__shipping-payment .checkout__info input[type="checkbox"]:checked + label::before {
 	border: 1px solid #fff;
 	width: 20px;
 	height: 20px;
@@ -153,7 +153,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -161,18 +161,18 @@
 			width: 22px;
 			margin: 0 0px 0 0;
 			background-repeat: no-repeat;
-			border: 1px solid #E3E3E3;
+			border: 1px solid #e3e3e3;
 			border-radius: 3px;
 			bottom: 27px;
 			left: 30px;
 			border-radius: 20px;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			background: white;
 		}
 
-		input[type="radio"]:checked+label:before {
+		input[type="radio"]:checked + label:before {
 			border: 1px solid #fff;
 			width: 22px;
 			height: 22px;
@@ -190,11 +190,11 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			background: white;
 		}
 
-		input[type="radio"]+label:before {
+		input[type="radio"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -202,14 +202,14 @@
 			width: 22px;
 			margin: 0 0px 0 0;
 			background-repeat: no-repeat;
-			border: 1px solid #E3E3E3;
+			border: 1px solid #e3e3e3;
 			border-radius: 3px;
 			bottom: 27px;
 			left: 30px;
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked+label:before {
+		input[type="radio"]:checked + label:before {
 			border: 1px solid #fff;
 			width: 22px;
 			height: 22px;
@@ -270,7 +270,7 @@
 			display: none;
 		}
 
-		input[type="checkbox"]+label:before {
+		input[type="checkbox"] + label:before {
 			content: "";
 			display: inline-block;
 			height: 20px;
@@ -284,7 +284,7 @@
 			left: 0px;
 		}
 
-		input[type="checkbox"]:checked+label::before {
+		input[type="checkbox"]:checked + label::before {
 			border: 1px solid #fff;
 			width: 20px;
 			height: 20px;
@@ -539,7 +539,7 @@
 /*--- start Страница услуги ----*/
 /*------- start Табы -------*/
 .tabs__head {
-	margin: 30px 0px 30px 0px;
+	margin: 30px 0px 80px 0px;
 
 	.tabs__button {
 		display: grid;
@@ -636,7 +636,7 @@
 	}
 
 	.swiper-pagination {
-		margin-bottom: 60px;
+		margin-bottom: 80px;
 	}
 
 	.swiper-slide {
@@ -686,14 +686,16 @@
 .our-work__swiper-container,
 .our-work__swiper-container2,
 .our-work__swiper-container3 {
-	margin-bottom: 140px;
+	// margin-bottom: 140px;
 	width: 1410px;
+	margin-top: -20px;
 
 	.swiper-pagination-bullet {
 		width: 5px;
 		height: 5px;
 		display: inline-block;
 		border-radius: 50%;
+		opacity: 1;
 		background: #797979;
 
 		//opacity: .2;
@@ -713,7 +715,6 @@
 }
 
 .our-work {
-
 	/* CSS */
 	/*************************************
 * Базовые стили lightbox. 
@@ -962,11 +963,11 @@
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -980,7 +981,7 @@
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -1078,7 +1079,7 @@
 		justify-content: center;
 	}
 
-	main>div {
+	main > div {
 		display: flex;
 		align-items: center;
 		align-content: center;
@@ -1086,16 +1087,16 @@
 		overflow: hidden;
 	}
 
-	main>div svg {
+	main > div svg {
 		position: relative;
 		z-index: 1;
 	}
 
-	main>div svg polygon {
+	main > div svg polygon {
 		fill: #ffffff;
 	}
 
-	main>div span {
+	main > div span {
 		display: block;
 		position: relative;
 		z-index: 0;
@@ -1103,43 +1104,43 @@
 		line-height: 1.4;
 	}
 
-	main>div:first-child {
+	main > div:first-child {
 		text-align: right;
 		z-index: 1;
 	}
 
-	main>div:first-child span:first-child {
+	main > div:first-child span:first-child {
 		opacity: 0;
 		transform: translateX(100%);
 		-webkit-animation: translateLeft 1000ms linear 1250ms forwards;
 		animation: translateLeft 1000ms linear 1250ms forwards;
 	}
 
-	main>div:first-child span:last-child {
+	main > div:first-child span:last-child {
 		opacity: 0;
 		transform: translateX(100%);
 		-webkit-animation: translateLeft 1000ms linear 1450ms forwards;
 		animation: translateLeft 1000ms linear 1450ms forwards;
 	}
 
-	main>div:first-child svg polygon {
+	main > div:first-child svg polygon {
 		-webkit-animation: removeFill 10ms ease-out 1600ms forwards;
 		animation: removeFill 10ms ease-out 1600ms forwards;
 	}
 
-	main>div:last-child {
+	main > div:last-child {
 		z-index: 0;
 		margin-left: -50px;
 	}
 
-	main>div:last-child span:first-child {
+	main > div:last-child span:first-child {
 		opacity: 0;
 		transform: translateX(-100%);
 		-webkit-animation: translateRight 1000ms linear 1650ms forwards;
 		animation: translateRight 1000ms linear 1650ms forwards;
 	}
 
-	main>div:last-child span:last-child {
+	main > div:last-child span:last-child {
 		opacity: 0;
 		transform: translateX(-100%);
 		-webkit-animation: translateRight 1000ms linear 1850ms forwards;
