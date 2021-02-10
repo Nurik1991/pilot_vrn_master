@@ -16,12 +16,12 @@ body {
 	z-index: 3;
 }
 
-.header,
-.offer__text,
-.offer-swiper-pagination,
-.offer-swiper-container,
-.search-block,
-.offer__bookmarks {
+.main-page .header,
+.main-page .offer__text,
+.main-page .offer-swiper-pagination,
+.main-page .offer-swiper-container,
+.main-page .search-block,
+.main-page .offer__bookmarks {
 	visibility: hidden;
 	transition: 0.7s;
 	-webkit-transition: 0.7s;
@@ -30,21 +30,24 @@ body {
 	-o-transition: 0.7s;
 }
 
-.header {
+.main-page .header {
 	top: -100px;
 }
 
-.offer__text {
+.header {
+	top: 0;
+}
+.main-page .offer__text {
 	opacity: 0;
 }
 
-.offer-swiper-pagination {
+.main-page .offer-swiper-pagination {
 	opacity: 0;
 }
 
-.offer-swiper-container,
-.search-block,
-.offer__bookmarks {
+.main-page .offer-swiper-container,
+.main-page .search-block,
+.main-page .offer__bookmarks {
 	opacity: 0;
 }
 
@@ -84,9 +87,11 @@ h6 {
 	font-weight: 400;
 }
 
-// p {
-// 	@include adaptiv-font(16, 14);
-// }
+p,
+li {
+	// @include adaptiv-font(16, 14);
+	line-height: 150%;
+}
 
 a {
 	color: black;
@@ -153,7 +158,7 @@ aside {
 	top: 4px;
 	left: -4px;
 	padding: 10px 50px;
-	border: 1px solid #b9b4ad;
+	border: 1px solid #cacaca;
 	width: 100%;
 	height: 100%;
 	z-index: 1;
@@ -180,7 +185,7 @@ aside {
 	display: inline-flex;
 
 	a {
-		padding: 31.5px 33px;
+		padding: 27.5px 33px;
 		color: white;
 		text-transform: uppercase;
 		@include adaptiv-font(14, 12);
@@ -1010,7 +1015,7 @@ aside {
 		-o-transition: 0.5s;
 
 		&:hover {
-			background-color: #b9b4ad;
+			background-color: #cacaca;
 			transition: 0.5s;
 			-webkit-transition: 0.5s;
 			-moz-transition: 0.5s;
@@ -1021,7 +1026,7 @@ aside {
 }
 
 .card__like-button.active .svg {
-	background: #b9b4ad;
+	background: #cacaca;
 }
 
 .card__buy-button {
@@ -1174,7 +1179,7 @@ aside {
 		padding-right: 70px;
 	}
 
-	.swiper-container-vertical>.swiper-pagination-bullets {
+	.swiper-container-vertical > .swiper-pagination-bullets {
 		right: -23px;
 		top: 50%;
 		transform: translate3d(0px, -50%, 0);
@@ -1440,7 +1445,7 @@ aside {
 		text-align: left;
 	}
 
-	input[type="checkbox"]:checked+label::before {
+	input[type="checkbox"]:checked + label::before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -1451,7 +1456,7 @@ aside {
 		border-radius: 3px;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -1934,6 +1939,10 @@ aside {
 			margin-left: 20px;
 			padding: 8px;
 			font-weight: normal;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			-ms-border-radius: 2px;
+			-o-border-radius: 2px;
 		}
 	}
 
@@ -1988,6 +1997,7 @@ aside {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	margin-top: 25px;
 }
 
 .description__choose-image {
@@ -2023,7 +2033,8 @@ aside {
 	margin-bottom: 20px;
 }
 
-.description__addition {}
+.description__addition {
+}
 
 .services {
 	position: relative;
@@ -2033,11 +2044,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -2051,7 +2062,7 @@ aside {
 		bottom: 0;
 	}
 
-	input[type="checkbox"]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 2px solid #eeeeee;
 		width: 20px;
 		height: 20px;
@@ -2104,14 +2115,16 @@ aside {
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
+		padding: 11px;
 	}
 }
 
 .description__buttons .svg-silver:hover {
-	background: #b9b4ad;
+	background: #cacaca;
 }
 
-.description {}
+.description {
+}
 
 .description__title {
 	font-size: 14px;
@@ -2137,7 +2150,8 @@ aside {
 	border-bottom: 2px dashed #d2d2d2;
 }
 
-.description__list-item {}
+.description__list-item {
+}
 
 .number {
 	display: flex;
@@ -2593,11 +2607,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"]+label {
+	input[type="checkbox"] + label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]+label::before {
+	input[type="checkbox"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -2611,7 +2625,7 @@ aside {
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked+label:before {
+	input[type="checkbox"]:checked + label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -2654,7 +2668,7 @@ aside {
 	top: 4px;
 	left: -4px;
 	padding: 10px 50px;
-	border: 1px solid #b9b4ad;
+	border: 1px solid #cacaca;
 	width: 100%;
 	height: 100%;
 	z-index: 1;

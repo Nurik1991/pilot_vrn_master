@@ -7,42 +7,42 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		show_second();
-	}, 1500);
+	}, 1300);
 
 	setTimeout(function () {
 		show_third();
-	}, 2000);
+	}, 2100);
 
 	setTimeout(function () {
 		show_fourth();
-	}, 2500);
+	}, 2900);
 
 	setTimeout(function () {
 		show_fiveth();
-	}, 3000);
+	}, 3700);
 
 	setTimeout(function () {
 		show_sixth();
-	}, 2500);
+	}, 4200);
 
 });
 
 
 function show_first() {
-	$('.offer-swiper-container').css({
+	$('.main-page .offer-swiper-container').css({
 		visibility: 'visible',
 		opacity: '1'
 	});
 }
 function show_second() {
-	$('.header').css({
+	$('.main-page .header').css({
 		visibility: 'visible',
 		top: '0px'
 	});
 }
 function show_third() {
 
-	$('.offer__text').css({
+	$('.main-page .offer__text').css({
 		visibility: 'visible',
 		opacity: '1'
 	});
@@ -51,21 +51,22 @@ function show_third() {
 
 function show_fourth() {
 
-	$('.offer-swiper-pagination').css({
+	$('.main-page .offer-swiper-pagination').css({
 		visibility: 'visible',
 		opacity: '1'
 	});
+
 }
 function show_fiveth() {
-
-	$('.search-block').css({
+		$('.search-block').css({
 		visibility: 'visible',
 		opacity: '1'
 	});
+	
 }
 function show_sixth() {
 
-	$('.offer__bookmarks').css({
+$('.main-page .offer__bookmarks').css({
 		visibility: 'visible',
 		opacity: '1'
 	});
