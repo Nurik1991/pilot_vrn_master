@@ -1580,6 +1580,7 @@ aside {
           justify-content: center;
   text-align: center;
   width: 33%;
+  padding: 0 20px;
 }
 
 .company__advantag .company__advantag-block-icon {
@@ -2725,7 +2726,7 @@ aside {
 }
 
 .breadcrumb .breadcrumb-list__link {
-  color: #9a9a9a;
+  color: #aaaaaa;
 }
 
 .breadcrumb .container {
@@ -2737,6 +2738,10 @@ aside {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.breadcrumb .breadcrumb-list__item:last-of-type a {
+  color: #797979 !important;
 }
 
 /*--------конец 404 -----*/
@@ -3078,7 +3083,7 @@ aside {
 .checkout__shipping-payment .checkout__shipping,
 .checkout__shipping-payment .checkout__total,
 .checkout__shipping-payment .checkout__payment {
-  border-bottom: 1px dashed #d2d2d2;
+  border-bottom: 2px dashed #d2d2d2;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
@@ -3319,7 +3324,7 @@ aside {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 0.3fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;
-  border-top: 1px dashed #d2d2d2;
+  border-top: 2px dashed #d2d2d2;
   padding: 40px 0px 40px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;

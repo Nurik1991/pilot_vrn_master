@@ -113,7 +113,7 @@
 	.checkout__shipping,
 	.checkout__total,
 	.checkout__payment {
-		border-bottom: 1px dashed #d2d2d2;
+		border-bottom: 2px dashed #d2d2d2;
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 	}
@@ -343,7 +343,7 @@
 		.basket__products-one {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;
-			border-top: 1px dashed #d2d2d2;
+			border-top: 2px dashed #d2d2d2;
 			// border-bottom: 1px dashed #D2D2D2;
 			padding: 40px 0px 40px 0px;
 			align-items: center;
