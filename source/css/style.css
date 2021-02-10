@@ -2496,7 +2496,7 @@ aside {
 /*----- start кнопки все состояния -------*/
 .button {
   background: #ffa401;
-  padding: 10px 50px;
+  padding: 14px 50px;
   border: none;
   outline: none;
   margin-right: -50px;
@@ -3254,7 +3254,7 @@ aside {
   background-repeat: no-repeat;
   border: 1px solid #c5c5c5;
   border-radius: 3px;
-  bottom: 0px;
+  bottom: -3px;
   left: 0px;
 }
 
@@ -3272,6 +3272,7 @@ aside {
 
 .checkout__shipping-payment .checkout__info label {
   padding-left: 30px;
+  font-size: 13px;
 }
 
 .checkout__shipping-payment .checkout__shipping-payment .checkout__info label {
@@ -3372,7 +3373,7 @@ aside {
 }
 
 .basket .basket__products .card__like-button {
-  top: 40px;
+  top: 30px;
   right: 0;
 }
 
@@ -3382,7 +3383,7 @@ aside {
 
 .basket .basket__products .card__delete-button {
   right: 0;
-  top: 140px;
+  top: 130px;
   position: absolute;
   cursor: pointer;
   overflow: hidden;
@@ -3521,7 +3522,7 @@ aside {
   text-transform: uppercase;
   background-color: #eeeeee;
   width: 210px;
-  padding: 15px;
+  padding: 20px 15px 20px 15px;
   text-align: center;
 }
 

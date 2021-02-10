@@ -78,7 +78,7 @@
 	}
 }
 
-.checkout__shipping-payment .checkout__info input[type="checkbox"]:checked + label::before {
+.checkout__shipping-payment .checkout__info input[type="checkbox"]:checked+label::before {
 	border: 1px solid #fff;
 	width: 20px;
 	height: 20px;
@@ -153,7 +153,7 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -168,11 +168,11 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			background: white;
 		}
 
-		input[type="radio"]:checked + label:before {
+		input[type="radio"]:checked+label:before {
 			border: 1px solid #fff;
 			width: 22px;
 			height: 22px;
@@ -190,11 +190,11 @@
 			//margin-left: -999999999px;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			background: white;
 		}
 
-		input[type="radio"] + label:before {
+		input[type="radio"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 22px;
@@ -209,7 +209,7 @@
 			border-radius: 20px;
 		}
 
-		input[type="radio"]:checked + label:before {
+		input[type="radio"]:checked+label:before {
 			border: 1px solid #fff;
 			width: 22px;
 			height: 22px;
@@ -270,7 +270,7 @@
 			display: none;
 		}
 
-		input[type="checkbox"] + label:before {
+		input[type="checkbox"]+label:before {
 			content: "";
 			display: inline-block;
 			height: 20px;
@@ -280,11 +280,11 @@
 			background-repeat: no-repeat;
 			border: 1px solid #c5c5c5;
 			border-radius: 3px;
-			bottom: 0px;
+			bottom: -3px;
 			left: 0px;
 		}
 
-		input[type="checkbox"]:checked + label::before {
+		input[type="checkbox"]:checked+label::before {
 			border: 1px solid #fff;
 			width: 20px;
 			height: 20px;
@@ -297,6 +297,7 @@
 
 		label {
 			padding-left: 30px;
+			font-size: 13px;
 		}
 	}
 
@@ -384,7 +385,7 @@
 		}
 
 		.card__like-button {
-			top: 40px;
+			top: 30px;
 			right: 0;
 			// padding: 12px;
 		}
@@ -395,7 +396,7 @@
 
 		.card__delete-button {
 			right: 0;
-			top: 140px;
+			top: 130px;
 			position: absolute;
 			cursor: pointer;
 			overflow: hidden;
@@ -563,7 +564,7 @@
 			text-transform: uppercase;
 			background-color: #eeeeee;
 			width: 210px;
-			padding: 15px;
+			padding: 20px 15px 20px 15px;
 			text-align: center;
 
 			&:hover {
@@ -715,6 +716,7 @@
 }
 
 .our-work {
+
 	/* CSS */
 	/*************************************
 * Базовые стили lightbox. 
@@ -963,11 +965,11 @@
 		display: none;
 	}
 
-	input[type="checkbox"] + label {
+	input[type="checkbox"]+label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"] + label::before {
+	input[type="checkbox"]+label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -981,7 +983,7 @@
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked + label:before {
+	input[type="checkbox"]:checked+label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -1079,7 +1081,7 @@
 		justify-content: center;
 	}
 
-	main > div {
+	main>div {
 		display: flex;
 		align-items: center;
 		align-content: center;
@@ -1087,16 +1089,16 @@
 		overflow: hidden;
 	}
 
-	main > div svg {
+	main>div svg {
 		position: relative;
 		z-index: 1;
 	}
 
-	main > div svg polygon {
+	main>div svg polygon {
 		fill: #ffffff;
 	}
 
-	main > div span {
+	main>div span {
 		display: block;
 		position: relative;
 		z-index: 0;
@@ -1104,43 +1106,43 @@
 		line-height: 1.4;
 	}
 
-	main > div:first-child {
+	main>div:first-child {
 		text-align: right;
 		z-index: 1;
 	}
 
-	main > div:first-child span:first-child {
+	main>div:first-child span:first-child {
 		opacity: 0;
 		transform: translateX(100%);
 		-webkit-animation: translateLeft 1000ms linear 1250ms forwards;
 		animation: translateLeft 1000ms linear 1250ms forwards;
 	}
 
-	main > div:first-child span:last-child {
+	main>div:first-child span:last-child {
 		opacity: 0;
 		transform: translateX(100%);
 		-webkit-animation: translateLeft 1000ms linear 1450ms forwards;
 		animation: translateLeft 1000ms linear 1450ms forwards;
 	}
 
-	main > div:first-child svg polygon {
+	main>div:first-child svg polygon {
 		-webkit-animation: removeFill 10ms ease-out 1600ms forwards;
 		animation: removeFill 10ms ease-out 1600ms forwards;
 	}
 
-	main > div:last-child {
+	main>div:last-child {
 		z-index: 0;
 		margin-left: -50px;
 	}
 
-	main > div:last-child span:first-child {
+	main>div:last-child span:first-child {
 		opacity: 0;
 		transform: translateX(-100%);
 		-webkit-animation: translateRight 1000ms linear 1650ms forwards;
 		animation: translateRight 1000ms linear 1650ms forwards;
 	}
 
-	main > div:last-child span:last-child {
+	main>div:last-child span:last-child {
 		opacity: 0;
 		transform: translateX(-100%);
 		-webkit-animation: translateRight 1000ms linear 1850ms forwards;
