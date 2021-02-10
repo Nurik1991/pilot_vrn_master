@@ -134,6 +134,7 @@ aside {
 	width: 100%;
 	z-index: 9999999999;
 }
+
 .main-page .header {
 	height: 80px;
 	background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%);
@@ -1173,7 +1174,7 @@ aside {
 		padding-right: 70px;
 	}
 
-	.swiper-container-vertical > .swiper-pagination-bullets {
+	.swiper-container-vertical>.swiper-pagination-bullets {
 		right: -23px;
 		top: 50%;
 		transform: translate3d(0px, -50%, 0);
@@ -1439,7 +1440,7 @@ aside {
 		text-align: left;
 	}
 
-	input[type="checkbox"]:checked + label::before {
+	input[type="checkbox"]:checked+label::before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -1450,7 +1451,7 @@ aside {
 		border-radius: 3px;
 	}
 
-	input[type="checkbox"] + label::before {
+	input[type="checkbox"]+label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -2022,8 +2023,7 @@ aside {
 	margin-bottom: 20px;
 }
 
-.description__addition {
-}
+.description__addition {}
 
 .services {
 	position: relative;
@@ -2033,11 +2033,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"] + label {
+	input[type="checkbox"]+label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"] + label::before {
+	input[type="checkbox"]+label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -2051,7 +2051,7 @@ aside {
 		bottom: 0;
 	}
 
-	input[type="checkbox"]:checked + label:before {
+	input[type="checkbox"]:checked+label:before {
 		border: 2px solid #eeeeee;
 		width: 20px;
 		height: 20px;
@@ -2111,8 +2111,7 @@ aside {
 	background: #b9b4ad;
 }
 
-.description {
-}
+.description {}
 
 .description__title {
 	font-size: 14px;
@@ -2138,8 +2137,7 @@ aside {
 	border-bottom: 2px dashed #d2d2d2;
 }
 
-.description__list-item {
-}
+.description__list-item {}
 
 .number {
 	display: flex;
@@ -2442,7 +2440,7 @@ aside {
 	.container {
 		display: flex;
 		padding-top: 30px;
-		padding-bottom: 90px;
+		padding-bottom: 54px;
 		justify-content: flex-start;
 	}
 }
@@ -2450,6 +2448,7 @@ aside {
 .breadcrumb .breadcrumb-list__item:last-of-type a {
 	color: #797979 !important;
 }
+
 /*--------конец 404 -----*/
 
 /*------- Контакты -------*/
@@ -2473,12 +2472,12 @@ aside {
 	.contact__info {
 		width: 448px;
 		margin-top: 136px;
-		margin-bottom: 140px;
+		margin-bottom: 110px;
 		margin-right: 50px;
 
 		h2 {
 			font-size: 40px;
-			padding-bottom: 68px;
+			padding-bottom: 48px;
 		}
 
 		ul {
@@ -2489,6 +2488,7 @@ aside {
 		li {
 			list-style-type: none;
 			padding-bottom: 30px;
+			line-height: 170%;
 
 			span {
 				color: #797979;
@@ -2501,7 +2501,8 @@ aside {
 		text-align: center;
 		width: 416px;
 		height: 616px;
-		margin-top: 50px;
+		margin-top: 100px;
+		margin-bottom: 48px;
 		margin-right: -90px;
 		z-index: 2;
 
@@ -2592,11 +2593,11 @@ aside {
 		display: none;
 	}
 
-	input[type="checkbox"] + label {
+	input[type="checkbox"]+label {
 		cursor: pointer;
 	}
 
-	input[type="checkbox"] + label::before {
+	input[type="checkbox"]+label::before {
 		content: "";
 		display: inline-block;
 		height: 20px;
@@ -2610,7 +2611,7 @@ aside {
 		left: 63px;
 	}
 
-	input[type="checkbox"]:checked + label:before {
+	input[type="checkbox"]:checked+label:before {
 		border: 1px solid #fff;
 		width: 20px;
 		height: 20px;
@@ -2666,6 +2667,7 @@ aside {
 .page__seat .search-block {
 	padding-bottom: 70px;
 }
+
 /*--------конец Контакты -----*/
 
 @import "_style2";

@@ -2738,7 +2738,7 @@ aside {
   display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
-  padding-bottom: 90px;
+  padding-bottom: 54px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -2765,13 +2765,13 @@ aside {
 .contact .contact__info {
   width: 448px;
   margin-top: 136px;
-  margin-bottom: 140px;
+  margin-bottom: 110px;
   margin-right: 50px;
 }
 
 .contact .contact__info h2 {
   font-size: 40px;
-  padding-bottom: 68px;
+  padding-bottom: 48px;
 }
 
 .contact .contact__info ul {
@@ -2782,6 +2782,7 @@ aside {
 .contact .contact__info li {
   list-style-type: none;
   padding-bottom: 30px;
+  line-height: 170%;
 }
 
 .contact .contact__info li span {
@@ -2793,7 +2794,8 @@ aside {
   text-align: center;
   width: 416px;
   height: 616px;
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 48px;
   margin-right: -90px;
   z-index: 2;
 }
@@ -5746,6 +5748,13 @@ aside {
   .checkout .city,
   .checkout .index {
     width: 100%;
+  }
+  .checkout__info a {
+    width: 100%;
+  }
+  .checkout__info input[type="checkbox"] + label:before {
+    bottom: 9px;
+    left: 30px;
   }
   .wrapperbg {
     margin-top: 0;
