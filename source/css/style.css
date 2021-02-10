@@ -1544,7 +1544,6 @@ aside {
   padding: 13.5px 27px;
   color: #2c2419;
   display: inline-block;
-  float: right;
   clear: both;
   margin-right: 160px;
 }
@@ -3449,7 +3448,7 @@ aside {
   background-color: #f1f1f1;
   border-radius: 5px;
   margin-bottom: 30px;
-  padding: 50px 30px;
+  padding: 45px 30px 30px 30px;
 }
 
 .basket .basket__info .basket__line {
@@ -3475,6 +3474,11 @@ aside {
 .basket .basket__info .basket__line:last-child p.basket-price,
 .basket .basket__info .basket__line:last-child p.basket-title {
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.basket .basket__info .basket__line:last-child p.basket-price {
+  font-size: 18px;
 }
 
 .basket .basket__info .button {
