@@ -1356,6 +1356,10 @@ aside {
   margin-left: 135px;
 }
 
+.about-us .without-button .title-button {
+  display: none;
+}
+
 .about-us .title-text {
   max-width: 570px;
   margin: 50px 0 76px 0;
@@ -1558,7 +1562,7 @@ aside {
 }
 
 .company__advantag .company__advantag-block-icon {
-  border-bottom: 2px dashed #d2d2d2;
+  border-bottom: 1px dashed #d2d2d2;
   padding-bottom: 33px;
   margin-bottom: 20px;
 }
@@ -1960,7 +1964,6 @@ aside {
   position: -webkit-sticky;
   position: sticky;
   top: -1px;
-  margin-bottom: 40px;
 }
 
 .single-product__preview-image .single-product__preview-image-zoom {
@@ -2017,7 +2020,6 @@ aside {
 
 .recommended .swiper-pagination-bullet {
   background: #797979 !important;
-  opacity: 1;
   -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07) !important;
           box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07) !important;
 }
@@ -2385,7 +2387,7 @@ aside {
   color: #797979;
   padding-bottom: 35px;
   margin-bottom: 30px;
-  border-bottom: 2px dashed #d2d2d2;
+  border-bottom: 1px dashed #d2d2d2;
 }
 
 .description__list {
@@ -2393,7 +2395,7 @@ aside {
   color: #797979;
   padding-bottom: 35px !important;
   margin-bottom: 30px !important;
-  border-bottom: 2px dashed #d2d2d2;
+  border-bottom: 1px dashed #d2d2d2;
 }
 
 .number {
@@ -2979,7 +2981,6 @@ aside {
   padding-left: 15px;
   font-size: 16px;
   margin-bottom: 36px;
-  padding: 13px 0 11px 15px;
 }
 
 .checkout input:focus {
@@ -3013,7 +3014,6 @@ aside {
   border: 1px solid #eeeeee;
   border-radius: 5px;
   padding-left: 15px;
-  padding-top: 13px;
   resize: none;
 }
 
@@ -3039,14 +3039,9 @@ aside {
 .wrapperbg {
   background-color: #f1f1f1;
   border-radius: 5px;
-  padding: 25px 30px;
   padding-bottom: 50px;
   padding-top: 25px;
   margin-top: -10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 
 .checkout__shipping-payment {
@@ -3058,7 +3053,7 @@ aside {
 .checkout__shipping-payment .checkout__shipping,
 .checkout__shipping-payment .checkout__total,
 .checkout__shipping-payment .checkout__payment {
-  border-bottom: 2px dashed #d2d2d2;
+  border-bottom: 1px dashed #d2d2d2;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
@@ -3068,7 +3063,7 @@ aside {
 .checkout__shipping-payment .checkout__title {
   font-size: 16px;
   color: #797979;
-  padding-left: 0px;
+  padding-left: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
   font-weight: normal;
@@ -3103,10 +3098,10 @@ aside {
   width: 22px;
   margin: 0 0px 0 0;
   background-repeat: no-repeat;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #c5c5c5;
   border-radius: 3px;
   bottom: 27px;
-  left: 0px;
+  left: 30px;
   border-radius: 20px;
 }
 
@@ -3140,7 +3135,7 @@ aside {
   width: 22px;
   margin: 0 0px 0 0;
   background-repeat: no-repeat;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #c5c5c5;
   border-radius: 3px;
   bottom: 27px;
   left: 30px;
@@ -3154,8 +3149,6 @@ aside {
   background-image: url(../img/circle.png);
   background-position: 3px 3px;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 2px 10px rgba(44, 36, 25, 0.1);
-          box-shadow: 0px 2px 10px rgba(44, 36, 25, 0.1);
 }
 
 .checkout__shipping-payment .checkout__number {
@@ -3175,7 +3168,7 @@ aside {
   color: #797979;
   font-weight: normal;
   font-size: 16px;
-  padding: 30px 0px 30px 0px;
+  padding: 30px 30px 30px 30px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
@@ -3219,7 +3212,7 @@ aside {
   width: 20px;
   margin: 0 0px 0 0;
   background-repeat: no-repeat;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #c5c5c5;
   border-radius: 3px;
   bottom: 27px;
   left: 30px;
@@ -3238,7 +3231,7 @@ aside {
 }
 
 .checkout__shipping-payment .checkout__info label {
-  padding-left: 60px;
+  padding-left: 30px;
 }
 
 .checkout__shipping-payment .checkout__shipping-payment .checkout__info label {
@@ -3255,8 +3248,7 @@ aside {
 }
 
 .checkout__shipping-payment .button {
-  margin-left: 0px;
-  margin-bottom: 50px;
+  margin-left: 30px;
   padding: 16px 36px;
   position: relative;
 }
@@ -3302,7 +3294,7 @@ aside {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 0.3fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;
-  border-top: 2px dashed #d2d2d2;
+  border-top: 1px dashed #d2d2d2;
   padding: 40px 0px 40px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -3462,7 +3454,7 @@ aside {
 /*--- start Страница услуги ----*/
 /*------- start Табы -------*/
 .tabs__head {
-  margin: 30px 0px 80px 0px;
+  margin: 30px 0px 30px 0px;
 }
 
 .tabs__head .tabs__button {
@@ -3528,7 +3520,6 @@ aside {
 
 .our-work .swiper-pagination {
   margin-bottom: 60px;
-  bottom: 35px;
 }
 
 .our-work .swiper-slide {
@@ -3574,8 +3565,8 @@ aside {
 .our-work__swiper-container,
 .our-work__swiper-container2,
 .our-work__swiper-container3 {
+  margin-bottom: 140px;
   width: 1410px;
-  margin-top: -20px;
 }
 
 .our-work__swiper-container .swiper-pagination-bullet,
@@ -3586,7 +3577,6 @@ aside {
   display: inline-block;
   border-radius: 50%;
   background: #797979;
-  opacity: 1;
 }
 
 .our-work__swiper-container .swiper-pagination-bullet-active,
