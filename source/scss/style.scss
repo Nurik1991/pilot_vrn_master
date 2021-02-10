@@ -129,6 +129,13 @@ aside {
 
 .header {
 	height: 80px;
+	background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 1) 146.88%);
+	position: fixed;
+	width: 100%;
+	z-index: 9999999999;
+}
+.main-page .header {
+	height: 80px;
 	background: linear-gradient(180deg, #1d170f 0%, rgba(29, 23, 15, 0.6) 146.88%);
 	position: fixed;
 	width: 100%;
@@ -137,6 +144,21 @@ aside {
 
 .header__logo {
 	margin-top: 9px;
+}
+
+.silver::after {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: -4px;
+	padding: 10px 50px;
+	border: 1px solid #b9b4ad;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: 1s;
+	transition: 1s;
 }
 
 .header__menu {
@@ -322,7 +344,7 @@ aside {
 	background-position: center;
 	background-size: cover;
 	position: relative;
-	top: -80px;
+	// top: -80px;
 	z-index: -1;
 
 	// &::before {
@@ -338,7 +360,7 @@ aside {
 
 	.offer-swiper-container {
 		position: absolute;
-		max-height: 100%;
+		max-height: 99%;
 		z-index: 99;
 
 		&::before {
@@ -503,7 +525,7 @@ aside {
 	margin: 0 auto;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	margin-top: -255px;
+	margin-top: -90px;
 	margin-bottom: 140px;
 
 	input {
@@ -891,6 +913,7 @@ aside {
 .card__material {
 	color: #797979;
 	margin-bottom: 10px;
+	font-size: 14px;
 }
 
 .card__price {
@@ -973,7 +996,7 @@ aside {
 		height: 42px;
 		object-fit: contain;
 		object-position: center;
-		padding: 10px;
+		padding: 12px;
 		transition: 0.5s;
 		-webkit-transition: 0.5s;
 		-moz-transition: 0.5s;
@@ -1011,7 +1034,8 @@ aside {
 		height: 48px;
 		object-fit: contain;
 		object-position: center;
-		padding: 12px;
+		padding: 15px;
+		padding-top: 12px;
 		transition: 0.5s;
 		-webkit-transition: 0.5s;
 		-moz-transition: 0.5s;
@@ -1162,11 +1186,11 @@ aside {
 		margin-left: 135px;
 	}
 
-	.without-button {
-		.title-button {
-			display: none;
-		}
-	}
+	// .without-button {
+	// 	.title-button {
+	// 		display: none;
+	// 	}
+	// }
 
 	.title-text {
 		max-width: 570px;
@@ -1339,7 +1363,7 @@ aside {
 	}
 
 	.company__advantag-block-icon {
-		border-bottom: 1px dashed #d2d2d2;
+		border-bottom: 2px dashed #d2d2d2;
 		padding-bottom: 33px;
 		margin-bottom: 20px;
 	}
@@ -1695,6 +1719,7 @@ aside {
 	position: -webkit-sticky;
 	position: sticky;
 	top: -1px;
+	margin-bottom: 40px;
 
 	.single-product__preview-image-zoom {
 		position: absolute;
@@ -1758,6 +1783,7 @@ aside {
 
 	.swiper-pagination-bullet {
 		background: #797979 !important;
+		opacity: 1;
 		box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07) !important;
 	}
 
@@ -2094,7 +2120,7 @@ aside {
 	color: #797979;
 	padding-bottom: 35px;
 	margin-bottom: 30px;
-	border-bottom: 1px dashed #d2d2d2;
+	border-bottom: 2px dashed #d2d2d2;
 }
 
 .description__list {
@@ -2102,7 +2128,7 @@ aside {
 	color: #797979;
 	padding-bottom: 35px !important;
 	margin-bottom: 30px !important;
-	border-bottom: 1px dashed #d2d2d2;
+	border-bottom: 2px dashed #d2d2d2;
 }
 
 .description__list-item {
