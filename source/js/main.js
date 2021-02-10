@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		show_sixth();
-	}, 3500);
+	}, 2500);
 
 });
 
