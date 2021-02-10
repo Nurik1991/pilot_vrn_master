@@ -1360,6 +1360,7 @@ aside {
 		justify-content: center;
 		text-align: center;
 		width: 33%;
+		padding: 0 20px;
 	}
 
 	.company__advantag-block-icon {
@@ -2429,7 +2430,7 @@ aside {
 	}
 
 	.breadcrumb-list__link {
-		color: #9a9a9a;
+		color: #aaaaaa;
 	}
 
 	.container {
@@ -2440,6 +2441,9 @@ aside {
 	}
 }
 
+.breadcrumb .breadcrumb-list__item:last-of-type a {
+	color: #797979 !important;
+}
 /*--------конец 404 -----*/
 
 /*------- Контакты -------*/

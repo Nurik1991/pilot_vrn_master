@@ -7,23 +7,23 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		show_second();
-	}, 2000);
+	}, 1500);
 
 	setTimeout(function () {
 		show_third();
-	}, 3000);
+	}, 2000);
 
 	setTimeout(function () {
 		show_fourth();
-	}, 4000);
+	}, 2700);
 
 	setTimeout(function () {
 		show_fiveth();
-	}, 5000);
+	}, 3500);
 
 	setTimeout(function () {
 		show_sixth();
-	}, 5500);
+	}, 4000);
 
 });
 
