@@ -2765,7 +2765,7 @@ aside {
 .contact .contact__info {
   width: 448px;
   margin-top: 136px;
-  margin-bottom: 110px;
+  margin-bottom: 90px;
   margin-right: 50px;
 }
 
@@ -2881,7 +2881,7 @@ aside {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: -7px;
+  margin-top: 0px;
 }
 
 .contact input[type="checkbox"] {
