@@ -3040,10 +3040,10 @@ aside {
 .wrapperbg {
 	background-color: #f1f1f1;
 	border-radius: 5px;
-	<<<<<<< HEAD padding: 25px 30px;
+	padding: 25px 30px;
 	padding-bottom: 66px;
-	=======padding-bottom: 50px;
-	>>>>>>>600c458fe3ebf502588afdb8d95bb31e1c4f0658 padding-top: 25px;
+	padding-bottom: 50px;
+	padding-top: 25px;
 	margin-top: -10px;
 }
 
