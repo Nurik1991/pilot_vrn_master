@@ -1963,7 +1963,7 @@ aside {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			margin-bottom: 25px;
+			margin-bottom: 10px;
 		}
 
 		.comment__name {
@@ -1991,8 +1991,13 @@ aside {
 .additional-link {
 	border-bottom: 2px solid $yellow;
 	padding: 4px 10px;
+	text-transform: uppercase;
+	color: #5d5d5d;
+	font-size: 14px;
 }
-
+.single-product__preview-recomended {
+	padding-top: 55px;
+}
 .additional-block {
 	display: flex;
 	width: 100%;
@@ -2011,7 +2016,7 @@ aside {
 		max-width: 49px;
 		max-height: 59px;
 		padding: 2px;
-		border: 1px solid #ebebeb;
+		border: 2px solid #ebebeb;
 		outline: 3px solid white;
 
 		&:hover {
@@ -2020,6 +2025,12 @@ aside {
 			outline: 1px solid $yellow;
 			margin-top: -1px;
 		}
+	}
+	.active {
+		cursor: pointer;
+		border-bottom: 3px solid #ffa401;
+		outline: 1px solid #ffa401;
+		margin-top: -1px;
 	}
 }
 

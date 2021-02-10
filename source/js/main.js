@@ -19,11 +19,11 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		show_fiveth();
-	}, 3700);
+	}, 3900);
 
 	setTimeout(function () {
 		show_sixth();
-	}, 4200);
+	}, 3700);
 
 });
 

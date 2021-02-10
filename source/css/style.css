@@ -2239,7 +2239,7 @@ aside {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .reviews .comment .comment__name {
@@ -2269,6 +2269,13 @@ aside {
 .additional-link {
   border-bottom: 2px solid #ffa401;
   padding: 4px 10px;
+  text-transform: uppercase;
+  color: #5d5d5d;
+  font-size: 14px;
+}
+
+.single-product__preview-recomended {
+  padding-top: 55px;
 }
 
 .additional-block {
@@ -2300,11 +2307,18 @@ aside {
   max-width: 49px;
   max-height: 59px;
   padding: 2px;
-  border: 1px solid #ebebeb;
+  border: 2px solid #ebebeb;
   outline: 3px solid white;
 }
 
 .description__choose-image img:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #ffa401;
+  outline: 1px solid #ffa401;
+  margin-top: -1px;
+}
+
+.description__choose-image .active {
   cursor: pointer;
   border-bottom: 3px solid #ffa401;
   outline: 1px solid #ffa401;
