@@ -5195,7 +5195,9 @@ aside {
   .additional .additional-link {
     width: 100%;
   }
-  .single-product__preview-recomended .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  .single-product__preview-recomended
+.swiper-container-horizontal
+> .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
     -webkit-transform: translateX(-30%);
             transform: translateX(-30%);
   }
