@@ -335,8 +335,11 @@
 
 	h2 {
 		text-align: center;
-		font-size: 37px;
+		@include adaptiv-font(37, 30);
 		padding-bottom: 69px;
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
 	}
 
 	.basket__products {

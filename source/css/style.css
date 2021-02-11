@@ -3003,8 +3003,6 @@ aside {
 .mobile-menu__items .svg {
   width: 30px;
   height: 30px;
-  filter: invert(1);
-  -webkit-filter: invert(1);
 }
 
 .mobile-menu__items .offer__buy {
@@ -3046,7 +3044,7 @@ aside {
 .mobile-menu__items .offer__buy-count,
 .mobile-menu__items .offer__like-count {
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   right: -5px;
   color: #2c2419;
   background-color: white;
@@ -3420,8 +3418,11 @@ aside {
 
 .basket h2 {
   text-align: center;
-  font-size: 37px;
+  font-size: calc(30px + 7 * ((100vw - 320px) / 1600));
   padding-bottom: 69px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .basket .basket__products {

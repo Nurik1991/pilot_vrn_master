@@ -2695,8 +2695,6 @@ aside {
 .mobile-menu__items .svg {
 	width: 30px;
 	height: 30px;
-	filter: invert(1);
-	-webkit-filter: invert(1);
 }
 .mobile-menu__items .offer__buy {
 	display: flex;
@@ -2721,7 +2719,7 @@ aside {
 .mobile-menu__items .offer__buy-count,
 .mobile-menu__items .offer__like-count {
 	position: absolute;
-	bottom: 10px;
+	top: 10px;
 	right: -5px;
 	color: #2c2419;
 	background-color: white;
