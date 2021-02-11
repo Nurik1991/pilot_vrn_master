@@ -5905,6 +5905,23 @@ aside {
   .lighten {
     display: block;
   }
+  .checkout .note {
+    width: 671px !important;
+    height: 316px;
+  }
+  .checkout .phone {
+    width: 669px;
+  }
+  .checkout input {
+    width: 47%;
+  }
+  .checkout .city {
+    width: 427px;
+    margin-right: 30px;
+  }
+  .checkout input {
+    width: 318px;
+  }
 }
 
 @media (min-width: 1580px) {
