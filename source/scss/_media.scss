@@ -435,7 +435,42 @@
 		margin: 100px auto;
 	}
 	.container {
-		padding: 20px;
+		padding: 20px 40px;
+	}
+
+	.catalog__grid {
+		column-gap: 10px;
+		row-gap: 10px;
+	}
+
+	.about-us,
+	.additional-block,
+	.block-help {
+		margin: 0;
+		margin-bottom: 85px;
+	}
+	.single-product__preview-recomended {
+		padding-top: 0px;
+	}
+	.card {
+		margin-bottom: unset;
+	}
+	.goods-block__container,
+	.catalog__grid,
+	.contact .contact__map {
+		margin-bottom: 85px;
+	}
+	.questions-block,
+	.contact .contact__form {
+		margin: 85px auto;
+	}
+	.single-product {
+		margin: 85px auto;
+	}
+	.page__cat .search-block,
+	.page__seat .search-block,
+	.brands {
+		margin-bottom: 85px;
 	}
 
 	.offer__text {
@@ -632,6 +667,10 @@
 	.company__advantag-block-text {
 		font-size: 14px;
 		text-align: center;
+	}
+
+	.single-product__description .silver {
+		width: 75% !important;
 	}
 	// end mobile
 }
