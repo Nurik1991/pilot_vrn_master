@@ -5561,6 +5561,8 @@ aside {
   .page-404 .page-404__number p {
     text-align: center;
     margin: 0;
+    font-size: 60px;
+    font-weight: bold;
   }
   .page-404 .page-404__text {
     width: 100%;
@@ -5570,6 +5572,12 @@ aside {
   }
   .page-404 .page-404__lightning {
     display: none;
+  }
+  .page-404 .crack {
+    margin: 0;
+  }
+  .lighten {
+    display: none !important;
   }
   .footer .container {
     display: -ms-grid;
@@ -5756,7 +5764,7 @@ aside {
     margin: 0;
   }
   .page-404 .page-404__text p {
-    font-size: 50px;
+    font-size: 14px;
   }
   .crack {
     position: relative;
@@ -5819,6 +5827,30 @@ aside {
   }
   .our-work__swiper-container {
     margin-bottom: 0;
+  }
+  .page404__wrapp {
+    display: none;
+  }
+  .lighten {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1580px) {
+  .page404__wrapp {
+    display: none;
+  }
+  .lighten {
+    display: block;
+  }
+}
+
+@media (min-width: 1580px) {
+  .page404__wrapp {
+    display: none;
+  }
+  .lighten {
+    display: block;
   }
 }
 
