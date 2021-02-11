@@ -4411,6 +4411,9 @@ aside {
   .contact input[type="checkbox"] + label::before {
     bottom: unset;
   }
+  .pay-delivery h2 {
+    font-size: 30px;
+  }
   .footer {
     margin-top: unset;
     padding-bottom: 85px;
@@ -5036,6 +5039,9 @@ aside {
   }
   .single-product__description .silver {
     width: 75% !important;
+  }
+  .company__advantag .container {
+    padding: 10px;
   }
 }
 
