@@ -1595,7 +1595,7 @@ aside {
 }
 
 .company__advantag .company__advantag-block-icon {
-  border-bottom: 1px dashed #d2d2d2;
+  border-bottom: 2px dashed #d2d2d2;
   padding-bottom: 33px;
   margin-bottom: 20px;
 }
@@ -1726,6 +1726,11 @@ aside {
 /* -----------	Страница брендов  -----------	*/
 .silver {
   background-color: #eee !important;
+}
+
+.breadcrumb__silver {
+  background-color: #eee !important;
+  padding-bottom: 85px;
 }
 
 .page__cat .category__offer,
@@ -5291,7 +5296,10 @@ aside {
   }
   .offer {
     background-color: unset;
-    height: 580px;
+    height: 300px;
+  }
+  .card {
+    padding: 5px;
   }
   .offer .offer-swiper-container::before {
     height: 97%;
@@ -5454,7 +5462,7 @@ aside {
     width: 130%;
   }
   .search-block {
-    margin-top: -248px;
+    margin-top: -170px;
   }
   .about-us .title {
     margin-left: 20px;
@@ -5514,9 +5522,6 @@ aside {
   }
   .offer-swiper-container .swiper-wrapper {
     width: 130%;
-  }
-  .search-block {
-    margin-top: -248px;
   }
   .about-us .title {
     margin-left: 20px;

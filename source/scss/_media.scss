@@ -921,7 +921,10 @@
 	}
 	.offer {
 		background-color: unset;
-		height: 580px;
+		height: 300px;
+	}
+	.card {
+		padding: 5px;
 	}
 
 	.offer .offer-swiper-container::before {
@@ -1084,7 +1087,7 @@
 		width: 130%;
 	}
 	.search-block {
-		margin-top: -248px;
+		margin-top: -170px;
 	}
 	.about-us .title {
 		margin-left: 20px;
@@ -1152,7 +1155,7 @@
 		width: 130%;
 	}
 	.search-block {
-		margin-top: -248px;
+		// margin-top: -248px;
 	}
 	.about-us .title {
 		margin-left: 20px;
