@@ -4657,6 +4657,7 @@ aside {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
   .pay-delivery {
     margin: 100px auto;
@@ -5275,6 +5276,7 @@ aside {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
   .header {
     display: none;
@@ -5448,6 +5450,9 @@ aside {
   .silver {
     width: 90% !important;
     margin-right: 10px !important;
+  }
+  .reviews {
+    max-width: unset;
   }
 }
 
