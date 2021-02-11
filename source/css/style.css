@@ -4418,6 +4418,9 @@ aside {
   .contact input[type="checkbox"] + label::before {
     bottom: unset;
   }
+  .pay-delivery h2 {
+    font-size: 30px;
+  }
   .footer {
     margin-top: unset;
     padding-bottom: 85px;
@@ -4661,6 +4664,7 @@ aside {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
   .pay-delivery {
     margin: 100px auto;
@@ -5042,6 +5046,9 @@ aside {
   .single-product__description .silver {
     width: 75% !important;
   }
+  .company__advantag .container {
+    padding: 10px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1224px) {
@@ -5274,6 +5281,7 @@ aside {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
   .header {
     display: none;
@@ -5447,6 +5455,9 @@ aside {
   .silver {
     width: 90% !important;
     margin-right: 10px !important;
+  }
+  .reviews {
+    max-width: unset;
   }
 }
 
