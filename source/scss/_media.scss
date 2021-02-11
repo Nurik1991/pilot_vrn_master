@@ -250,7 +250,7 @@
 	}
 
 	.phone img {
-		height: 30px;
+		height: 26px;
 		margin: 20px;
 		filter: invert(1);
 	}
@@ -837,6 +837,10 @@
 		font-size: 14px;
 	}
 
+	.goods-block__container {
+		gap: 15px;
+	}
+
 	// end mobile
 }
 
@@ -1014,9 +1018,8 @@
 	}
 
 	.phone img {
-		height: 30px;
+		height: 26px;
 		margin: 20px;
-		filter: invert(1);
 	}
 
 	.logo svg {

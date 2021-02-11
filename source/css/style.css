@@ -3001,8 +3001,8 @@ aside {
 }
 
 .mobile-menu__items .svg {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 28px;
 }
 
 .mobile-menu__items .offer__buy {
@@ -4759,7 +4759,7 @@ aside {
             justify-content: space-between;
   }
   .phone img {
-    height: 30px;
+    height: 26px;
     margin: 20px;
     -webkit-filter: invert(1);
             filter: invert(1);
@@ -5298,6 +5298,9 @@ aside {
   .select__head {
     font-size: 14px;
   }
+  .goods-block__container {
+    gap: 15px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1224px) {
@@ -5475,10 +5478,8 @@ aside {
             justify-content: space-between;
   }
   .phone img {
-    height: 30px;
+    height: 26px;
     margin: 20px;
-    -webkit-filter: invert(1);
-            filter: invert(1);
   }
   .logo svg {
     padding: 8px 0;
