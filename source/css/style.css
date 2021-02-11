@@ -4829,7 +4829,9 @@ aside {
     margin-bottom: unset;
   }
   .goods-block__container,
-  .catalog__grid,
+  .catalog__grid {
+    margin-bottom: 0;
+  }
   .contact .contact__map {
     margin-bottom: 85px;
   }
@@ -4857,7 +4859,7 @@ aside {
   .search-block .search-block__select {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    padding-bottom: 20px;
+    padding: 85px 0;
   }
   .swiper-pagination {
     display: none;
@@ -5025,7 +5027,9 @@ aside {
   .additional .additional-link {
     width: 100%;
   }
-  .single-product__preview-recomended .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  .single-product__preview-recomended
+.swiper-container-horizontal
+> .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
     -webkit-transform: translateX(-30%);
             transform: translateX(-30%);
   }
@@ -5048,6 +5052,48 @@ aside {
   }
   .company__advantag .container {
     padding: 10px;
+  }
+  .catalog,
+  .goods-block,
+  .questions-block,
+  .special-goods,
+  .single-product__preview-recomended {
+    margin: 85px auto;
+  }
+  .about-us {
+    max-height: unset !important;
+  }
+  .about-us .title {
+    margin: 85px auto;
+  }
+  .about-us .title-text {
+    max-width: 570px;
+    margin: 40px 0;
+  }
+  .about-us .offer__text-button {
+    padding-top: 30px;
+    padding-bottom: 85px;
+  }
+  .goods-block__container {
+    margin-bottom: 0;
+  }
+  .page__cat .search-block__select,
+  .page__seat .search-block__select {
+    padding-bottom: 125px;
+  }
+  .page__seat .goods-block__container {
+    margin-bottom: unset;
+  }
+  .pagination,
+  .description__buttons {
+    margin-bottom: 85px;
+  }
+  .description__choose-title,
+  .services,
+  .description__price,
+  .single-product__preview-recomended-title {
+    margin-bottom: 30px;
+    text-align: center;
   }
 }
 
@@ -5677,8 +5723,6 @@ aside {
             flex-direction: column;
     height: 100%;
     min-height: 208px;
-    margin-bottom: 30px;
-    width: 90%;
   }
   .questions-block__bg::after {
     width: 100%;

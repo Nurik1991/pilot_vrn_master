@@ -1,6 +1,5 @@
 /* ====================Мобильная версия================= */
 @media screen and (max-width: 768px) {
-
 	// mobile
 	.breadcrumb {
 		display: none;
@@ -50,7 +49,6 @@
 		}
 
 		.footer__social-links {
-
 			/* text-align: center; */
 			.telephone a {
 				margin-left: 0px;
@@ -83,8 +81,8 @@
 		flex-direction: column;
 		height: 100%;
 		min-height: 208px;
-		margin-bottom: 30px;
-		width: 90%;
+		// margin-bottom: 30px;
+		// width: 90%;
 
 		&::after {
 			width: 100%;
@@ -113,7 +111,7 @@
 	}
 
 	.contact {
-		input[type="checkbox"]+label::before {
+		input[type="checkbox"] + label::before {
 			left: 15%;
 		}
 
@@ -217,7 +215,7 @@
 				width: 100%;
 			}
 
-			input[type="checkbox"]+label:before {
+			input[type="checkbox"] + label:before {
 				// bottom: 7px;
 				// left: 20px;
 				bottom: 9px;
@@ -236,8 +234,6 @@
 		text-align: center;
 		height: 100%;
 	}
-
-
 
 	.tabs__head {
 		margin-top: 60px;
@@ -290,7 +286,6 @@
 	.page-404 {
 		.page-404__text {
 			p {
-
 				font-weight: bold;
 				margin-right: 4px;
 			}
@@ -312,7 +307,6 @@
 
 // ____________________________________________________________________________________ //
 @media (min-width: 768px) and (max-width: 1024px) {
-
 	// mobile
 	.contact {
 		.contact__info {
@@ -354,14 +348,13 @@
 			width: 100%;
 		}
 
-		input[type="checkbox"]+label:before {
+		input[type="checkbox"] + label:before {
 			// bottom: 7px;
 			// left: 20px;
 			bottom: 9px;
 			left: 30px;
 		}
 	}
-
 
 	.wrapperbg {
 		margin-top: 0;
@@ -399,10 +392,8 @@
 	// end mobile
 }
 
-
 // ____________________________________________________________________________________ //
 @media (min-width: 1024px) and (max-width: 1580px) {
-
 	// mobile
 	.page404__wrapp {
 		display: none;
@@ -441,7 +432,6 @@
 
 // ____________________________________________________________________________________ //
 @media (min-width: 1580px) {
-
 	// mobile
 	.page404__wrapp {
 		display: none;
