@@ -2692,6 +2692,50 @@ aside {
 	padding-bottom: 70px;
 }
 
+.mobile-menu__items .svg {
+	width: 30px;
+	height: 30px;
+	filter: invert(1);
+	-webkit-filter: invert(1);
+}
+.mobile-menu__items .offer__buy {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 40px;
+	height: 50px;
+	align-items: center;
+	padding: 5px;
+	margin-left: 10px;
+}
+.mobile-menu__items .offer__like {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 40px;
+	height: 50px;
+	align-items: center;
+	margin: 0 15px;
+	padding: 5px;
+}
+.mobile-menu__items .offer__buy-count,
+.mobile-menu__items .offer__like-count {
+	position: absolute;
+	bottom: 10px;
+	right: -5px;
+	color: #2c2419;
+	background-color: white;
+	padding: 0 5px;
+	border-radius: 100%;
+	font-size: 14px;
+	text-align: center;
+}
+
+.mobile-menu__items .logo {
+	display: inline-flex;
+	justify-content: flex-start;
+	width: 70%;
+}
 /*--------конец Контакты -----*/
 
 @import "_style2";
