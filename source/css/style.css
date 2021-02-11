@@ -1728,6 +1728,11 @@ aside {
   background-color: #eee !important;
 }
 
+.breadcrumb__silver {
+  background-color: #eee !important;
+  padding-bottom: 85px;
+}
+
 .page__cat .category__offer,
 .page__seat .category__offer {
   min-height: 270px;
