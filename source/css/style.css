@@ -4801,7 +4801,8 @@ aside {
     row-gap: 10px;
   }
   .about-us,
-  .additional-block {
+  .additional-block,
+  .block-help {
     margin: 0;
     margin-bottom: 85px;
   }
@@ -4811,10 +4812,13 @@ aside {
   .card {
     margin-bottom: unset;
   }
-  .goods-block__container {
+  .goods-block__container,
+  .catalog__grid,
+  .contact .contact__map {
     margin-bottom: 85px;
   }
-  .questions-block {
+  .questions-block,
+  .contact .contact__form {
     margin: 85px auto;
   }
   .single-product {
