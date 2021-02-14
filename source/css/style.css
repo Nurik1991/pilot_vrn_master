@@ -5480,6 +5480,8 @@ aside {
   .phone img {
     height: 26px;
     margin: 20px;
+    -webkit-filter: invert(1);
+            filter: invert(1);
   }
   .logo svg {
     padding: 8px 0;
@@ -5559,7 +5561,7 @@ aside {
   }
   .offer {
     background-color: unset;
-    height: 300px;
+    height: 700px;
   }
   .card {
     padding: 5px;
@@ -5833,15 +5835,50 @@ aside {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .qwe img {
+    max-width: unset;
+    height: auto;
+  }
 }
 
-@media (min-width: 1580px) {
+@media (min-width: 1580px) and (max-width: 1650px) {
   .company__advantag .company__advantag-block {
     -ms-flex-pack: distribute !important;
         justify-content: space-around !important;
     width: unset;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+  .offer .offer-swiper-container .offer-swiper-pagination {
+    right: 22%;
+    z-index: 99999999999;
+    color: white;
+    height: 30px;
+    top: 42%;
+  }
+  .qwe img {
+    max-width: unset;
+    height: auto;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+}
+
+@media (min-width: 1650px) {
+  .company__advantag .company__advantag-block {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    width: unset;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .qwe img {
+    max-width: unset;
+    height: auto;
   }
   .mobile-menu {
     display: none;
