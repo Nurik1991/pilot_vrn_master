@@ -1,1 +1,1 @@
-# pilot_vrn_master
+Верстка сайта https://pilot-vrn.ru/ для интеграции на vue
